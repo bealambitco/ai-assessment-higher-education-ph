@@ -1,0 +1,24 @@
+{
+  "case_id": "W2-03",
+  "researcher_name": "Bea Charmelyn T. Lambitco",
+  "decision_verbatim": "Accept",
+  "comments_verbatim": "## Fill only this section after reading the version\n\nDecision (Accept for further checking / Revise again / Exclude / Unresolved): Accept\nDoes it apply your comments? If not, what was missed?: I like the scenario in ai-assisted because i dont like the 0.0 grade (can be wrong cos sometimes universities just keep a 1.0 failing mark). I meanwhile like the rest in the revision. \nSource support and school context (any concern): \nAnswerability, acceptable alternatives and scoring (any concern): \nAuthority, timing, units or calculations (any concern): \nRelated-case overlap (retain / change / unresolved, with reason): \nChanges you now authorize, if any: \n\n## Disposition — use this same file\n\nFor each proposed change or later auditor finding, write Accept / Reject / Modify / Unresolved and your reason. Codex will copy your decisions to the separate disposition record. No need to fill two files.\n\n| Change or finding ID | Your decision | Reason / correction |\n|---|---|---|\n| W2-03-SCENARIO | | |\n| W2-03-REFERENCE | | |\n| W2-03-SCORING | | |\n\nAI auditor results: not received. Do not pre-accept unknown findings.\n\n",
+  "interpretation_of_original": "second Gemini revision, not initial generation; W1-03 has no new Gemini revision and uses retained original narrative",
+  "normalized_decision": "ACCEPT_WITH_REQUESTED_INTEGRATION",
+  "sessions": [
+    {
+      "date": "2026-09-13",
+      "started_at": "2026-09-13T11:17:00+08:00",
+      "ended_at": "2026-09-13T11:20:00+08:00",
+      "minutes": 3,
+      "precision": "minute",
+      "verbatim": "Actual start and finish: September 13, 11:17 AM - 11:20 AM"
+    }
+  ],
+  "review_date": "2026-09-13",
+  "timing_status": "RECORDED",
+  "reviewed_candidate_sha256": "636d829fbaf4479256e9a76f9a2514abe3270d4322ae9ff497cf8ce4880eae0f",
+  "recorded_at_utc": "2026-09-13T05:55:38.457484+00:00",
+  "integration_candidate_sha256": "6c001d7e93ac7d962b126c0a1b97d9e83e9e6c7dd51edbe20f69919c3354bafc",
+  "integration_requires_final_audit_and_disposition": true
+}

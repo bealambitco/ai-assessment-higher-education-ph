@@ -1,0 +1,74 @@
+[
+  {
+    "run_id": "D01",
+    "case_id": "W1-03",
+    "condition": "excerpt",
+    "attachment": "attachments/W1-03_excerpt.txt"
+  },
+  {
+    "run_id": "D02",
+    "case_id": "W1-03",
+    "condition": "full_text",
+    "attachment": "attachments/W1-03_full_text.txt"
+  },
+  {
+    "run_id": "D03",
+    "case_id": "W2-03",
+    "condition": "full_text",
+    "attachment": "attachments/W2-03_full_text.txt"
+  },
+  {
+    "run_id": "D04",
+    "case_id": "W2-03",
+    "condition": "excerpt",
+    "attachment": "attachments/W2-03_excerpt.txt"
+  },
+  {
+    "run_id": "D05",
+    "case_id": "W3-02",
+    "condition": "excerpt",
+    "attachment": "attachments/W3-02_excerpt.txt"
+  },
+  {
+    "run_id": "D06",
+    "case_id": "W3-02",
+    "condition": "full_text",
+    "attachment": "attachments/W3-02_full_text.txt"
+  },
+  {
+    "run_id": "D07",
+    "case_id": "W1-06",
+    "condition": "full_text",
+    "attachment": "attachments/W1-06_full_text.txt"
+  },
+  {
+    "run_id": "D08",
+    "case_id": "W1-06",
+    "condition": "excerpt",
+    "attachment": "attachments/W1-06_excerpt.txt"
+  },
+  {
+    "run_id": "D09",
+    "case_id": "W2-07",
+    "condition": "excerpt",
+    "attachment": "attachments/W2-07_excerpt.txt"
+  },
+  {
+    "run_id": "D10",
+    "case_id": "W2-07",
+    "condition": "full_text",
+    "attachment": "attachments/W2-07_full_text.txt"
+  },
+  {
+    "run_id": "D11",
+    "case_id": "W3-04",
+    "condition": "full_text",
+    "attachment": "attachments/W3-04_full_text.txt"
+  },
+  {
+    "run_id": "D12",
+    "case_id": "W3-04",
+    "condition": "excerpt",
+    "attachment": "attachments/W3-04_excerpt.txt"
+  }
+]

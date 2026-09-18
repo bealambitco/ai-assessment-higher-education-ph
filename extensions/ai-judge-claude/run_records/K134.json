@@ -1,0 +1,43 @@
+{
+  "judge_id": "K134",
+  "case_id": "W1-03",
+  "record_status": "RAW_SAVED",
+  "attempt": 1,
+  "prompt_sha256": "a961d0e0a5d8cc538933575aafa294455a4d150fc2c4e242094a44b741f41347",
+  "started_at": "2026-09-18T15:02:04+08:00",
+  "finished_at": "2026-09-18T15:03:04+08:00",
+  "actual_model_id": "deepseek/deepseek-v4-pro-0813",
+  "reasoning_setting": "OpenRouter reasoning effort=high",
+  "interface": "OpenRouter API, chat/completions, one request per run",
+  "provider": "Baidu",
+  "usage": {
+    "prompt_tokens": 5151,
+    "completion_tokens": 3872,
+    "total_tokens": 9023,
+    "cost": 0.021150936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 768,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021150936,
+      "upstream_inference_prompt_cost": 0.005817816,
+      "upstream_inference_completions_cost": 0.01533312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3029,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "cost": 0.021150936,
+  "prompt_unchanged": true,
+  "fresh_chat": true,
+  "tools_or_attachments_used": false,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": "[{\"attempt\": 1, \"error\": \"HTTP Error 429: Too Many Requests\", \"at\": \"2026-09-18T15:01:58+08:00\"}]",
+  "temperature_setting": "provider default"
+}

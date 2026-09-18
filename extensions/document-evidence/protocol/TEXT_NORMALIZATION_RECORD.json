@@ -1,0 +1,12 @@
+[
+  {
+    "case_id": "W3-04",
+    "page": 3,
+    "basis": "Visual inspection of retained PDF page 3 before generation; no model outputs consulted.",
+    "changes": [
+      "Replaced corrupted extracted equation glyphs with a faithful plain-text transcription.",
+      "Changed extracted £ glyphs in first Table 2 row to visually verified ≤ signs."
+    ],
+    "original_extracted_equation": "                                           ∑#!,-\n                                               $% &$'()*+\n                                                          (𝑐𝑟𝑒𝑑𝑖𝑡 𝑢𝑛𝑖𝑡)! (𝑚𝑜𝑑𝑢𝑙𝑒 𝑔𝑟𝑎𝑑𝑒)!\n             𝑀𝑜𝑑𝑢𝑙𝑒 𝐺𝑟𝑎𝑑𝑒 𝐴𝑣𝑒𝑟𝑎𝑔𝑒 =\n                                                  𝑡𝑜𝑡𝑎𝑙 𝑐𝑟𝑒𝑑𝑖𝑡 𝑢𝑛𝑖𝑡𝑠 𝑜𝑓 𝑡ℎ𝑒 𝑐𝑜𝑢𝑟𝑠𝑒\n\n\n\n"
+  }
+]

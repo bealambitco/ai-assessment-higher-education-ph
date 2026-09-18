@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-09-17T03:18:56.542912+00:00",
+  "T13": {
+    "researcher_clarification": "I added the main thesis, but my minor edit was a grammatical error.",
+    "handling": "Preserve original minor_edit classification, decision reason and final product. Append this clarification; do not retrospectively rewrite judgment or time."
+  },
+  "T24": {
+    "researcher_report": "Got interrupted; when I clicked paused, it took around a minute.",
+    "recorded_pause_seconds": 72.42641,
+    "handling": "Recorded pause already excluded by the system. Possible additional unrecorded interruption/latency is unresolved. Retain recorded times; flag T24 for exclusion from clean-time summaries pending clarification and include an all-recorded sensitivity. Do not subtract an exact estimated minute."
+  },
+  "familiarity": "Researcher reports remaining familiarity during review. Prior exposure responses do not establish absence of case/reference familiarity."
+}

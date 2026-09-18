@@ -1,0 +1,170 @@
+[
+ {
+  "judge_id": "K201",
+  "model": "gemini",
+  "run_id": "D01",
+  "condition": "excerpt",
+  "case_id": "W1-03"
+ },
+ {
+  "judge_id": "K202",
+  "model": "gemini",
+  "run_id": "D02",
+  "condition": "full_text",
+  "case_id": "W1-03"
+ },
+ {
+  "judge_id": "K203",
+  "model": "gemini",
+  "run_id": "D03",
+  "condition": "full_text",
+  "case_id": "W2-03"
+ },
+ {
+  "judge_id": "K204",
+  "model": "gemini",
+  "run_id": "D04",
+  "condition": "excerpt",
+  "case_id": "W2-03"
+ },
+ {
+  "judge_id": "K205",
+  "model": "gemini",
+  "run_id": "D05",
+  "condition": "excerpt",
+  "case_id": "W3-02"
+ },
+ {
+  "judge_id": "K206",
+  "model": "gemini",
+  "run_id": "D06",
+  "condition": "full_text",
+  "case_id": "W3-02"
+ },
+ {
+  "judge_id": "K207",
+  "model": "gemini",
+  "run_id": "D07",
+  "condition": "full_text",
+  "case_id": "W1-06"
+ },
+ {
+  "judge_id": "K208",
+  "model": "gemini",
+  "run_id": "D08",
+  "condition": "excerpt",
+  "case_id": "W1-06"
+ },
+ {
+  "judge_id": "K209",
+  "model": "gemini",
+  "run_id": "D09",
+  "condition": "excerpt",
+  "case_id": "W2-07"
+ },
+ {
+  "judge_id": "K210",
+  "model": "gemini",
+  "run_id": "D10",
+  "condition": "full_text",
+  "case_id": "W2-07"
+ },
+ {
+  "judge_id": "K211",
+  "model": "gemini",
+  "run_id": "D11",
+  "condition": "full_text",
+  "case_id": "W3-04"
+ },
+ {
+  "judge_id": "K212",
+  "model": "gemini",
+  "run_id": "D12",
+  "condition": "excerpt",
+  "case_id": "W3-04"
+ },
+ {
+  "judge_id": "K213",
+  "model": "kimi_optional",
+  "run_id": "D01",
+  "condition": "excerpt",
+  "case_id": "W1-03"
+ },
+ {
+  "judge_id": "K214",
+  "model": "kimi_optional",
+  "run_id": "D02",
+  "condition": "full_text",
+  "case_id": "W1-03"
+ },
+ {
+  "judge_id": "K215",
+  "model": "kimi_optional",
+  "run_id": "D03",
+  "condition": "full_text",
+  "case_id": "W2-03"
+ },
+ {
+  "judge_id": "K216",
+  "model": "kimi_optional",
+  "run_id": "D04",
+  "condition": "excerpt",
+  "case_id": "W2-03"
+ },
+ {
+  "judge_id": "K217",
+  "model": "kimi_optional",
+  "run_id": "D05",
+  "condition": "excerpt",
+  "case_id": "W3-02"
+ },
+ {
+  "judge_id": "K218",
+  "model": "kimi_optional",
+  "run_id": "D06",
+  "condition": "full_text",
+  "case_id": "W3-02"
+ },
+ {
+  "judge_id": "K219",
+  "model": "kimi_optional",
+  "run_id": "D07",
+  "condition": "full_text",
+  "case_id": "W1-06"
+ },
+ {
+  "judge_id": "K220",
+  "model": "kimi_optional",
+  "run_id": "D08",
+  "condition": "excerpt",
+  "case_id": "W1-06"
+ },
+ {
+  "judge_id": "K221",
+  "model": "kimi_optional",
+  "run_id": "D09",
+  "condition": "excerpt",
+  "case_id": "W2-07"
+ },
+ {
+  "judge_id": "K222",
+  "model": "kimi_optional",
+  "run_id": "D10",
+  "condition": "full_text",
+  "case_id": "W2-07"
+ },
+ {
+  "judge_id": "K223",
+  "model": "kimi_optional",
+  "run_id": "D11",
+  "condition": "full_text",
+  "case_id": "W3-04"
+ },
+ {
+  "judge_id": "K224",
+  "model": "kimi_optional",
+  "run_id": "D12",
+  "condition": "excerpt",
+  "case_id": "W3-04"
+ }
+]

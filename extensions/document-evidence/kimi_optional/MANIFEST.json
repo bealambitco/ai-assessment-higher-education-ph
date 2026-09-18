@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "D01",
+    "case_id": "W1-03",
+    "condition": "excerpt",
+    "attachment": "attachments/W1-03_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D01_full_prompt.txt",
+    "prompt_sha256": "978413685ac3ab558f53cd3c4fffc446eac7a607b8453631ed76a6629dc1c8ef",
+    "attachment_sha256": "485ab27d78b2b82473c02a58e51aaf1576671030342b61531a852f1fa4e5e54f",
+    "raw_path": "kimi_optional/raw_outputs/D01_raw.txt"
+  },
+  {
+    "run_id": "D02",
+    "case_id": "W1-03",
+    "condition": "full_text",
+    "attachment": "attachments/W1-03_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D02_full_prompt.txt",
+    "prompt_sha256": "47c08c40b8db88093fd939ba46a1e5e34fb02d4b6d70aed664840609ab82ed41",
+    "attachment_sha256": "026ecfd0c20aace6818dc237f00884bbf6068aafd14814832a676e636f39ef70",
+    "raw_path": "kimi_optional/raw_outputs/D02_raw.txt"
+  },
+  {
+    "run_id": "D03",
+    "case_id": "W2-03",
+    "condition": "full_text",
+    "attachment": "attachments/W2-03_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D03_full_prompt.txt",
+    "prompt_sha256": "aa1ab8fd16a066f16407b2b78fb4194dcecc231aae025a2b8f50c650bedcc405",
+    "attachment_sha256": "ac0be2258b8d6669b48bb615d9be227fa860a297053c409367698479e38cf03e",
+    "raw_path": "kimi_optional/raw_outputs/D03_raw.txt"
+  },
+  {
+    "run_id": "D04",
+    "case_id": "W2-03",
+    "condition": "excerpt",
+    "attachment": "attachments/W2-03_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D04_full_prompt.txt",
+    "prompt_sha256": "6095a40d8deb5278cf8d2ea39c456f76724ff30c446b230b7b892f8f23d1f5ae",
+    "attachment_sha256": "b0937ccd67fe601facd14bd0ee113497584e03b680eec3b21abefce80445ef1e",
+    "raw_path": "kimi_optional/raw_outputs/D04_raw.txt"
+  },
+  {
+    "run_id": "D05",
+    "case_id": "W3-02",
+    "condition": "excerpt",
+    "attachment": "attachments/W3-02_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D05_full_prompt.txt",
+    "prompt_sha256": "1fb36dc1ef59cf85ca072c16e6adf1120aa4e3c23632e8307650ad0c695033d0",
+    "attachment_sha256": "3d3212006ab4203d00c74bc5b4e9ef6418730d70ffb7004cbfc400365b38a095",
+    "raw_path": "kimi_optional/raw_outputs/D05_raw.txt"
+  },
+  {
+    "run_id": "D06",
+    "case_id": "W3-02",
+    "condition": "full_text",
+    "attachment": "attachments/W3-02_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D06_full_prompt.txt",
+    "prompt_sha256": "7fc7135043bc5aeba16e62243d0d0f7916612aef784c208878fb272d0e9ac021",
+    "attachment_sha256": "0d68701c43a8e07e8c03870a359fe688b09d6cabf8afa7adfaa59b0785756000",
+    "raw_path": "kimi_optional/raw_outputs/D06_raw.txt"
+  },
+  {
+    "run_id": "D07",
+    "case_id": "W1-06",
+    "condition": "full_text",
+    "attachment": "attachments/W1-06_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D07_full_prompt.txt",
+    "prompt_sha256": "cc0334ea0ceafe30cd447c3702c1b271d3701ee979b29c7477629e6b3666e259",
+    "attachment_sha256": "40bd3c3da24ab912ff549a0d10804b9efc9a80306528086607e04f9586b03f8a",
+    "raw_path": "kimi_optional/raw_outputs/D07_raw.txt"
+  },
+  {
+    "run_id": "D08",
+    "case_id": "W1-06",
+    "condition": "excerpt",
+    "attachment": "attachments/W1-06_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D08_full_prompt.txt",
+    "prompt_sha256": "65e1f7d2e3cbf382db103bb5062c93592a49d2a5abee9f8c0cf4c00fb3e41b11",
+    "attachment_sha256": "bf37d3129567fe527483add9fddaea76e997df49dc32ff88090a9839c26c5a95",
+    "raw_path": "kimi_optional/raw_outputs/D08_raw.txt"
+  },
+  {
+    "run_id": "D09",
+    "case_id": "W2-07",
+    "condition": "excerpt",
+    "attachment": "attachments/W2-07_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D09_full_prompt.txt",
+    "prompt_sha256": "2f7e3220e6ba503bc478eed818401850eeb0654b1d1bea2e19d3e061fbe530d2",
+    "attachment_sha256": "2ea00ccf5eb119cc6a18588dd3240f25d653b7a3c9238ac6bc2c6292eae789f7",
+    "raw_path": "kimi_optional/raw_outputs/D09_raw.txt"
+  },
+  {
+    "run_id": "D10",
+    "case_id": "W2-07",
+    "condition": "full_text",
+    "attachment": "attachments/W2-07_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D10_full_prompt.txt",
+    "prompt_sha256": "20c480f2b0aacfd3bac9420d7d45800398b534ef7ab32d77b933df0d89e2891a",
+    "attachment_sha256": "b6606ee4259c929fc5cadb6a0b8c47eb523e067cc1130c79ff5de53af4f7e889",
+    "raw_path": "kimi_optional/raw_outputs/D10_raw.txt"
+  },
+  {
+    "run_id": "D11",
+    "case_id": "W3-04",
+    "condition": "full_text",
+    "attachment": "attachments/W3-04_full_text.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D11_full_prompt.txt",
+    "prompt_sha256": "53647755f1315707fb5a7c8f48cb1575763bf1a57fb5e9818c50cd39f36142d5",
+    "attachment_sha256": "94925627441572a683dccc28d0b4a78ef9a834438d408d873b1a017c7d22d082",
+    "raw_path": "kimi_optional/raw_outputs/D11_raw.txt"
+  },
+  {
+    "run_id": "D12",
+    "case_id": "W3-04",
+    "condition": "excerpt",
+    "attachment": "attachments/W3-04_excerpt.txt",
+    "model_folder": "kimi_optional",
+    "prompt_path": "kimi_optional/prompts/D12_full_prompt.txt",
+    "prompt_sha256": "be98b7816956b528370c3670bf1992631c7496c1eca9a966d8b479b158290fd9",
+    "attachment_sha256": "5c8e6077146930a0a1dc9010d5c50890180177327c74d8074675dd406834a32c",
+    "raw_path": "kimi_optional/raw_outputs/D12_raw.txt"
+  }
+]

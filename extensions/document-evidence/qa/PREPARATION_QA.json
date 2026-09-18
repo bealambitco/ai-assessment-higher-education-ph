@@ -1,0 +1,43 @@
+{
+  "prepared_at": "2026-09-18T11:29:26+08:00",
+  "status": "PASS_PREPARATION_PENDING_ACTUAL_CONFIGURATION",
+  "cases": 6,
+  "workflows": {
+    "W1": 2,
+    "W2": 2,
+    "W3": 2
+  },
+  "institutions": 6,
+  "gemini_runs": 12,
+  "optional_kimi_runs": 12,
+  "conditions": [
+    "frozen excerpt text attachment",
+    "retained complete extracted document text attachment"
+  ],
+  "scenario_task_equal_within_pair": true,
+  "instructions_equal_within_pair": true,
+  "no_reference_answers_or_scoring_criteria_supplied": true,
+  "all_links_exist": true,
+  "all_original_freeze_hashes_verified": 92,
+  "original_scores_or_outputs_opened": false,
+  "model_calls_made": 0,
+  "pending_output_records": 24,
+  "source_conversion_qualification": "Text rendering, not visual/PDF fidelity or browsing; Mapua math corrections disclosed",
+  "actual_app_and_reasoning_settings": "UNCONFIRMED",
+  "final_hash_and_pending_checks": "PASS: all 24 prompts/attachments match recorded hashes; all outputs pending; matching prompts across models",
+  "visual_source_spot_checks": [
+    "CNU PDF pages 16\u201317",
+    "Ateneo PDF page 12",
+    "DLSU PDF page 7",
+    "USPF PDF pages 26\u201327",
+    "Mapua PDF page 3"
+  ],
+  "visual_check_limit": "Relevant passage spot checks only, not a page-by-page visual audit of all handbooks.",
+  "recheck_2026_09_18": {
+    "all_86_local_links_resolve": true,
+    "all_source_and_prompt_hashes_match": true,
+    "all_tasks_match_frozen_inputs": true,
+    "parser_checks": "PASS valid, fenced, wrong ID, duplicate key, nonfinite number",
+    "parser_fix": "Reject nonstandard NaN/Infinity JSON values; no collected reply modified"
+  }
+}

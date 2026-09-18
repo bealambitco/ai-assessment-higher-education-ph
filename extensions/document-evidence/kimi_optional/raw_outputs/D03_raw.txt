@@ -1,0 +1,57 @@
+{
+  "run_id": "D03",
+  "case_id": "W2-03",
+  "evidence_access": "read",
+  "answer": "Under the supplied DLSU policy, none of the three proposed actions is permitted on the basis of the 94% Turnitin AI-writing indicator alone.\n\n1) Refusing the submission: Not permitted. The policy states faculty cannot refuse submissions solely because of AI detector results, and explicitly extends this to percentage-based tools like Turnitin 'regardless of any threshold value,' so even a 94% score does not authorize refusal.\n\n2) Immediate failing grade penalty: Not permitted on the detector result alone. Grade penalties are allowed only when a suspicious (flagged) submission is accompanied by additional pieces of evidence indicating the student's non-ownership of the work. The scenario states no such evidence has been gathered and the student has not been engaged, so the evidentiary precondition is unmet.\n\n3) Filing an academic dishonesty case: Not yet supported. Detector results 'cannot be used as the sole basis' for establishing generative AI-related academic dishonesty because the tools produce false positives and false negatives. Moreover, the policy defines AI-related dishonesty as (a) using generative AI in a way prohibited by the usage policy defined for that assessment (even if disclosed), or (b) failing to properly disclose generative AI use. A detector percentage establishes neither; the course's declared usage policy level for the project component and the student's disclosure status are unknown from the scenario.\n\nPermitted use of the detector: The tool may be used to flag the submission as suspicious. Appendix B directs that human judgment and verification must occur before any penalty is applied.\n\nWhat the policy requires before sanctions: One or more enumerated indicators of non-ownership, such as failure to answer questions consistent with the submitted work, failure to explain the thought processes behind it, failure to demonstrate the same skills in a controlled environment, traces of hallucinations unlikely to be human error (e.g., citing a non-existent source), drastic writing-style differences (used with caution), or large similarity with other students' submissions. If penalties are imposed, they must be clearly communicated to the student, including the specific indicators of non-ownership that justify the penalty. If cheating is alleged, the incident should be reported to the Student Discipline Formation Office per the cited Student Handbook provision.",
+  "proposed_action": "Do not refuse the submission, impose a grade penalty, or file a dishonesty case based solely on the 94% indicator. Treat the submission as flagged, then meet with the student about their research process (e.g., ask them to explain their thought process and answer questions consistent with the work), check the syllabus's declared Generative AI Use Policy level for the project and any disclosure statement, and look for the policy's additional non-ownership indicators. Only if such evidence emerges should a penalty be imposed (with clear written communication of the specific indicators) and the alleged cheating reported to the Student Discipline Formation Office.",
+  "citations": [
+    {
+      "quote": "Faculty cannot refuse submissions or impose grade penalties solely because of AI detector results.",
+      "locator": "Section IV-d (Handling of Generative AI-Related Academic Dishonesty), PDF viewer page 7"
+    },
+    {
+      "quote": "For AI detector tools that produce percentage values such as Turnitin, this policy shall apply regardless of any threshold value, since even high percentage outputs are not a definitive indication of cheating.",
+      "locator": "Section IV-d, PDF viewer page 7"
+    },
+    {
+      "quote": "results of such tools cannot be used as the sole basis for establishing generative AI-related academic dishonesty, as these tools can produce both false positives and false negatives",
+      "locator": "Section IV-d, PDF viewer page 7"
+    },
+    {
+      "quote": "Faculty can impose penalties and file academic dishonesty cases if suspicious submissions are accompanied by additional pieces of evidence that indicate students’ non-ownership of the submitted work.",
+      "locator": "Section IV-d, PDF viewer page 7"
+    },
+    {
+      "quote": "Failure to explain the thought processes used to produce the submitted work",
+      "locator": "Section IV-d, list of non-ownership indicators, PDF viewer page 7"
+    },
+    {
+      "quote": "Such grade penalties must be clearly communicated to the student. The communication must include the specific indicators of non-ownership to justify the penalty.",
+      "locator": "Section IV-d, PDF viewer page 7"
+    },
+    {
+      "quote": "Using generative AI in producing a submission in a way that is prohibited by the usage policy defined for that assessment, even if it was disclosed",
+      "locator": "Section IV-d, PDF viewer page 6"
+    },
+    {
+      "quote": "Failing to properly disclose the use of generative AI in a submission",
+      "locator": "Section IV-d, PDF viewer page 6"
+    },
+    {
+      "quote": "In cases of alleged cheating, the faculty member should report the incident to the Student Discipline Formation Office (Section 9.3)",
+      "locator": "Section IV-d (quoting Student Handbook), PDF viewer page 7"
+    },
+    {
+      "quote": "Use AI detector tools to flag suspicious submissions, but human judgment and verification must be done before any penalty is applied.",
+      "locator": "Appendix B: Guidelines on the Use of AI Detector Tools, PDF viewer page 13"
+    }
+  ],
+  "numeric_results": [
+    {
+      "quantity": "Turnitin AI-writing detector indicator reported on the submission",
+      "value": 94,
+      "unit": "percent"
+    }
+  ],
+  "evidence_limits": "The scenario and source do not establish the ISBUSAN course's declared Generative AI Use Policy level for the project component (free to use / allowed in specific contexts / banned) or whether the student included a disclosure statement, so it cannot be determined whether any generative AI use would even constitute dishonesty under the policy's two defined categories. The retained text states it is 'not a live currency check,' so the current in-force status of the policy cannot be confirmed from the attachment. The Student Handbook is referenced, but only the provisions quoted within the policy document are available here."
+}

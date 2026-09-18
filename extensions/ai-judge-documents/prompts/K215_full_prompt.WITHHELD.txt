@@ -1,0 +1,3 @@
+Withheld from the public release: this prompt embeds the full retained institutional document for case W2-03, which is not redistributed.
+SHA-256 of the prompt as sent: 801632b3017c6781e7afad1ea09edd3f51b17bc445ed971526c69ebba621eb2b
+The excerpt-condition prompt for the same case is published; the full document can be retrieved from literature/institutional-sources.csv.

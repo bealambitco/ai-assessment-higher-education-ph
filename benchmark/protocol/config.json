@@ -1,0 +1,76 @@
+{
+  "version": "21-manual-1",
+  "status": "PREPARED_NOT_FROZEN",
+  "frozen": false,
+  "scope_decision": "Astra/Luna primary; Fable/Opus extension \u2014 user confirmed September 15",
+  "primary_models": [
+    "astra",
+    "luna"
+  ],
+  "extension_models": [
+    "fable",
+    "opus"
+  ],
+  "repetitions": 2,
+  "primary_raw_answers": 96,
+  "primary_pathway_rows": 192,
+  "timed_items": 24,
+  "repeat_score_items": 20,
+  "collection_mode": "MANUAL_CHAT",
+  "models": {
+    "astra": {
+      "exact_label": "Astra",
+      "effort": "medium",
+      "interface": "Codex",
+      "confirmed_by_researcher": true,
+      "intended_api_family": "gpt-6-astra",
+      "underlying_backend_id_verified": false
+    },
+    "luna": {
+      "exact_label": "Luna",
+      "effort": "medium",
+      "interface": "Codex",
+      "confirmed_by_researcher": true,
+      "intended_api_family": "gpt-5.6-luna",
+      "underlying_backend_id_verified": false
+    },
+    "fable": {
+      "exact_label": null,
+      "effort": "high",
+      "interface": null,
+      "confirmed_by_researcher": false
+    },
+    "opus": {
+      "exact_label": null,
+      "effort": "high",
+      "interface": null,
+      "confirmed_by_researcher": false
+    }
+  },
+  "case_acceptance_complete": true,
+  "compatibility_checked": true,
+  "pre_generation_exposure_declaration": "Researcher explicitly reports no experimental responses generated, September 15 chat.",
+  "scope_and_manual_amendment_confirmed": true,
+  "ethics_status": {
+    "status": "RESEARCHER_REPORTED_FELLOWSHIP_OKAY",
+    "statement": "Fellowship is okay, no need for institution because it is independent of it.",
+    "verification_limit": "No formal ethics clearance or exemption document independently inspected; do not claim institutional approval."
+  },
+  "seeds": {
+    "rep1": 2026091601,
+    "rep2": 2026091602,
+    "timing": 2026091501,
+    "scoring": 2026091701,
+    "repeat": 2026091702,
+    "reviewers": 2026091506
+  },
+  "spending_authorized": false,
+  "user_confirmed_effort_settings": "Astra Medium/Luna Medium; Fable High/Opus High, September 15 chat",
+  "collection_context": "Both primary models in Codex at Medium, researcher confirmed. Use a fresh task with no research project, attachments or prior conversation per answer. Do not invoke tools. Platform instructions/tool availability are not claimed absent; record any tool use or contextual exposure.",
+  "interface_correction_history": [
+    "Initially reported Codex; corrected by researcher to ChatGPT web before any experimental generation.",
+    "Researcher supplied smoke replies: Astra web; Luna only available in Codex. Final comparison setup pending.",
+    "Final researcher choice before freeze: both in Codex at Medium; Astra availability in Codex verified by researcher."
+  ],
+  "compatibility_evidence": "Both supplied smoke objects pass format check; Luna reported in Codex, Astra smoke in web with separate researcher verification of Codex access. This does not claim an Astra Codex smoke run or verify hidden context."
+}

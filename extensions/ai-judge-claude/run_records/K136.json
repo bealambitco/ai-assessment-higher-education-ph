@@ -1,0 +1,43 @@
+{
+  "judge_id": "K136",
+  "case_id": "W1-03",
+  "record_status": "RAW_SAVED",
+  "attempt": 1,
+  "prompt_sha256": "10ce6a6dfb9c97c17a80b1324100c6b7dedd1bd5e714c0ed3bf6a246a2ab9fed",
+  "started_at": "2026-09-18T15:02:06+08:00",
+  "finished_at": "2026-09-18T15:03:04+08:00",
+  "actual_model_id": "deepseek/deepseek-v4-pro-0813",
+  "reasoning_setting": "OpenRouter reasoning effort=high",
+  "interface": "OpenRouter API, chat/completions, one request per run",
+  "provider": "Baidu",
+  "usage": {
+    "prompt_tokens": 4922,
+    "completion_tokens": 3109,
+    "total_tokens": 8031,
+    "cost": 0.017827176,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 768,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017827176,
+      "upstream_inference_prompt_cost": 0.005515536,
+      "upstream_inference_completions_cost": 0.01231164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2392,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "cost": 0.017827176,
+  "prompt_unchanged": true,
+  "fresh_chat": true,
+  "tools_or_attachments_used": false,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": "",
+  "temperature_setting": "provider default"
+}

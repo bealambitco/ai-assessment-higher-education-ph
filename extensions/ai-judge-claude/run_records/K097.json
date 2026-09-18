@@ -1,0 +1,43 @@
+{
+  "judge_id": "K097",
+  "case_id": "W1-05",
+  "record_status": "RAW_SAVED",
+  "attempt": 1,
+  "prompt_sha256": "5c9fe3a2d7888cc526fef001d76184e6a7a55a38d4369963e5dc754e14d0d54c",
+  "started_at": "2026-09-18T14:28:51+08:00",
+  "finished_at": "2026-09-18T14:31:40+08:00",
+  "actual_model_id": "deepseek/deepseek-v4-pro-0813",
+  "reasoning_setting": "OpenRouter reasoning effort=high",
+  "interface": "OpenRouter API, chat/completions, one request per run",
+  "provider": "Sail Research",
+  "usage": {
+    "prompt_tokens": 6025,
+    "completion_tokens": 2168,
+    "total_tokens": 8193,
+    "cost": 0.01063478,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01063478,
+      "upstream_inference_prompt_cost": 0.0042175,
+      "upstream_inference_completions_cost": 0.00641728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1444,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "cost": 0.01063478,
+  "prompt_unchanged": true,
+  "fresh_chat": true,
+  "tools_or_attachments_used": false,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": "",
+  "temperature_setting": "provider default"
+}

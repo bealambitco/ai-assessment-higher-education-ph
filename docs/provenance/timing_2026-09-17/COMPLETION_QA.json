@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-09-17T03:18:56.542912+00:00",
+  "session_sha256": "944a56ba27fb55a9cd123a730d727613441dedb39d39ec4701c5a618c0a3e7ab",
+  "completed": 24,
+  "checks": [
+    {
+      "timing_id": "T01",
+      "status": "PASS",
+      "final_product_sha256": "271e8472af99a3698401741f5a2c2b689656666b2c1b9c31f6607e5a8536530c",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T02",
+      "status": "PASS",
+      "final_product_sha256": "7bc1e836a5afef9f0b13a6bedf142fb806b20040a6d5a513e0a9c60a3976d2b9",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T03",
+      "status": "PASS",
+      "final_product_sha256": "8160322c2d608004034a17d230d37080b25f1cbe97c4f252944310d99b927d77",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T04",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T05",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T06",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T07",
+      "status": "PASS",
+      "final_product_sha256": "d3a30e93aa22798e7744305fd9bcff3b308a6d50da44f322470b4cf00d78e003",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T08",
+      "status": "PASS",
+      "final_product_sha256": "d367ff3779ec48de051f753ac37fc0fbd7ffd6f66493a3ca741aa6c06e650c5b",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T09",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T10",
+      "status": "PASS",
+      "final_product_sha256": "8182862d50a367d867fb6361061771a73716bb7083c572415ee5cab6d0c90921",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T11",
+      "status": "PASS",
+      "final_product_sha256": "fd2f2e8b4cf0ad120ec013c6846e368b04b27bf199eac341c60207fa475ac3b7",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T12",
+      "status": "PASS",
+      "final_product_sha256": "4afade279b51288c46b4f526819d732bc2f7802fe0024fe35bd69df7bf15c01c",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T13",
+      "status": "PASS",
+      "final_product_sha256": "8ee48ed9bb3e258fe10498637dd000121fc01e47fe09739f38777038227f123a",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T14",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T15",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T16",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T17",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T18",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T19",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T20",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T21",
+      "status": "PASS",
+      "final_product_sha256": "ca793742f95380bfac6ccbc09aeacc60e30d1c928ee7ecb9aaee7c08e1955b9b",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T22",
+      "status": "PASS",
+      "final_product_sha256": "131549cdecb8fc35cee0de8cb4e1d7538f51b239e6cfd74a3dedde97d426755d",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T23",
+      "status": "PASS",
+      "final_product_sha256": "81c10735bc387955cf5ed172fd9989ae8cb728de1faae46c3998ab88e8e4e3f8",
+      "literal_backslash_n_count": 0
+    },
+    {
+      "timing_id": "T24",
+      "status": "PASS",
+      "final_product_sha256": "61cc68736bfe7e437b147371d9400e60951edd914fc80266074be807bff7eb3f",
+      "literal_backslash_n_count": 0
+    }
+  ],
+  "scope": "Saved fields and timing arithmetic only; not substantive correctness or repaired-product scoring."
+}

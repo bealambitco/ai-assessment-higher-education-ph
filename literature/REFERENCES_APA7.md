@@ -1,0 +1,97 @@
+# References (APA 7)
+
+The 47 works cited in the final paper, as printed in its reference list.
+
+ASEAN Secretariat. (2025, November 24). *Remarks by H.E. Dr. Kao Kim Hourn, Secretary-General of ASEAN, at the ceremony on the deposit of instruments of accession to ASEAN legal instruments by the Democratic Republic of Timor-Leste*. https://asean.org/wp-content/uploads/2025/11/Updated_SG-Dr-Kao-Remarks-for-the-Ceremony-for-the-Deposity-of-Instruments-of-Accession-by-Ti.pdf
+
+Association of Southeast Asian Nations. (2025). *Expanded ASEAN guide on AI governance and ethics: Generative AI*. https://asean.org/wp-content/uploads/2025/01/Expanded-ASEAN-Guide-on-AI-Governance-and-Ethics-Generative-AI.pdf
+
+Atıl, B., Aykent, S., Chittams, A., Fu, L., Passonneau, R. J., Radcliffe, E., Rajagopal, G. R., Sloan, A., Tudrej, T., Türe, F., Wu, Z., Xu, L., & Baldwin, B. (2025). Non-determinism of “deterministic” LLM system settings in hosted environments. In *Proceedings of the 5th Workshop on Evaluation and Comparison of NLP Systems* (pp. 135–148). Association for Computational Linguistics. https://doi.org/10.18653/v1/2025.eval4nlp-1.12
+
+Bean, A. M., Kearns, R. O., Romanou, A., Hafner, F. S., Mayne, H., Batzner, J., Foroutan Eghlidi, N., Schmitz, C., Korgul, K., Batra, H., Deb, O., Beharry, E., Emde, C., Foster, T., Gausen, A., Grandury, M., Han, S., Hofmann, V., Ibrahim, L., . . . Mahdi, A. (2025). Measuring what matters: Construct validity in large language model benchmarks. In *Advances in Neural Information Processing Systems 38* (pp. 19868–19949). https://doi.org/10.52202/085713-0590
+
+Bowyer, S., Aitchison, L., & Ivanova, D. R. (2025). Position: Don't use the CLT in LLM evals with fewer than a few hundred datapoints. In *Proceedings of the 42nd International Conference on Machine Learning* (Vol. 267, pp. 81143–81184). PMLR. https://proceedings.mlr.press/v267/bowyer25a.html
+
+Buçinca, Z., Malaya, M. B., & Gajos, K. Z. (2021). To trust or to think: Cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making. *Proceedings of the ACM on Human-Computer Interaction, 5*(CSCW1), Article 188. https://doi.org/10.1145/3449287
+
+Commission on Higher Education Regional Office XI. (2026, February 25). *CHEDX 2.0 coffee table book formally turned over during CHED RAISE 2026*. https://ro11.ched.gov.ph/2026/02/25/chedx-2-0-coffee-table-book-formally-turned-over-during-ched-raise-2026/12198/quality-assurance/
+
+Constitution of the Democratic Republic of Timor-Leste. (2002). Section 13. Constitute Project. https://www.constituteproject.org/constitution/East_Timor_2002
+
+Corbin, T., Dawson, P., & Liu, D. (2025). Talk is cheap: Why structural assessment changes are needed for a time of GenAI. *Assessment & Evaluation in Higher Education, 50*(7), 1087–1097. https://doi.org/10.1080/02602938.2025.2503964
+
+Crescitelli, V., Immediato, G., Persia, F., & Costantini, S. (2026). *AI evaluation should measure verification cost, not correctness alone* [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2608.08709
+
+Crompton, H., Burke, D., Nickel, C., Bozkurt, A., Miao, F., Sharples, M., Greene, J. A., Parsons, D., Gill-Simmen, L., Edmett, A., Pegrum, M., de Waard, I., Bonk, C. J., Garcia, M. B., Curry, J. H., Lindsey, L., Yang, M., Marshall, S., Bali, M., . . . Yu, S. (2026). Governing generative AI in higher education: A global Delphi study on policy and practice. *International Journal of Educational Technology in Higher Education, 23*(1), Article 21. https://doi.org/10.1186/s41239-026-00602-z
+
+Department of Education. (2026). *Foundational guidelines on artificial intelligence in basic education* (DepEd Order No. 003, s. 2026). https://www.deped.gov.ph/wp-content/uploads/DO_s2026_003r-1.pdf
+
+Fok, R., & Weld, D. S. (2024). In search of verifiability: Explanations rarely enable complementary performance in AI-advised decision making. *AI Magazine, 45*(3), 317–332. https://doi.org/10.1002/aaai.12182
+
+Geifman, Y., & El-Yaniv, R. (2019). SelectiveNet: A deep neural network with an integrated reject option. In K. Chaudhuri & R. Salakhutdinov (Eds.), *Proceedings of the 36th International Conference on Machine Learning* (Vol. 97, pp. 2151–2159). PMLR. https://proceedings.mlr.press/v97/geifman19a.html
+
+Gervacio, J. L. M. (2026). *Rewriting the rules: The Philippine AI roadmap and its transformative implications for higher education* (UP CIDS Discussion Paper Series 2026-10). University of the Philippines Center for Integrative and Development Studies. https://cids.up.edu.ph/discussion_paper/rewriting-rules-philippine-ai-roadmap-transformative-implications-higher-education/
+
+Giray, L., De Silos, P. Y., Adornado, A., Buelo, R. J. V., Galas, E., Reyes-Chua, E., Santiago, C., & Ulanday, M. L. (2024). Use and impact of artificial intelligence in Philippine higher education: Reflections from instructors and administrators. *Internet Reference Services Quarterly, 28*(3), 315–338. https://doi.org/10.1080/10875301.2024.2352746
+
+Ilagan, J. B., & Ilagan, J. R. (2024). A prototype of a conversational virtual university support agent powered by a large language model that addresses inquiries about policies in the student handbook. *Procedia Computer Science, 239*, 1124–1131. https://doi.org/10.1016/j.procs.2024.06.278
+
+Jabbour, S., Fouhey, D., Banovic, N., Shepard, S. D., Kazerooni, E., Sjoding, M. W., & Wiens, J. (2026). *Selective prediction reduces the negative effects of automation bias overall but increases false negatives* (Version 2) [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2508.07617
+
+Jukiewicz, M., & Wyrwa, M. (2026). Can ChatGPT replace the teacher in assessment? A review of research on the use of large language models in grading and providing feedback. *Applied Sciences, 16*(2), Article 680. https://doi.org/10.3390/app16020680
+
+Kapoor, S., Cantrell, E. M., Peng, K., Pham, T. H., Bail, C. A., Gundersen, O. E., Hofman, J. M., Hullman, J., Lones, M. A., Malik, M. M., Nanayakkara, P., Poldrack, R. A., Raji, I. D., Roberts, M., Salganik, M. J., Serra-Garcia, M., Stewart, B. M., Vandewiele, G., & Narayanan, A. (2024). REFORMS: Consensus-based recommendations for machine-learning-based science. *Science Advances, 10*(18), Article eadk3452. https://doi.org/10.1126/sciadv.adk3452
+
+Kirichenko, P., Ibrahim, M., Chaudhuri, K., & Bell, S. J. (2025). AbstentionBench: Reasoning LLMs fail on unanswerable questions. In *Advances in Neural Information Processing Systems 38* (pp. 190800–190850). https://doi.org/10.52202/085713-5729
+
+Korthals, L., Akrong, E., Geller, G., Rosenbusch, H., Grasman, R., & Visser, I. (2026). Towards reliable LLM grading through self-consistency and selective human review: Higher accuracy, less work. *Machine Learning and Knowledge Extraction, 8*(3), Article 74. https://doi.org/10.3390/make8030074
+
+Krumdick, M., Lovering, C., Reddy, V., Ebner, S., & Tanner, C. (2026). *No free labels: Limitations of LLM-as-a-judge without human grounding* (Version 3) [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2503.05061
+
+Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J. (2023). GPT detectors are biased against non-native English writers. *Patterns, 4*(7), Article 100779. https://doi.org/10.1016/j.patter.2023.100779
+
+Magesh, V., Surani, F., Dahl, M., Suzgun, M., Manning, C. D., & Ho, D. E. (2025). Hallucination-free? Assessing the reliability of leading AI legal research tools. *Journal of Empirical Legal Studies, 22*(2), 216–242. https://doi.org/10.1111/jels.12413
+
+Miller, E. (2024). *Adding error bars to evals: A statistical approach to language model evaluations* [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2411.00640
+
+National Privacy Commission. (2024). *Guidelines on the application of Republic Act No. 10173 or the Data Privacy Act of 2012 (DPA), its implementing rules and regulations, and the issuances of the Commission to artificial intelligence systems processing personal data* (NPC Advisory No. 2024-04). https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf
+
+OECD.AI Policy Observatory. (2026, April 28). *National AI Strategy Roadmap 2.0 (NAISR 2.0)* [Policy initiative profile]. https://oecd.ai/en/dashboards/policy-initiatives/national-ai-strategy-roadmap-20-naisr-20
+
+Oladive, M. A. (2026, February 27). CHED: AI must not compromise academic integrity in education. *Daily Guardian*. https://dailyguardian.com.ph/ched-ai-must-not-compromise-academic-integrity-in-education/
+
+Parasuraman, R., Sheridan, T. B., & Wickens, C. D. (2000). A model for types and levels of human interaction with automation. *IEEE Transactions on Systems, Man, and Cybernetics—Part A: Systems and Humans, 30*(3), 286–297. https://doi.org/10.1109/3468.844354
+
+Perkins, M., Furze, L., Roe, J., & MacVaugh, J. (2024). The Artificial Intelligence Assessment Scale (AIAS): A framework for ethical integration of generative AI in educational assessment. *Journal of University Teaching and Learning Practice, 21*(6). https://doi.org/10.53761/q3azde36
+
+Philippine Accrediting Association of Schools, Colleges and Universities. (2025). *PAASCU guidelines on AI use in accreditation*. https://paascu.org.ph/paascu-board-approves-guidelines-on-ai-use-in-accreditation/
+
+Reuel, A., Hardy, A., Smith, C., Lamparth, M., Hardy, M., & Kochenderfer, M. J. (2024). BetterBench: Assessing AI benchmarks, uncovering issues, and establishing best practices. In *Advances in Neural Information Processing Systems 37* (pp. 21763–21813). https://doi.org/10.52202/079017-0685
+
+Selwyn, N., Ljungqvist, M., & Sonesson, A. (2025). When the prompting stops: Exploring teachers' work around the educational frailties of generative AI tools. *Learning, Media and Technology, 50*(3), 310–323. https://doi.org/10.1080/17439884.2025.2537959
+
+SunStar Cebu. (2025, July 21). Filipino households spend less on internet in 2024; access, usage expand. *SunStar*. https://www.sunstar.com.ph/cebu/filipino-households-spend-less-on-internet-in-2024-access-usage-expand
+
+SunStar Cebu. (2026, June 29). Asean ministers adopt AI, teacher training initiatives. *SunStar*. https://www.sunstar.com.ph/cebu/asean-ministers-adopt-aiteacher-training-initiatives
+
+Tam, Z. R., Wu, C.-K., Tsai, Y.-L., Lin, C.-Y., Lee, H.-y., & Chen, Y.-N. (2024). Let me speak freely? A study on the impact of format restrictions on large language model performance. In *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track* (pp. 1218–1236). Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.emnlp-industry.91
+
+Toquero, C. M. (2026). Trends, trajectories and tomorrows of AI regulations in Philippine higher educational institutions. *Higher Education Quarterly, 80*(1), Article e70090. https://doi.org/10.1111/hequ.70090
+
+UNESCO. (2025). *Philippines: Artificial intelligence readiness assessment report* (SHS/REI/EAI/2025/AI-RAM/PH). https://unesdoc.unesco.org/ark:/48223/pf0000393860
+
+Untalan, S. (2026, February 11). ASEAN study flags AI readiness gap as use surges across region. *GMA News Online*. https://www.gmanetwork.com/news/topstories/nation/976214/asean-study-flags-ai-readiness-gap-as-use-surges-across-region/story/
+
+Vasconcelos, H., Jörke, M., Grunde-McLaughlin, M., Gerstenberg, T., Bernstein, M. S., & Krishna, R. (2023). Explanations can reduce overreliance on AI systems during decision-making. *Proceedings of the ACM on Human-Computer Interaction, 7*(CSCW1), Article 129. https://doi.org/10.1145/3579605
+
+Vergara, J. P. C. (2024). *Navigating the generative artificial intelligence era: Charting the course for curricular reform in higher education in the Philippines* (Monograph Series 2024-06). University of the Philippines Center for Integrative and Development Studies. https://cids.up.edu.ph/wp-content/uploads/2024/12/06-Navigating-the-Generative-Artificial-Intelligence-Era-Charting-the-Course-for-Curricular-Reform-in-Higher-Education-in-the-Philippines_Vergara.pdf
+
+Villarino, R. T. H. (2025). Artificial intelligence (AI) integration in rural Philippine higher education: Perspectives, challenges, and ethical considerations. *IJERI: International Journal of Educational Research and Innovation*, (23), 1–25. https://doi.org/10.46661/ijeri.10909
+
+Wen, B., Yao, J., Feng, S., Xu, C., Tsvetkov, Y., Howe, B., & Wang, L. L. (2025). Know your limits: A survey of abstention in large language models. *Transactions of the Association for Computational Linguistics, 13*, 529–556. https://doi.org/10.1162/tacl_a_00754
+
+Xia, Q., Weng, X., Ouyang, F., Lin, T. J., & Chiu, T. K. F. (2024). A scoping review on how generative artificial intelligence transforms assessment in higher education. *International Journal of Educational Technology in Higher Education, 21*(1), Article 40. https://doi.org/10.1186/s41239-024-00468-z
+
+Zhou, R., Hua, W., Pan, L., Cheng, S., Wu, X., Yu, E., & Wang, W. Y. (2025). RuleArena: A benchmark for rule-guided reasoning with LLMs in real-world scenarios. In *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)* (pp. 550–572). Association for Computational Linguistics. https://doi.org/10.18653/v1/2025.acl-long.27
+
+Zwerdling, N., Boaz, D., Rabinovich, E., Uziel, G., Amid, D., & Anaby Tavor, A. (2025). Towards enforcing company policy adherence in agentic workflows. In *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track* (pp. 595–606). Association for Computational Linguistics. https://doi.org/10.18653/v1/2025.emnlp-industry.41

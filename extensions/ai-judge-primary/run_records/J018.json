@@ -1,0 +1,20 @@
+{
+  "judge_id": "J018",
+  "case_id": "W3-05",
+  "record_status": "NOT_RUN",
+  "attempt": 1,
+  "prompt_sha256": "b3e1aa6940003d7e88b17de368bb1a367bb459bf98519e8b76a37dd4384ef30f",
+  "started_at": null,
+  "finished_at": null,
+  "actual_model_id": null,
+  "reasoning_setting": null,
+  "interface": null,
+  "provider": null,
+  "usage": null,
+  "cost": null,
+  "prompt_unchanged": null,
+  "fresh_chat": null,
+  "tools_or_attachments_used": null,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "judge_id": "K143",
+  "case_id": "W3-08",
+  "record_status": "INVALID_OUTPUT",
+  "processed_at": "2026-09-18T07:07:55.443939+00:00",
+  "raw_sha256": "a2ac2e7ce5a4d57e1747f11bafdc1bfc82223ce46f8a3533389f5343318e7557",
+  "prompt_sha256": "c899c00d4274bfbbcbbd25bccbb34154936e1229dd9b8c8ed976bda46d8c14a7",
+  "judgment": null,
+  "validation_errors": [
+    "Expecting value: line 1 column 1 (char 0)"
+  ],
+  "warnings": [],
+  "outer_code_fence_removed": false,
+  "note": "Structure validation is not verification of substantive correctness. Actual model/settings come from collection records, not this reply."
+}

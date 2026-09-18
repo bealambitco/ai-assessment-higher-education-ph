@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "W1-01",
+    "accepted_case_sha256": "a72b9d7e5d395ec3e3382ff5ceafa8bdeba5019521e306ee3604c8441b625586",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-01_review.md",
+    "review_source_sha256": "adbcca2a35f62f06a11e4c1b3f65841fda2a797efe968f8ef4c128358a474d85",
+    "input_sha256": "e22494be008474a4e6af3733c38bb064855c585561829a36639b3e338cf7940d",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-02",
+    "accepted_case_sha256": "810b36b029c21713bd05e8fa9f4fa12b0a90eb0ff70e74b8c2b19707c8e928e0",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-02_review.md",
+    "review_source_sha256": "11884794e889ab455b189f30d663cd37deab7ab7e101cd69a2ba3958f8bbf5b2",
+    "input_sha256": "dc4390e0dfa8e5a70ebb3e81eb3a6fb9420effb21a403017a34c1f14ce529557",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-03",
+    "accepted_case_sha256": "a8a2fee4d93ac64f6ff863864ec68d9a8d473157bb473a9a997ada7f5116fec2",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-03_review.md",
+    "review_source_sha256": "4343f7d53ca2ca99b87504d9d7a9bfdc931ec14889d5507d076e5b7f5c908fe6",
+    "input_sha256": "790eaf0ab09527b9ba99b8463c13f5245ec59f24cf40a52dac3b483d3d1b817d",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-04",
+    "accepted_case_sha256": "0f4cc0aa1cfa595c77b95efed148a98dfc1463ddd4c0fd284792e01570529006",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-04_review.md",
+    "review_source_sha256": "7f5042efc3fb04429511fdd75ded50ffce9e8925e0adef29c71480da2cd8ed7c",
+    "input_sha256": "cfa4e47473f16a6dad2222a8e573026fd3046ffd21bb0b70fad060bbfc290fee",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-05",
+    "accepted_case_sha256": "509ef151851bc093a7e3c6cebe86797c5b9bdd4b135ea72585ad1109a9ef913b",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-05_review.md",
+    "review_source_sha256": "cfc5a2882c4cd451f4a0bab6f4bc0e70fdbc9d20163c08c743770ab9941faae4",
+    "input_sha256": "ca3c57c3e3b12b4bd32a6729513cb36f9ff78675c1b1fc1345e845dd849b6b40",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-06",
+    "accepted_case_sha256": "2cde8db16d442aa83939172f3ab29310c4b1272cc9729e7b6e83a13cc142f924",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-06_review.md",
+    "review_source_sha256": "b4666a888d61697785b62a0af918d0a35fd9c5fac2bee4d9669313e16c3e94dc",
+    "input_sha256": "5a9654d5ad78b24070a2f925e142661a5831e090dc5a641d63fd3bc835cf8ffe",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-07",
+    "accepted_case_sha256": "b1d9f520ee27a49e82cf80ca83d7ab5f6882fa3c74007b7c26226b4475bef4e4",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-07_review.md",
+    "review_source_sha256": "fe2c15e93672a48130ad0e45c9f9cd40987a50b8e38b9ee8908dd69365ca0313",
+    "input_sha256": "4c65c7bdf6db4fca8db5ce48c34089c379475b159a22f7d01e8b2af658bb03ff",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W1-08",
+    "accepted_case_sha256": "b3703ad82765b7292cfcef279e89a0b41b5724ee03c29ca65cc1f110fe60ad01",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W1-08_review.md",
+    "review_source_sha256": "248dd529c5ba104b06e064b6779ffbddad74867f5d7dd13909d869954cbd198c",
+    "input_sha256": "388e5d65da94fddbc0dc996c5d30c4e808eb68c6b2a1cf233a41b4ca77ef87bb",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-01",
+    "accepted_case_sha256": "134bd8b654979775209452a805c1e8df0c7a63e86ee0aa7e5318947a6b52e6e0",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-01_review.md",
+    "review_source_sha256": "2c2ae03279a3749e5654467dbbd98b61b3e2559f178ae86b1d7b8e4de6d81b6e",
+    "input_sha256": "13ec48495de9411247462eee2e756f295c67870eb827ed08f7ad3746ac2dca50",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-02",
+    "accepted_case_sha256": "baf3366561900acf81a5b97f146e59ddb002e23335730a2d0c24796fb9086487",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-02_review.md",
+    "review_source_sha256": "a3e7146a5e611005b778a4c3e89e23dafd561e410af6d90981dbd6bf6ffc44fd",
+    "input_sha256": "0e78996bbb48805143ebce8fbbaf5c8ad927f515157d298644420b78424bbb1d",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-03",
+    "accepted_case_sha256": "61754a5ae66928d73e508e8fa659ea4b69db2f878a3a635ca4b32d35ef852ff0",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-03_review.md",
+    "review_source_sha256": "00f4c0708ac2689bc5fd4f5b49835bf913fa0e5c05b26fc061f49cdcbb05ca98",
+    "input_sha256": "5cf44639578c9921d4a9d57d6a0e739b53f0e4858790f62f8ec722b0907c108e",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-04",
+    "accepted_case_sha256": "6e3025a7b44f775723930028c7fee4de96dfb608b9d07a48b116d36e2b53f2f1",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-04_review.md",
+    "review_source_sha256": "d8e2dbace1268d30a5e87ce011e58a21e1c92fb78e3ba18fd2eb4ba5545fc6f8",
+    "input_sha256": "50c3cfdebe8027bcdabf4b6527fe411d69335ac7818c469555d743ed0892e59a",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-05",
+    "accepted_case_sha256": "b9f33b18a6ca2b967b10effe9d125066d9199ffb9e02215aa00316653d1e5767",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-05_review.md",
+    "review_source_sha256": "7ab34b0ba383c9f153936b262f467f0da042a0222b32ef8ba6d82445eba7f016",
+    "input_sha256": "f5af7d9d3b26464384fb39003fd8ed663243ec01d794c22dcf61aa713c963a8a",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-06",
+    "accepted_case_sha256": "5bb722f6049be5f1a5891622ea568a7096e4cebbfbfc84e652c20ae9136c5165",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-06_review.md",
+    "review_source_sha256": "6e6e031ff0ba1f4b74aa85913aa7af09300ffbfb76e30ec7f65708c811ef20ea",
+    "input_sha256": "ad2b1d06b87e0ba5cb85b867b40be1b794286a2d0f406ae26f893783b702106e",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-07",
+    "accepted_case_sha256": "2469dbb1117de9fb37955f0416f0824ec98cb3be7d523eb4177dc615ac3061fa",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-07_review.md",
+    "review_source_sha256": "5cfdc393fb1e75f04a7f5340c881dd042db92f56ea801f43dae5aa57c584d3a9",
+    "input_sha256": "a20a270bff413af420d94d664bd474a6c1b84603c14afe2648a6a4c0ef913d10",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W2-08",
+    "accepted_case_sha256": "1308e6c4b3314d234e464cdb7cd1faae5b102b2472e50cdaafd6c98018048de5",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W2-08_review.md",
+    "review_source_sha256": "a6dcc1b6e390c66b8aadbae902b304efe914100a2e9250dddf24bb7f6a010ef3",
+    "input_sha256": "83c174c312089572410d7df05641a8e0759bef1638dd3eb7916828659a76e05d",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-01",
+    "accepted_case_sha256": "37ef1202324f751638051d692248cf7cea11ca491b0e7f49088b948cbf5be367",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-01_review.md",
+    "review_source_sha256": "5581b1021ffd95e9f5d7bb5db859f1481f0c02562fb74d2fdd5c923b20d0d0e6",
+    "input_sha256": "500984dac5be92c4900cdd265b952d4f08d4cb7712b6d1f0377cf70161b522c8",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-02",
+    "accepted_case_sha256": "609fa95232aaf51eb1fe515dd6d2b46c23a33efbaa07a53179aa371b891d25da",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-02_review.md",
+    "review_source_sha256": "ea206037e10627f57a6e679084e211b41b8acb2882aae8949b41bdbac005fa0f",
+    "input_sha256": "be5e223f866130c913099374c1670a5bcb38fc4d0012ca2945ee098d7ad6d5bb",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-03",
+    "accepted_case_sha256": "177cb9f205d5e3ce2a6fe093b38296fc92ffcdfec2a787501499b97455d48c0b",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-03_review.md",
+    "review_source_sha256": "d0668bd9adeee14ee472e4dd3cf354a02c2661961b5a6b89a587580f1d330e41",
+    "input_sha256": "16db2234479f56c579b2f4762ba22b79707534ae75467424b0323b8e1ecd1a6c",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. W3-03 includes accepted explicit override clause."
+  },
+  {
+    "case_id": "W3-04",
+    "accepted_case_sha256": "30fb12441a90c7a440c44ae9452310fcce702de064eb10c13bd7ca83acb95c08",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-04_review.md",
+    "review_source_sha256": "35b6a748acf2cccc4bf563a4eff9e53e2678c0132b9a5e7580c587a193e76ae8",
+    "input_sha256": "dbd5196be5bda70644ef54bbbd24bee1b2c91462f0988dbab4a195a9acd4e5c8",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-05",
+    "accepted_case_sha256": "69d4c9bea2cb3807a880fa41ce8880423957667f9d5f7bf08cdafcfbe43c4051",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-05_review.md",
+    "review_source_sha256": "9f1e61f287b5bd6871b6d95a040c8dfb6c0b0632890e635483e24fe14a7eba59",
+    "input_sha256": "34ae1e8855322b601030b761b9d8d94515e12b0d86e08abb265df7520d1346b6",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-06",
+    "accepted_case_sha256": "87a12557d72e48e1f083a9ca8c45a691df87b67b0d7e82577e6d653bffd0b36b",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-06_review.md",
+    "review_source_sha256": "c1957898d7bc880277c50f8cb1f45dd3eae1e9ba0d750ae66f2fbb6276a6ba7e",
+    "input_sha256": "5bc7d2cd1e196e6ae7f5ff2982188f7b75c88ce257ee83286d9cfd5ee0aab002",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-07",
+    "accepted_case_sha256": "0f924a5dba53e84012193f9499c61c798b05138771af09d3fd595b2622b8c0fc",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-07_review.md",
+    "review_source_sha256": "da88a898783fce844c606003096c37234e13e42e8de3a540f748d7256f3f5505",
+    "input_sha256": "c6ca4e54ae2e1e91d8f2265a6badb86e850bb9ca4987845dfad3a71042f8adcc",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  },
+  {
+    "case_id": "W3-08",
+    "accepted_case_sha256": "bd8b52b554144fed95671bff5c956a50c9bc4170986544d077b1fbf5d1480373",
+    "review_source_path": "delayed_reference_reviews/CORE_24/W3-08_review.md",
+    "review_source_sha256": "9cdb276740c2dc80357322bf9162630fca5d368c62c0cef659d1f3fa2dd7d58e",
+    "input_sha256": "5b0a069c014323ddf13e957af2fd2a40c4212c6f7ff03d58a54c901376797731",
+    "source_selection": "Retained reviewed excerpt; locators only from source annotations. Scenario facts preserved. No reference answers or criteria."
+  }
+]

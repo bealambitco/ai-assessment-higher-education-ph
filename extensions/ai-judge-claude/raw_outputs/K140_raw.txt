@@ -1,0 +1,36 @@
+{
+  "judge_id": "K140",
+  "case_id": "W2-03",
+  "status": "SCORED",
+  "criteria": [
+    {
+      "criterion": 1,
+      "judgment": "Correct",
+      "response_evidence": "Under DLSU policy, the faculty member's proposed actions—refusal of submission, grade penalty, and academic dishonesty filing based solely on the Turnitin detector result—are prohibited. The policy explicitly states that AI detector results cannot be the sole basis for academic dishonesty findings, and faculty cannot refuse submissions or impose grade penalties based only on detector indicators, regardless of the percentage value. The 94% indicator is not a definitive indication of cheating.",
+      "source_basis": "Source excerpt, DLSU AI Academic Dishonesty Policy, paragraphs 1–2, as also reflected in reference source atoms for section IV-d paragraphs 1–2.",
+      "reason": "The response accurately states that detector output alone cannot establish misconduct or justify refusal or grade penalty, and that this applies regardless of the 94% threshold output."
+    },
+    {
+      "criterion": 2,
+      "judgment": "Correct",
+      "response_evidence": "To proceed with any penalty or dishonesty case, the faculty member must first gather additional evidence of student non-ownership, such as inability to explain the work, inconsistent responses to questions about it, drastic writing style changes compared to prior submissions, hallucinations unlikely to result from human error, or similar submissions from other students.",
+      "source_basis": "Source excerpt, DLSU AI Academic Dishonesty Policy, paragraph 3, including non-ownership indicator examples; reference source atoms for section IV-d paragraph 3, Items 1–6.",
+      "reason": "The response correctly conditions any penalty or dishonesty case on additional evidence of non-ownership and gives policy-consistent examples without treating the detector result as sufficient."
+    },
+    {
+      "criterion": 3,
+      "judgment": "Correct",
+      "response_evidence": "The policy also requires that any grade penalty be clearly communicated to the student with specific justification. The permitted use of the detector is only as a flag for further investigation, not as grounds for action on its own.",
+      "source_basis": "Source excerpt, DLSU AI Academic Dishonesty Policy, paragraphs 1 and 4; reference source atoms for section IV-d paragraphs 1 and 4.",
+      "reason": "The response permits the detector only for flagging and states the required grade-penalty communication. It does not invent a disciplinary committee or filing timetable."
+    }
+  ],
+  "severity": "None",
+  "acceptable": "Yes",
+  "overall_reason": "The original response accurately applies the DLSU policy: it rejects the proposed refusal, grade penalty, and dishonesty filing based solely on the detector result; requires additional evidence of non-ownership; and identifies the communication requirement. No material unsupported or contradictory claim is present.",
+  "reference_concern": {
+    "present": false,
+    "detail": "",
+    "prevents_overall_judgment": false
+  }
+}

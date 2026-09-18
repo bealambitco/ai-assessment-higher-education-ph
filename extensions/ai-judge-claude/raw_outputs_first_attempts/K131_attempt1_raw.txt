@@ -1,0 +1,8 @@
+{
+  "judge_id": "K131",
+  "case_id": "W3-04",
+  "status": "SCORED",
+  "criteria": [
+    {
+      "criterion": 1,
+      "judgment

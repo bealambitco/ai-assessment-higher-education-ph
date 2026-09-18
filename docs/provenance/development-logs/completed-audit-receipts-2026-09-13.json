@@ -1,0 +1,218 @@
+[
+  {
+    "case_id": "W1-01",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W1-01/W1-01_audited-case.json",
+    "raw_reply": "../development/W1-01/W1-01_audit-response.txt",
+    "raw_reply_sha256": "a24742e0358f48f5173ce54796d4b2e7732871b19d863daeaf316c41293a994b"
+  },
+  {
+    "case_id": "W1-02",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W1-02/W1-02_audited-case.json",
+    "raw_reply": "../development/W1-02/W1-02_audit-response.txt",
+    "raw_reply_sha256": "c4519fa51b3e265d3ee389a08e2dcddb95224e2b7bb92779e61865b90509de10"
+  },
+  {
+    "case_id": "W1-03",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 6,
+    "audited_case": "../development/W1-03/W1-03_audited-case.json",
+    "raw_reply": "../development/W1-03/W1-03_audit-response.txt",
+    "raw_reply_sha256": "2f0de785173980acf7c837f255a19141591a828e1486506cc0930aad55952fe6"
+  },
+  {
+    "case_id": "W1-04",
+    "auditor_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 1,
+    "optional_notes": 3,
+    "audited_case": "../development/W1-04/W1-04_audited-case.json",
+    "raw_reply": "../development/W1-04/W1-04_audit-response.txt",
+    "raw_reply_sha256": "049493823ef5fd1ee6b501a2000119c8deeee1b189ede1a520ba1a9cc9c0ef68"
+  },
+  {
+    "case_id": "W1-05",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W1-05/W1-05_audited-case.json",
+    "raw_reply": "../development/W1-05/W1-05_audit-response.txt",
+    "raw_reply_sha256": "25ab950321da41fb26735dcbe59dc6fd386a456f2f7ee8ccd38cf7127c581b56"
+  },
+  {
+    "case_id": "W1-06",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 8,
+    "audited_case": "../development/W1-06/W1-06_audited-case.json",
+    "raw_reply": "../development/W1-06/W1-06_audit-response.txt",
+    "raw_reply_sha256": "0d27ef32d2ad5941e043bd7d3251222b547301e58361020b682b542c8b34e5bb"
+  },
+  {
+    "case_id": "W1-07",
+    "auditor_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 2,
+    "optional_notes": 4,
+    "audited_case": "../development/W1-07/W1-07_audited-case.json",
+    "raw_reply": "../development/W1-07/W1-07_audit-response.txt",
+    "raw_reply_sha256": "19ebf0b5e194bff0299a3f6c05b4fd082b88e287f5fa11f2a43a497443bf1647"
+  },
+  {
+    "case_id": "W1-08",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 6,
+    "audited_case": "../development/W1-08/W1-08_audited-case.json",
+    "raw_reply": "../development/W1-08/W1-08_audit-response.txt",
+    "raw_reply_sha256": "dd570a8f2f6a1261cc36d616f5cbb790bae0ad6ab7e8b32aa681b84eaa6b2890"
+  },
+  {
+    "case_id": "W2-01",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 7,
+    "audited_case": "../development/W2-01/W2-01_audited-case.json",
+    "raw_reply": "../development/W2-01/W2-01_audit-response.txt",
+    "raw_reply_sha256": "6a5674bf5c5ea1bdaae783394a76d4bc1a8f6a8e5beb374830122144b9032e90"
+  },
+  {
+    "case_id": "W2-02",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 4,
+    "audited_case": "../development/W2-02/W2-02_audited-case.json",
+    "raw_reply": "../development/W2-02/W2-02_audit-response.txt",
+    "raw_reply_sha256": "9db71ae0046e8ecf99564e1fb639519cd68993596fa9c244fc70f10ef0a09397"
+  },
+  {
+    "case_id": "W2-03",
+    "auditor_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 1,
+    "optional_notes": 4,
+    "audited_case": "../development/W2-03/W2-03_audited-case.json",
+    "raw_reply": "../development/W2-03/W2-03_audit-response.txt",
+    "raw_reply_sha256": "6efe7ff1fd44a23c59a1d1dac24d2c02493f9d3736a49b151eacb13513ad4091"
+  },
+  {
+    "case_id": "W2-04",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W2-04/W2-04_audited-case.json",
+    "raw_reply": "../development/W2-04/W2-04_audit-response.txt",
+    "raw_reply_sha256": "9e03678e95c3afb8120db04d14ce31c6f19efe6b56e68b23e17234352b824708"
+  },
+  {
+    "case_id": "W2-05",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W2-05/W2-05_audited-case.json",
+    "raw_reply": "../development/W2-05/W2-05_audit-response.txt",
+    "raw_reply_sha256": "79ee048823ba7aea071abfffa36b5a60404a6ab3c491eaf35fe02f0cb4d65b4e"
+  },
+  {
+    "case_id": "W2-06",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W2-06/W2-06_audited-case.json",
+    "raw_reply": "../development/W2-06/W2-06_audit-response.txt",
+    "raw_reply_sha256": "a8bc7ae90d6a53473003e826c4054c5be0480bcd8613d6581765982effd839a8"
+  },
+  {
+    "case_id": "W2-07",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W2-07/W2-07_audited-case.json",
+    "raw_reply": "../development/W2-07/W2-07_audit-response.txt",
+    "raw_reply_sha256": "4081d7542e94dc48905c815f244ec2a96cd14f1f0ea6af4373b629fc11a8e1d4"
+  },
+  {
+    "case_id": "W2-08",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 4,
+    "audited_case": "../development/W2-08/W2-08_audited-case.json",
+    "raw_reply": "../development/W2-08/W2-08_audit-response.txt",
+    "raw_reply_sha256": "cb733b9fb8a8788ccbc2e2f1724a0acc3057bf8796a3483a09206b42d495d227"
+  },
+  {
+    "case_id": "W3-01",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W3-01/W3-01_audited-case.json",
+    "raw_reply": "../development/W3-01/W3-01_audit-response.txt",
+    "raw_reply_sha256": "ebfd3f55890652f03fa76e9bd26624822b9e2698a0417ba9387ab24281ecd88e"
+  },
+  {
+    "case_id": "W3-02",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W3-02/W3-02_audited-case.json",
+    "raw_reply": "../development/W3-02/W3-02_audit-response.txt",
+    "raw_reply_sha256": "321a11be500ea56131745b042a3805048823b76b01a5d94ba2fa1f05f0c3c519"
+  },
+  {
+    "case_id": "W3-03",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 6,
+    "audited_case": "../development/W3-03/W3-03_audited-case.json",
+    "raw_reply": "../development/W3-03/W3-03_audit-response.txt",
+    "raw_reply_sha256": "82dfd5e64542910991edace7ddb19bc77f43cdec86ec8d0abd91ab0f2dfc8050"
+  },
+  {
+    "case_id": "W3-04",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 4,
+    "audited_case": "../development/W3-04/W3-04_audited-case.json",
+    "raw_reply": "../development/W3-04/W3-04_audit-response.txt",
+    "raw_reply_sha256": "00d94d032a2458b7ddd46048f03e29f6a319d5f3f34e7673e5460fe64a0700e5"
+  },
+  {
+    "case_id": "W3-05",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W3-05/W3-05_audited-case.json",
+    "raw_reply": "../development/W3-05/W3-05_audit-response.txt",
+    "raw_reply_sha256": "aee09db1c8309679aafcaaa9eaf0105c2dc11d861c19646e52b74c3a23dc9e6b"
+  },
+  {
+    "case_id": "W3-06",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 4,
+    "audited_case": "../development/W3-06/W3-06_audited-case.json",
+    "raw_reply": "../development/W3-06/W3-06_audit-response.txt",
+    "raw_reply_sha256": "9178cd55e9f508fe0ee82ff50c782527a6699d0af06f49df191fa15e077f0fae"
+  },
+  {
+    "case_id": "W3-07",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 5,
+    "audited_case": "../development/W3-07/W3-07_audited-case.json",
+    "raw_reply": "../development/W3-07/W3-07_audit-response.txt",
+    "raw_reply_sha256": "8fc5f924cc9fff548cb56504cc027e48a124d8ddbd49b3bbb41beefb95c466fc"
+  },
+  {
+    "case_id": "W3-08",
+    "auditor_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "optional_notes": 4,
+    "audited_case": "../development/W3-08/W3-08_audited-case.json",
+    "raw_reply": "../development/W3-08/W3-08_audit-response.txt",
+    "raw_reply_sha256": "41dfaf110a25563298a6f262df0896e5dbbec5e9d1dfefed6d330b56531e6a0d"
+  }
+]

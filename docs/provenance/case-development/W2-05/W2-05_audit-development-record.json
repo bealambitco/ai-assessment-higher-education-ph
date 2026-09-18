@@ -1,0 +1,148 @@
+{
+  "case_id": "W2-05",
+  "revision_id": "INTEGRATED-W2-05-20260913",
+  "record_status": "AI_PROPOSED_REVISION",
+  "supportability": "SUPPORTABLE",
+  "supportability_reason": "Proposed source-grounded case after AI-assisted correction. Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights. Bounded reference and acceptable alternatives require human disposition; not independently validated. Shared-source dependence is retained.",
+  "scenario": "An instructor teaching an undergraduate lecture course at the University of the Philippines Diliman during the Second Semester of Academic Year (AY) 2025–2026 finalized semester marks and submitted the official Report of Grades online to the College Secretary and the University Registrar on June 10, 2026 (one day prior to the university's official second-semester grade-submission deadline of June 11, 2026). In the submitted report, Student D was assigned a final grade of 2.25.\n\nOn June 18, 2026, eight days after the official Report of Grades was submitted, Student D sent an email to the instructor politely requesting a breakdown of their term marks. While reviewing the course grading spreadsheet against the physical grade book, the instructor discovered a transcription error: Student D's midterm examination score of 87 had been mistakenly entered as 57 into the weighted grading formula. When recalculated using the verified raw score of 87, the student's cumulative performance corresponds to a final passing grade of 1.75.\n\nThe instructor acknowledges the transcription error in writing, agrees that 1.75 is the correct grade, and wishes to rectify the student's record immediately. The instructor proposes to log into the university's online grading portal to overwrite the submitted 2.25 grade directly, or alternatively, to submit a signed bilateral memorandum directly to the Office of the University Registrar requesting an administrative correction of the Report of Grades. The department administrative staff is reviewing the instructor's inquiry to determine whether the proposed actions comply with governing university grading policies. The review concerns the process for correcting a submitted grade; the instructor's recalculation to 1.75 is accepted for this review, and the component weights are not supplied.",
+  "requested_task": "Assess the proposed change to a submitted grade and explain the applicable authorization and recording process under the supplied UP policy.",
+  "proposed_reference_response": "The acknowledged transcription error supports seeking authority to correct the filed grade. The instructor cannot simply overwrite it or substitute a bilateral memorandum for the required faculty resolution. The corrected numerical grade is a stipulated case fact; this task evaluates the correction process rather than recomputing an unavailable grading formula.\n\nPolicy-grounded explanation\n\n1. A submitted grade cannot be unilaterally overwritten. In an exceptional error case the instructor requests authority from the faculty of their college. [University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 paragraph 1]\n\n2. If granted, the faculty resolution authorizing the change is forwarded to the Office of the University Registrar for recording and filing; a direct informal request alone is insufficient. [University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 paragraph 1]\n\n3. The described acknowledged transcription error supports the faculty-correction route. Do not require a student-reconsideration committee for this described request or claim that route could never apply to a different dispute. [University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 Article 374 distinction]\n\n4. The 87-to-57 entry is a transcription error, and 1.75 is a stipulated recalculation rather than a result independently derivable from the supplied inputs. Accurate process advice need not repeat dates, construction labels or missing weights unless making a calculation claim. [Scenario data; UP Diliman retained academic calendar for AY 2025–2026]\n\nSupporting policy provisions\n\nNo faculty member shall change any grade after the Report of Grades has been submitted online/filed with the Secretary of the College or with the University Registrar. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]\n\nIn exceptional cases, such as where an error has been committed, the faculty member may request authority from the faculty of his/her college to make the necessary change. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]\n\nIf the request is granted, a copy of the resolution of the faculty authorizing the change shall be forwarded to the Office of the University Registrar for recording and filing. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]\n\nNotwithstanding the foregoing provision and to avoid any injustice, the grade on a final examination paper may be revised by a committee of the Dean of the College if it should clearly appear, on the basis of the quality of the scholastic record of the student, that such grade is the result of an erroneous appreciation of the answers or of an arbitrary or careless decision by the faculty member concerned (Revised UP Code: Art. 374). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 2]\n\nShould the change of the grade on said paper affect the final grade of the student, the committee may request authority from the faculty of the college to make the necessary change in the final grade. The request for reconsideration shall be made within 30 days after the receipt of the final grade by the student concerned. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 3 / Revised UP Code Art. 374]\n\nNo student of the University shall directly or indirectly ask any person to recommend him/her to a professor for any grade in the class record, examination paper, or final Report of Grades. Any student violating this rule shall lose credit in the subject(s) regarding which such recommendation is made. The fact that a student is thus recommended shall be prima facie evidence that the recommendation is made at the request of the student concerned (Revised UP Code: Art. 375). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 4]\n\nStudents who have received a passing grade in a given subject are not allowed re-examination for the purpose of improving their grade (Revised UP Code: Art 371). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 5]\n\nSecond Semester AY 2025–2026 deadline for grade submission was scheduled for June 11, 2026. [Source: UP Diliman retained academic calendar for AY 2025–2026, Proposed Academic Calendar for AY 2025–2026 (officially released copy), PDF p. 1, Grade submission deadline row]",
+  "escalation_boundary": "No actual grade change is authorized by the research case.",
+  "source_atoms": [
+    "No faculty member shall change any grade after the Report of Grades has been submitted online/filed with the Secretary of the College or with the University Registrar. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]",
+    "In exceptional cases, such as where an error has been committed, the faculty member may request authority from the faculty of his/her college to make the necessary change. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]",
+    "If the request is granted, a copy of the resolution of the faculty authorizing the change shall be forwarded to the Office of the University Registrar for recording and filing. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 1]",
+    "Notwithstanding the foregoing provision and to avoid any injustice, the grade on a final examination paper may be revised by a committee of the Dean of the College if it should clearly appear, on the basis of the quality of the scholastic record of the student, that such grade is the result of an erroneous appreciation of the answers or of an arbitrary or careless decision by the faculty member concerned (Revised UP Code: Art. 374). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 2]",
+    "Should the change of the grade on said paper affect the final grade of the student, the committee may request authority from the faculty of the college to make the necessary change in the final grade. The request for reconsideration shall be made within 30 days after the receipt of the final grade by the student concerned. [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 3 / Revised UP Code Art. 374]",
+    "No student of the University shall directly or indirectly ask any person to recommend him/her to a professor for any grade in the class record, examination paper, or final Report of Grades. Any student violating this rule shall lose credit in the subject(s) regarding which such recommendation is made. The fact that a student is thus recommended shall be prima facie evidence that the recommendation is made at the request of the student concerned (Revised UP Code: Art. 375). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 4]",
+    "Students who have received a passing grade in a given subject are not allowed re-examination for the purpose of improving their grade (Revised UP Code: Art 371). [Source: University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375, Paragraph 5]",
+    "Second Semester AY 2025–2026 deadline for grade submission was scheduled for June 11, 2026. [Source: UP Diliman retained academic calendar for AY 2025–2026, Proposed Academic Calendar for AY 2025–2026 (officially released copy), PDF p. 1, Grade submission deadline row]"
+  ],
+  "required_answer_components": [
+    "A submitted grade cannot be unilaterally overwritten. In an exceptional error case the instructor requests authority from the faculty of their college.",
+    "If granted, the faculty resolution authorizing the change is forwarded to the Office of the University Registrar for recording and filing; a direct informal request alone is insufficient.",
+    "The described acknowledged transcription error supports the faculty-correction route. Do not require a student-reconsideration committee for this described request or claim that route could never apply to a different dispute.",
+    "The 87-to-57 entry is a transcription error, and 1.75 is a stipulated recalculation rather than a result independently derivable from the supplied inputs. Accurate process advice need not repeat dates, construction labels or missing weights unless making a calculation claim."
+  ],
+  "acceptable_variants": [
+    "Equivalent accurate wording and source mapping are acceptable; exact phrases, section numbers and exhaustive verbatim lists are not required.",
+    "Distinguish a supported bounded answer from official institutional action. Reasoned source-grounded qualifications are acceptable; do not require unnecessary refusal or a predetermined conflict.",
+    "Scoring is semantic: accept equivalent correct reasoning, not only the reference wording. Do not require repeating construction metadata, unsolicited office names or a disclaimer when the answer is already bounded. Judge incorrect and incomplete separately; omission does not automatically establish the same severity as a consequential false statement."
+  ],
+  "prohibited_inferences": [
+    "Asserting the unsupported conclusion: “The instructor may directly overwrite the filed grade because the error is obvious.”",
+    "Asserting the unsupported conclusion: “An informal instructor–student agreement substitutes for the faculty resolution sent to the Registrar.”",
+    "Asserting the unsupported conclusion: “A committee reconsideration of final-exam answers is compulsory for every admitted data-entry error.”",
+    "Asserting the unsupported conclusion: “The supplied raw score alone independently proves the 1.75 final grade without any grading weights.”"
+  ],
+  "ambiguity_flags": [
+    "Synthetic scenario facts are not official records; source scope remains limited to the supplied snapshot."
+  ],
+  "additional_source_needed": [
+    "No actual grade change is authorized by the research case."
+  ],
+  "structured_scoring_checks": [
+    {
+      "check_id": "W2-05-R2-01",
+      "description": "A submitted grade cannot be unilaterally overwritten. In an exceptional error case the instructor requests authority from the faculty of their college.",
+      "pass_criteria": "A submitted grade cannot be unilaterally overwritten. In an exceptional error case the instructor requests authority from the faculty of their college.",
+      "severity_if_failed": "CLASSIFY_ACTUAL_ERROR_BY_COMMON_RUBRIC",
+      "source_location": "University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 paragraph 1",
+      "fail_examples": [
+        "The instructor may directly overwrite the filed grade because the error is obvious."
+      ]
+    },
+    {
+      "check_id": "W2-05-R2-02",
+      "description": "If granted, the faculty resolution authorizing the change is forwarded to the Office of the University Registrar for recording and filing; a direct informal request alone is insufficient.",
+      "pass_criteria": "If granted, the faculty resolution authorizing the change is forwarded to the Office of the University Registrar for recording and filing; a direct informal request alone is insufficient.",
+      "severity_if_failed": "CLASSIFY_ACTUAL_ERROR_BY_COMMON_RUBRIC",
+      "source_location": "University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 paragraph 1",
+      "fail_examples": [
+        "An informal instructor–student agreement substitutes for the faculty resolution sent to the Registrar."
+      ]
+    },
+    {
+      "check_id": "W2-05-R2-03",
+      "description": "The described acknowledged transcription error supports the faculty-correction route. Do not require a student-reconsideration committee for this described request or claim that route could never apply to a different dispute.",
+      "pass_criteria": "The described acknowledged transcription error supports the faculty-correction route. Do not require a student-reconsideration committee for this described request or claim that route could never apply to a different dispute.",
+      "severity_if_failed": "CLASSIFY_ACTUAL_ERROR_BY_COMMON_RUBRIC",
+      "source_location": "University of the Philippines Diliman, Change of Grades, Revised UP Code Articles 374–375 Article 374 distinction",
+      "fail_examples": [
+        "A committee reconsideration of final-exam answers is compulsory for every admitted data-entry error."
+      ]
+    },
+    {
+      "check_id": "W2-05-R2-04",
+      "description": "The 87-to-57 entry is a transcription error, and 1.75 is a stipulated recalculation rather than a result independently derivable from the supplied inputs. Accurate process advice need not repeat dates, construction labels or missing weights unless making a calculation claim.",
+      "pass_criteria": "The 87-to-57 entry is a transcription error, and 1.75 is a stipulated recalculation rather than a result independently derivable from the supplied inputs. Accurate process advice need not repeat dates, construction labels or missing weights unless making a calculation claim.",
+      "severity_if_failed": "CLASSIFY_ACTUAL_ERROR_BY_COMMON_RUBRIC",
+      "source_location": "Scenario data; UP Diliman retained academic calendar for AY 2025–2026",
+      "fail_examples": [
+        "The supplied raw score alone independently proves the 1.75 final grade without any grading weights."
+      ]
+    }
+  ],
+  "revision_change_log": [
+    {
+      "field": "scenario",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "requested_task",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "proposed_reference_response",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "escalation_boundary",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "required_answer_components",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "acceptable_variants",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "prohibited_inferences",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "structured_scoring_checks",
+      "changed": true,
+      "reason": "Requested dates, 87→57 transcription error and faculty route applied. Removed categorical exclusion of all possible student reconsideration and extraneous legitimacy assertions. Final numerical grades are stipulated scenario facts, not recomputed from absent weights."
+    },
+    {
+      "field": "source_atoms",
+      "changed": true,
+      "reason": "Replaced generated paraphrase atoms with exact supplied source blocks/added evidence; case-relevant source/check locators remain in scoring."
+    },
+    {
+      "field": "scenario, requested_task and provenance presentation",
+      "changed": true,
+      "reason": "Final AI-assisted closure pass: natural institutional scenario wording; construction and source-verification limits retained in a separate provenance record. No new Gemini run. Original source evidence, researcher comments and received outputs preserved. Checklist labels truncated at decimal points expanded without altering criteria."
+    },
+    {
+      "field": "substantive QA: prohibited inferences, scoring examples, source/task scope",
+      "changed": true,
+      "reason": "Removed requirement to repeat construction/calendar metadata as part of a correct answer; procedural correction remains the test. Added retained-calendar locator. Replaced generic failure examples with case-specific incorrect statements; no new model generation or human approval."
+    },
+    {
+      "field": "researcher-directed integration and publication wording",
+      "changed": true,
+      "reason": "Original means the second Gemini revision. Restored granular policy atoms and embedded evidence, retained easier tasks and source-grounded QA corrections. Human selection accepted with integration instructions; post-integration audit and delayed review remain pending."
+    }
+  ]
+}

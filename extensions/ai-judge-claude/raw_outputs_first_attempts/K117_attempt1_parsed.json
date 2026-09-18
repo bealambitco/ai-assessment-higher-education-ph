@@ -1,0 +1,15 @@
+{
+  "judge_id": "K117",
+  "case_id": "W3-02",
+  "record_status": "INVALID_OUTPUT",
+  "processed_at": "2026-09-18T07:07:55.415613+00:00",
+  "raw_sha256": "6a24a45956491265d88805b9a95ae84465386c7e8a3f96b418e4a8e1f14392de",
+  "prompt_sha256": "a6a267fbdd812c35270ed4a4953b6aa51be72775418d186a2d5c0ff8ad452724",
+  "judgment": null,
+  "validation_errors": [
+    "Unterminated string starting at: line 25 column 17 (char 1918)"
+  ],
+  "warnings": [],
+  "outer_code_fence_removed": false,
+  "note": "Structure validation is not verification of substantive correctness. Actual model/settings come from collection records, not this reply."
+}

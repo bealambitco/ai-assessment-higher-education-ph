@@ -1,0 +1,51 @@
+{
+  "judge_id": "J071",
+  "case_id": "W3-01",
+  "record_status": "VALIDATED_STRUCTURE",
+  "processed_at": "2026-09-18T07:46:21.916664+00:00",
+  "raw_sha256": "0271e5545f6fb5720e678ddc5c121842824c1e70abcd68af9d37c5dc4583988b",
+  "prompt_sha256": "ae4e43acabb3a0396b29197e8237ffedf72d80aaaa3df8c09b13d8b2db537b3c",
+  "judgment": {
+    "judge_id": "J071",
+    "case_id": "W3-01",
+    "status": "SCORED",
+    "criteria": [
+      {
+        "criterion": 1,
+        "judgment": "Correct",
+        "response_evidence": "The proposed week-weighted calculation is inconsistent with section 5.4, which weights module grades by credit units, not scheduled weeks. The scenario supplies 1.0 credit unit for each module, so each receives one-third of the total weight despite their different durations.",
+        "source_basis": "Mapúa Malayan Colleges Mindanao, Modular System Guidelines for SY 2024–2025, Section 5.4, p. 3; Table 1, p. 1",
+        "reason": "The response correctly identifies credit units, not teaching weeks, as the weighting basis and notes each module carries 1.0 credit unit, matching the policy formula and Table 1."
+      },
+      {
+        "criterion": 2,
+        "judgment": "Correct",
+        "response_evidence": "MGA = [(1.0 × 1.50) + (1.0 × 2.25) + (1.0 × 2.00)] / 3.0 = 5.75 / 3 = 1.916666… ≈ 1.9167. The displayed MGA is rounded to four decimal places; the supplied excerpt does not establish an official rounding rule.",
+        "source_basis": "Section 5.4 applied arithmetic; numeric_results reports MGA 1.9167 grade points",
+        "reason": "The arithmetic correctly yields 5.75/3 = 1.916666…, displayed as 1.9167, with an explicit statement that the display is rounded and no rounding rule is mandated."
+      },
+      {
+        "criterion": 3,
+        "judgment": "Correct",
+        "response_evidence": "No conversion to a course grade or actual grade entry is recommended here. The displayed MGA is rounded to four decimal places; the supplied excerpt does not establish an official rounding rule.",
+        "source_basis": "Task scope (do not convert it to a course grade)",
+        "reason": "The response keeps the MGA calculation distinct from any course-grade conversion and does not invent a rounding or posting rule, satisfying the bounded-scope requirement."
+      }
+    ],
+    "severity": "None",
+    "acceptable": "Yes",
+    "overall_reason": "The response correctly rejects week-weighting, applies credit-unit weighting per Section 5.4, computes the MGA as 5.75/3 = 1.9167, and neither converts to a course grade nor invents a rounding rule. All three criteria are satisfied.",
+    "reference_concern": {
+      "present": false,
+      "detail": "",
+      "prevents_overall_judgment": false
+    }
+  },
+  "validation_errors": [],
+  "warnings": [
+    "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+    "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+  ],
+  "outer_code_fence_removed": false,
+  "note": "Structure validation is not verification of substantive correctness. Actual model/settings come from collection records, not this reply."
+}

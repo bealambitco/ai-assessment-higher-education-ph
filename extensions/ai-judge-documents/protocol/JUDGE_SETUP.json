@@ -1,0 +1,26 @@
+{
+  "status": "PREPARED_NOT_RUN",
+  "prepared_at": "2026-09-18T18:45:00+08:00",
+  "user_selected_family_label": "DeepSeek v4 Pro",
+  "actual_model_id": null,
+  "actual_interface": null,
+  "reasoning_setting": null,
+  "temperature_setting": null,
+  "provider_routing": null,
+  "recommended_versioned_candidate": "deepseek/deepseek-v4-pro-0813",
+  "candidate_is_not_confirmation_of_actual_use": true,
+  "settings_confirmed_at": null,
+  "collection_started_at": null,
+  "human_scoring_exposure_policy": "Prefer collection after all intended human and repeat scoring; if collected sooner, avoid reading judgments and record any actual exposure.",
+  "design": "same judge, instructions and per-case schema as packages 23 and 26; 24 document-extension answers (Gemini and Kimi, 6 cases x excerpt/full text); full-text runs are judged with the full document supplied; exploratory; no human scores",
+  "priority_counts": [
+    48,
+    72,
+    96
+  ],
+  "repeat_calls_planned": 0,
+  "paid_calls_executed": 0,
+  "model_listing_url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+  "confirmed_selected_model_id": "deepseek/deepseek-v4-pro-0813",
+  "model_id_confirmation_basis": "Explicit user reply during preparation, September 18, 2026"
+}

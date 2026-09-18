@@ -1,0 +1,43 @@
+{
+  "judge_id": "J079",
+  "case_id": "W3-03",
+  "status": "SCORED",
+  "criteria": [
+    {
+      "criterion": 1,
+      "judgment": "Correct",
+      "response_evidence": "The policy expressly allows an individual assessment to override its grading component’s usage policy. It permits communication either in the syllabus or by the instructor upon release of the assessment specifications; inclusion in the original syllabus is therefore not required.",
+      "source_basis": "De La Salle University Generative AI Policy, section IV-c, individual-assessment override (p. 6): overrides must be communicated 'in the syllabus or by the instructor upon the release of the assessment specifications.'",
+      "reason": "The response accurately states the override rule and, by noting syllabus inclusion is not required, rejects the prohibited inference that an override is valid only if in the original syllabus."
+    },
+    {
+      "criterion": 2,
+      "judgment": "Correct",
+      "response_evidence": "The prominent written ban communicated when Practical 3 specifications were released supports proper communication under the supplied provision. ... The acknowledged use of GenAI to produce submitted queries conflicts with Practical 3’s communicated ban.",
+      "source_basis": "Override clause and stated facts: the ban was issued with the Practical 3 specifications; AI use conflicts with the assessment rule.",
+      "reason": "The response confirms the written ban satisfies the communication condition, identifies the conflict with the admitted use, and correctly leaves any disciplinary disposition outside what the packet establishes."
+    },
+    {
+      "criterion": 3,
+      "judgment": "Correct",
+      "response_evidence": "The remaining laboratory assignments retain the component’s 'Free to Use' rule, with the stated transparency and accountability conditions, unless an individual assessment has its own properly communicated override. Practical 3’s ban does not itself change the rule for other assignments.",
+      "source_basis": "De La Salle University Generative AI Policy, section IV-c, grading-component declaration and override scope.",
+      "reason": "The response correctly limits the override to Practical 3 and preserves the Free to Use component rule for other assignments, avoiding the prohibited inference of a component-wide ban."
+    },
+    {
+      "criterion": 4,
+      "judgment": "Correct",
+      "response_evidence": "This assessment explains the governing usage rules; it does not authorize a grade change or disciplinary sanction.",
+      "source_basis": "Evidence scope: no committee, sanction, or complete misconduct procedure is established by these clauses.",
+      "reason": "The response stays within the declaration/override provisions and declines to assert any disciplinary outcome, matching the bounded-answer requirement without overstepping into official action."
+    }
+  ],
+  "severity": "None",
+  "acceptable": "Yes",
+  "overall_reason": "The response correctly applies the assessment-override rule (Practical 3 governed by the communicated ban, other assignments retaining Free to Use), accurately explains the communication condition, and stays within the supplied provisions without asserting any unsupported disciplinary outcome.",
+  "reference_concern": {
+    "present": false,
+    "detail": "",
+    "prevents_overall_judgment": false
+  }
+}

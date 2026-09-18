@@ -1,0 +1,20 @@
+RETAINED EXCERPT
+Source file: R12-DLSU-GenAI-Policy.pdf
+This is a retained excerpt, not a live currency check.
+
+Source text: "Faculty can use AI detector tools (Turnitin, GPTZero, etc.) for flagging suspicious submissions. However, results of such tools cannot be used as the sole basis for establishing generative AI-related academic dishonesty, as these tools can produce both false positives and false negatives.
+
+
+Faculty cannot refuse submissions or impose grade penalties solely because of AI detector results. For AI detector tools that produce percentage values such as Turnitin, this policy shall apply regardless of any threshold value, since even high percentage outputs are not a definitive indication of cheating.
+
+
+Faculty can impose penalties and file academic dishonesty cases if suspicious submissions are accompanied by additional pieces of evidence that indicate students’ non-ownership of the submitted work. This may be one or more of the following:
+- Failure to answer questions in a way that is consistent with the submitted work
+- Failure to explain the thought processes used to produce the submitted work
+- Failure to demonstrate the same skills in the submitted work in a controlled environment
+- Traces of hallucinations in the submitted work that are unlikely to be due to human error (e.g., citing a non-existent source)
+- Drastic difference in the writing style of the student compared to previous submissions (must be used with caution, as students’ writing styles can slowly change over time)
+- Large similarity with the submissions of other students despite the wide range of possible ideas for addressing the assessment
+
+
+Such grade penalties must be clearly communicated to the student. The communication must include the specific indicators of non-ownership to justify the penalty."

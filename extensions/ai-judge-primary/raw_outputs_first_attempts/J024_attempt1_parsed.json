@@ -1,0 +1,15 @@
+{
+  "judge_id": "J024",
+  "case_id": "W1-03",
+  "record_status": "INVALID_OUTPUT",
+  "processed_at": "2026-09-18T05:11:07.073356+00:00",
+  "raw_sha256": "fc97fdc305ccc415babf0b05a3062cdea14d52607ad2935635310b6a32dac53a",
+  "prompt_sha256": "708f06338ff865db005eb24cb6edb9c25b454cfa63b1a302eb78d4d6d9d6b771",
+  "judgment": null,
+  "validation_errors": [
+    "Invalid control character at: line 32 column 115 (char 2657)"
+  ],
+  "warnings": [],
+  "outer_code_fence_removed": false,
+  "note": "Structure validation is not verification of substantive correctness. Actual model/settings come from collection records, not this reply."
+}

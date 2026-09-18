@@ -1,0 +1,487 @@
+{
+  "counts": {
+    "empty": 0,
+    "valid": 48,
+    "invalid": 0
+  },
+  "records": [
+    {
+      "judge_id": "K097",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "fe21ae1e65c5fdcd5381fdb0e531e7115dae6cae5f626e83658c2455e9b865e5",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K144",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "1908813a7538d1958bdb1200cdaf80a1bfed8980cfd8e82d5917ab1a651b4d9d",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K098",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "c7b7bf070cdbed66eb225991ec8e7173a4fa745f13c05fc7472c340b1aee9258",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K099",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "60f7a0bf39070a3709a4f30343799ee0a65aafcdd856b1ecb3bd69c23c2af5cf",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K100",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "babc3282747cd4fab054773f47203b431d4569721abdb4e52d722f0be84338e4",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K101",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "f186e9b2e70e42c1d2b1f15a108727a8ce04fc49497351c521d253d7e35a3492",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K102",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "04094d66204bb377469126aa282b0f26fdfc43292211fabd50f6cab35afbf3b0",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K103",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "45fdd5adf35dba89e461d6c49bf2f952a998735b98905d471b6730300e1ca105",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K104",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "6dd3d40388d8cd350597242496cd93566eecab45aef37e669e677bd0eb5b037d",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K105",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "9b3e990f178fbfdffbe56a67c4180acab8d807f670a654662835276b2d646f61",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K106",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "eed4b17288d607e11d3ea4d8f37dcf60cc0cebcf1711130dbcc5717ae4aaca5b",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K107",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "2e994cf4f199dc5965faffceafc16bfc3c0d5b1c053f6d008f4af2f19df77316",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K108",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "bf5a963e06c535c1b530e60a47e0dbf005fff827c844270f5e71caf21ad48d74",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K109",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "307dc140dc9d41a9f12972c3a9809e75d9f7a72ce83a2c217443cec73d4655d9",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K110",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "31cc55130d2ebdf028bb17d0dae047d92211637bfcb6c512619961fb3d0babd1",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K111",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "fba5de67ffafa75a9227e2bf3467dee085a97e8dc5aae4e42e578c85662a8760",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K112",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "5768f906243ca87c80990451b9fd2865b17f9f12666d25b949c9054734bb1c2c",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K113",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "7869531beade9c65735f89358a9e83dd2903cf5bc86efd7ad542b8c2fbccbec8",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K114",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "a2b68ce9e2d1c2dc705cfd849c858405922777d4e5845e88adf4550b811b4d59",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K115",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "cc04e30845195bd812a444e2133d4966443ded90994495307f4234d7d109684e",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K116",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "8c9f875e0cef01a6aeac0f90b78758cd9be39a94f2785b575414eb1ea9837934",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K117",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "c579aab9b3bafef2fbcc9fa2e7917d11a57ce29860b181761a4e2abe23b610d3",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K118",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "65f0d69a54392f81f5a9112f1b1cb27f751b501be7b7d3a9da44813598f1ecbc",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K119",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "d3f3487040081fcefd6bc58b512634c626bac1bfac2e8337a3315db541059343",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K120",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "7d263f665e4cc1d7e4227901e4cccca9ad775d3c8bc78818dd9aa8091e9e4fa3",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K121",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "1d9b7bcadc7883cacab155446d0a33a25d5085e4080521b33f2e3dd9f42ed87c",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K122",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "3a86b53331091becb85f335dde1a1b595752c04adfbf9c1c167d663ba51e61dd",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K123",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "d03d973499d3e64455ed30ff14a7b27bcf811b6a5ecbc93eb62cbbc604155ad5",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K124",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "11419101d0c7a3f66306fdb0770c310e22f46445700958118f35da0f576676a9",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K125",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "50442b63aad181dc0fbfab9c935c2addd4ddd0c5856e7d9bd439ea0d25d98188",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K126",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "692bd3880d60f7501e39b62b4b42c5c50410e8512422304de015fb6e43b346af",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K127",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "df3a10f3ff581cc7d0415f937f26ae82fd4ef87d959a8945b1c787e78d247fff",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K128",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "bdec95b7077b575248ea87f63e76bfca869539b8c71e92b7dcab9e87b7de059d",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K129",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "b320f84775197d285dbf31e4f51597e1ea85445e281bd66a361c3b85c2dc3eda",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K130",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "d3bd8b5651dfe41c9b3ced09d809f777a514479b328a40d85b783a9b31cdca94",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K131",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "30ca383f5dbed39373e8efbe6346ec5c82e6a85af7f366658fdc352c90b5d688",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K132",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "b18207202db8560c11cf38163ad1ac9c207103f36f832c034bd1b6e0f07d5f73",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K133",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "10bc9a68f15be39fa4e934d8595775a396e55a11df547e014c0d2ac5c4807566",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K134",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "196bf32a4296ceb2ba4aad6e2a23fd245cabea72e942c133fff2a63dd6a6f6f1",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K135",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "de5dd8875017f01b6af1b56c3ad50477dd4f604407d41b0189fa492c4a8f1dc8",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K136",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "31375033d7d3acf01654a65159e513af25ee3b2e47889c8314b53051f0419163",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K137",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 1: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 2: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "9f1545a095e14a39f08341aaefed10480535b81c1d5e01c276948ac011e2f82a",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K138",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "e0c3961555fd99c2ab4caed1e94a1a1c5ee616daf452141f687bcc6adf59e14e",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K139",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "69c8f83986b9edc0851616c92d96809796a7a379332717a74cf84c5ebe3d8fee",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K140",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [],
+      "raw_sha256": "34dc10ffb4a24f7215829895a300d0be907ff74dd41ade151e69948403012ac1",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K141",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "984b91cb6764ea37d28eb410ecb3cba8cf3ed141d733ac613d642e4b3ffcc1bc",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K142",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "60700a2d7a14ca8b904262fb04724fab05457224cb4413c9ecc922fedd48b2f6",
+      "outer_code_fence_removed": false
+    },
+    {
+      "judge_id": "K143",
+      "record_status": "VALIDATED_STRUCTURE",
+      "errors": [],
+      "warnings": [
+        "Criterion 3: evidence quote is not a contiguous match; inspect without rewriting raw output.",
+        "Criterion 4: evidence quote is not a contiguous match; inspect without rewriting raw output."
+      ],
+      "raw_sha256": "44d6b48cc5ebad62d6d18e68baf476f2ab216f22f8f4b4eedf5fc0cfcddf933a",
+      "outer_code_fence_removed": false
+    }
+  ]
+}

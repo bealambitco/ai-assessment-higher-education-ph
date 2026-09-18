@@ -1,0 +1,854 @@
+[
+ {
+  "judge_id": "K097",
+  "case_id": "W1-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "5c9fe3a2d7888cc526fef001d76184e6a7a55a38d4369963e5dc754e14d0d54c",
+  "prompt_path": "prompts/K097_full_prompt.txt",
+  "raw_path": "raw_outputs/K097_raw.txt",
+  "parsed_path": "parsed_outputs/K097.json",
+  "run_record_path": "run_records/K097.json",
+  "original_response_sha256": "6097aa4636589b755216078564ec45ddd3c6b34f2e2220170c42c64cae6b79ee",
+  "payload_sha256": "0061c2e0e0462a8bfb0a7090ee0d1c23ef3f5d1b5b589e5a37740b9113480b1e"
+ },
+ {
+  "judge_id": "K144",
+  "case_id": "W3-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "857802790d8d918200769b49b67f6afd23fed2470737ef80acb3d1d4b67828e2",
+  "prompt_path": "prompts/K144_full_prompt.txt",
+  "raw_path": "raw_outputs/K144_raw.txt",
+  "parsed_path": "parsed_outputs/K144.json",
+  "run_record_path": "run_records/K144.json",
+  "original_response_sha256": "abd4b9faab8247e694203bdc12876d85c8e1da477e5cd13d3ac2a2e4e72a911b",
+  "payload_sha256": "74c67e0d8b332d23d61d7b570395dc39a7c0b6a78d57cb178d29bb9ca7d9adc0"
+ },
+ {
+  "judge_id": "K098",
+  "case_id": "W1-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "9a47aa4ad2d82bc2d56fdd1aa9250096b9599499dd1eae688d993718a8518897",
+  "prompt_path": "prompts/K098_full_prompt.txt",
+  "raw_path": "raw_outputs/K098_raw.txt",
+  "parsed_path": "parsed_outputs/K098.json",
+  "run_record_path": "run_records/K098.json",
+  "original_response_sha256": "8f2ced3056893a4c67e417f472020a94adf02c28cac429f8184553962f208e4b",
+  "payload_sha256": "1065d0f039132729dcbd3e77fe9cc6ea03403a8603183fb8786c1f68c7532252"
+ },
+ {
+  "judge_id": "K099",
+  "case_id": "W1-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "680c6c33f6d176870abcc1e89cc0bbdb93bdb1d5ee9f31ba8f1582333f7e8210",
+  "prompt_path": "prompts/K099_full_prompt.txt",
+  "raw_path": "raw_outputs/K099_raw.txt",
+  "parsed_path": "parsed_outputs/K099.json",
+  "run_record_path": "run_records/K099.json",
+  "original_response_sha256": "85c3fa5acf21c572f0244ad51b44562450d0e7b493f327b56c7bee91147ce3ce",
+  "payload_sha256": "4084a774364509cbaee66ee438d25ddbf182208e57b023b2ed531e569ac8d91d"
+ },
+ {
+  "judge_id": "K100",
+  "case_id": "W1-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "bb1250a6d762a1139580b77f2bdf091d4dd7bbda3ac32a1bcf8f9077d3ef5511",
+  "prompt_path": "prompts/K100_full_prompt.txt",
+  "raw_path": "raw_outputs/K100_raw.txt",
+  "parsed_path": "parsed_outputs/K100.json",
+  "run_record_path": "run_records/K100.json",
+  "original_response_sha256": "20adacc70c6b18b9f83fff5950add545cf4b693fdd3fd8ddc627f84764e9c5bb",
+  "payload_sha256": "e13db6afbfc63bba969abc3ee555225150dd087f00ccd6024d97b62e57e1ac31"
+ },
+ {
+  "judge_id": "K101",
+  "case_id": "W2-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "e2673f2a026b8a48217d62bcd29566ee827508c8e0ba9fdb5e3f3d51a9e76e90",
+  "prompt_path": "prompts/K101_full_prompt.txt",
+  "raw_path": "raw_outputs/K101_raw.txt",
+  "parsed_path": "parsed_outputs/K101.json",
+  "run_record_path": "run_records/K101.json",
+  "original_response_sha256": "b1e687d2c781e9af996bc0a004cc576915c129909339ecf9adbc4832dffdec27",
+  "payload_sha256": "046cf2ae24c26120237fd7817d4c9d114f867fd647023572928df3219e11be6d"
+ },
+ {
+  "judge_id": "K102",
+  "case_id": "W2-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "24ea378a3b2fc3648c99a018477e6c00dc7ae55bcfe461e8bf48b92b88bcff75",
+  "prompt_path": "prompts/K102_full_prompt.txt",
+  "raw_path": "raw_outputs/K102_raw.txt",
+  "parsed_path": "parsed_outputs/K102.json",
+  "run_record_path": "run_records/K102.json",
+  "original_response_sha256": "b654ca72110bb741d0daaea438f4fa55edea3caeb5009e7ccb4cb9a6ead11ef3",
+  "payload_sha256": "28f32c2355a3be2c41f237c7e6df5b55fcf652c7aed20d97e2252cf94d37c54d"
+ },
+ {
+  "judge_id": "K103",
+  "case_id": "W2-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "ecd702e2ff148cd09438e52fba9175bd76c6947b71089680d806c2d4ebd6e969",
+  "prompt_path": "prompts/K103_full_prompt.txt",
+  "raw_path": "raw_outputs/K103_raw.txt",
+  "parsed_path": "parsed_outputs/K103.json",
+  "run_record_path": "run_records/K103.json",
+  "original_response_sha256": "84882f4e63b946bcb7156544187a63e2b812e54d6713df84aa1e2c851e9b2047",
+  "payload_sha256": "0bb5a2f0394b7371f2173f252b69ddf8f9defbddfa9988cca6bce878cdc8dc03"
+ },
+ {
+  "judge_id": "K104",
+  "case_id": "W2-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "f7ca279b411aabff6ef2b6471cbeeebca3f0e9c81ea8344b0f4aac25460ac60f",
+  "prompt_path": "prompts/K104_full_prompt.txt",
+  "raw_path": "raw_outputs/K104_raw.txt",
+  "parsed_path": "parsed_outputs/K104.json",
+  "run_record_path": "run_records/K104.json",
+  "original_response_sha256": "1eb8ca60e247499b88794d3a0e6308ce9b4c337a9e2c6a50476fc66903e53547",
+  "payload_sha256": "d62a3348c9c460e30b3b96c9f91fc51de71e1aa9bd1bee3d45e8a1b251bd0ace"
+ },
+ {
+  "judge_id": "K105",
+  "case_id": "W3-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "f7b29e884032507e1089de903fe884359a2a0f9837c2d41184dd1568a59baaef",
+  "prompt_path": "prompts/K105_full_prompt.txt",
+  "raw_path": "raw_outputs/K105_raw.txt",
+  "parsed_path": "parsed_outputs/K105.json",
+  "run_record_path": "run_records/K105.json",
+  "original_response_sha256": "e742aef67524325af90ef817df5cc3b6b4903ee9f81c3df36c9d84282f26fe3e",
+  "payload_sha256": "a6715ac6d9b2ea33e142bfd934b01684f4b859cb310ae56bc302b9b7d8d5a344"
+ },
+ {
+  "judge_id": "K106",
+  "case_id": "W3-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "1447cc2b21897fa4ca71dbae9de02a0ec9f0baf93e9539eb7c59ce7f2f5b4c44",
+  "prompt_path": "prompts/K106_full_prompt.txt",
+  "raw_path": "raw_outputs/K106_raw.txt",
+  "parsed_path": "parsed_outputs/K106.json",
+  "run_record_path": "run_records/K106.json",
+  "original_response_sha256": "b5b098259dfcae256c9ae4897b3c263881d15855c45f08d36af10dd8aa68d82f",
+  "payload_sha256": "1328031c6a5af04185f1bd91ce618f299b8ab9a4a0c2ebd5a816a704bb4c6d50"
+ },
+ {
+  "judge_id": "K107",
+  "case_id": "W3-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "1478918690f920abe20a8951c3eeb911064ed0ba70402c47908e189494efa4d9",
+  "prompt_path": "prompts/K107_full_prompt.txt",
+  "raw_path": "raw_outputs/K107_raw.txt",
+  "parsed_path": "parsed_outputs/K107.json",
+  "run_record_path": "run_records/K107.json",
+  "original_response_sha256": "7d9a4b0d48415536082060de55364daf02419da2b0651daa4270c9fc4494d295",
+  "payload_sha256": "697071f83b7899c39a832615c1c5e6655af5776a30472b8a5b8bb81a4c23eb58"
+ },
+ {
+  "judge_id": "K108",
+  "case_id": "W3-05",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "559c8dca2d2e23e94d1d7f19727e0f92443a30d5fe19315a32489539f0ba47fb",
+  "prompt_path": "prompts/K108_full_prompt.txt",
+  "raw_path": "raw_outputs/K108_raw.txt",
+  "parsed_path": "parsed_outputs/K108.json",
+  "run_record_path": "run_records/K108.json",
+  "original_response_sha256": "175ed8d43be7c5bdb21d8055d7c2b19b0c2bced16c54aa35b0e54cb995b2732e",
+  "payload_sha256": "e18f3cc40980b3d1d31b2877854a9ff80cdb719e57be4b5ea5af04f376ad7963"
+ },
+ {
+  "judge_id": "K109",
+  "case_id": "W1-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "ffa052614743cf49b66b7b63d241585ef0a6e202ed13d6897c65e1d3afe279f4",
+  "prompt_path": "prompts/K109_full_prompt.txt",
+  "raw_path": "raw_outputs/K109_raw.txt",
+  "parsed_path": "parsed_outputs/K109.json",
+  "run_record_path": "run_records/K109.json",
+  "original_response_sha256": "364adcfb946f2fdc2cf565239ff93625d1e77b4788d3a8d31ebe2f63b2f15f0f",
+  "payload_sha256": "324197bc1676c219b21deb65373080d607e33781b16f4306fedfd1ed3a30ef73"
+ },
+ {
+  "judge_id": "K110",
+  "case_id": "W1-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "9b9e6290fdca4d7129019ee78951d80d9092b72dc6ed7eeed4c26266037d40e8",
+  "prompt_path": "prompts/K110_full_prompt.txt",
+  "raw_path": "raw_outputs/K110_raw.txt",
+  "parsed_path": "parsed_outputs/K110.json",
+  "run_record_path": "run_records/K110.json",
+  "original_response_sha256": "d57661385cf73e4a75ccf0518a138b905968f443a1722c695c6332e668f9ac0d",
+  "payload_sha256": "ccc482ec896cfcb44708d6d34ea3b9a45d03e3c5129e8f3571fdd407ab3e6d30"
+ },
+ {
+  "judge_id": "K111",
+  "case_id": "W1-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "a1f3bc0e32ebf24e9edc51937c42ed5e5b45a415b6a8a41a8e32bfa2e91f256d",
+  "prompt_path": "prompts/K111_full_prompt.txt",
+  "raw_path": "raw_outputs/K111_raw.txt",
+  "parsed_path": "parsed_outputs/K111.json",
+  "run_record_path": "run_records/K111.json",
+  "original_response_sha256": "cbb4979811314067cc6fa4d963cfddd0bcd881d06140f924288a86853350c845",
+  "payload_sha256": "437eaab3ff77d6eeba5cc1eb25489951ad0e5025776d4ba688ddb53e423423db"
+ },
+ {
+  "judge_id": "K112",
+  "case_id": "W1-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "649af8af3e527d648879a98390d06f8b8d89db8dd2c05f0e945e4782d468e7a7",
+  "prompt_path": "prompts/K112_full_prompt.txt",
+  "raw_path": "raw_outputs/K112_raw.txt",
+  "parsed_path": "parsed_outputs/K112.json",
+  "run_record_path": "run_records/K112.json",
+  "original_response_sha256": "c000a726801bd8b930f49de6367bb43d7b832b046dab6da8ad5e040986711eff",
+  "payload_sha256": "6c889f9dff11106da7205d86bffc0ff0969f31a4c70b3561a7a584f0dbe4da75"
+ },
+ {
+  "judge_id": "K113",
+  "case_id": "W2-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "d1f2434a8dbe53448fa3a587ca2e148985a8ce10b9b9f26d026b323573b65e83",
+  "prompt_path": "prompts/K113_full_prompt.txt",
+  "raw_path": "raw_outputs/K113_raw.txt",
+  "parsed_path": "parsed_outputs/K113.json",
+  "run_record_path": "run_records/K113.json",
+  "original_response_sha256": "f24a1ea2325683cf91d7d313679a239a7c573e4ca2f9f704e9a42821eb351fb3",
+  "payload_sha256": "cfb1442fd22c8bd6e9b7832d4f6e51859fbc885bd996415081fe76d971019e10"
+ },
+ {
+  "judge_id": "K114",
+  "case_id": "W2-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "29e6b9c2e1980c76bcce97c2cc2222afe8665195ec6ecd35e4f79d8d4e7e31f8",
+  "prompt_path": "prompts/K114_full_prompt.txt",
+  "raw_path": "raw_outputs/K114_raw.txt",
+  "parsed_path": "parsed_outputs/K114.json",
+  "run_record_path": "run_records/K114.json",
+  "original_response_sha256": "0854a6ee914eab6f12a076643aab2388a0a938ef4bd7e2e607bf7b525b63a9a0",
+  "payload_sha256": "05ec7719717adf21f48713f14ef9d324abb08e28476eecdda27d3139534a56d0"
+ },
+ {
+  "judge_id": "K115",
+  "case_id": "W2-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "6e2e776185398bb9b37faa119dbf5081817551229eb860663656fcf4e34e5f9a",
+  "prompt_path": "prompts/K115_full_prompt.txt",
+  "raw_path": "raw_outputs/K115_raw.txt",
+  "parsed_path": "parsed_outputs/K115.json",
+  "run_record_path": "run_records/K115.json",
+  "original_response_sha256": "5c3d62ab2e241e0f689b855ed0b324371459aa74a384f90fd369040a45520c79",
+  "payload_sha256": "b5f72b50e42fcc1e661f323bcedf5213180fe06634eaf50b450db83c82eb56f2"
+ },
+ {
+  "judge_id": "K116",
+  "case_id": "W2-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "e5b62fae6fb4182215dab63905028ec626fd9c457aa993708a300c909e521500",
+  "prompt_path": "prompts/K116_full_prompt.txt",
+  "raw_path": "raw_outputs/K116_raw.txt",
+  "parsed_path": "parsed_outputs/K116.json",
+  "run_record_path": "run_records/K116.json",
+  "original_response_sha256": "623aea486744640e2b7e638027e1d1368f9e37817a38dd261a595e88c178d570",
+  "payload_sha256": "60cba3cf661159e0b92fe92c9c2ceec385c80018393101257d6c46aef5b4b409"
+ },
+ {
+  "judge_id": "K117",
+  "case_id": "W3-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "a6a267fbdd812c35270ed4a4953b6aa51be72775418d186a2d5c0ff8ad452724",
+  "prompt_path": "prompts/K117_full_prompt.txt",
+  "raw_path": "raw_outputs/K117_raw.txt",
+  "parsed_path": "parsed_outputs/K117.json",
+  "run_record_path": "run_records/K117.json",
+  "original_response_sha256": "3e427d54b563e90785f68d7cb5b1f2994f246266a1c63707586ce6bcf4a7a4f9",
+  "payload_sha256": "b83bf4ee5a52419a0b7ef74b404b69d6eec7d6e4fa50b3db69579c67a6782574"
+ },
+ {
+  "judge_id": "K118",
+  "case_id": "W3-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "b520610537be860dcb88aae41b038247d952905a19ec05694ae5a2e3f464fc9d",
+  "prompt_path": "prompts/K118_full_prompt.txt",
+  "raw_path": "raw_outputs/K118_raw.txt",
+  "parsed_path": "parsed_outputs/K118.json",
+  "run_record_path": "run_records/K118.json",
+  "original_response_sha256": "7386d45291ff5e068e43b6bec8cd18a206dd64a9a4cf4f6df82d88efe7ebd7e7",
+  "payload_sha256": "2ea53a0bc3736572428175639f681005463088a74f4e5269495a9b700ddb01b8"
+ },
+ {
+  "judge_id": "K119",
+  "case_id": "W3-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "c3ffb72c3fdc04b4d660ac2cd0c5e3235bbe0c75df33c2c74db35d03d75174e7",
+  "prompt_path": "prompts/K119_full_prompt.txt",
+  "raw_path": "raw_outputs/K119_raw.txt",
+  "parsed_path": "parsed_outputs/K119.json",
+  "run_record_path": "run_records/K119.json",
+  "original_response_sha256": "8410714bf5a9745936505769f8c4d1e2a2ae3975b993e9b7cc41655e887d7ef9",
+  "payload_sha256": "4bdfec0ca1c33c5b0a46190504f419ad4f1c623864d696c5be1d7dc12b523a79"
+ },
+ {
+  "judge_id": "K120",
+  "case_id": "W3-02",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "d2a7a735965798431c4ca44d37ca6f6b216f09f1c6975af81aaa1f9a8b1794f2",
+  "prompt_path": "prompts/K120_full_prompt.txt",
+  "raw_path": "raw_outputs/K120_raw.txt",
+  "parsed_path": "parsed_outputs/K120.json",
+  "run_record_path": "run_records/K120.json",
+  "original_response_sha256": "6bdf43eae86f8c7cf1e5b76c8db22b2b7150fec593601e5f4bb06732b2006a1e",
+  "payload_sha256": "b99bb564e8fa8c564711fec9878c2f004bc298f0139e3e7e9cdb0dfd89a2c7c0"
+ },
+ {
+  "judge_id": "K121",
+  "case_id": "W1-06",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "621568e127414075811f32bc88a4b047f0a4ffab2c758ad12784263c5b655f3d",
+  "prompt_path": "prompts/K121_full_prompt.txt",
+  "raw_path": "raw_outputs/K121_raw.txt",
+  "parsed_path": "parsed_outputs/K121.json",
+  "run_record_path": "run_records/K121.json",
+  "original_response_sha256": "b3f48de9ed958fca770285efbb2b238873703551674233f9f7019de53ea62818",
+  "payload_sha256": "03de78ebd669d8265aed3d542665fbfa0bdcad9a387971f439c0bba830495f51"
+ },
+ {
+  "judge_id": "K122",
+  "case_id": "W1-06",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "47f5f3e6c2cb63b738b9b6ba0eb02bef2270f079cd625a59d309978b5c021726",
+  "prompt_path": "prompts/K122_full_prompt.txt",
+  "raw_path": "raw_outputs/K122_raw.txt",
+  "parsed_path": "parsed_outputs/K122.json",
+  "run_record_path": "run_records/K122.json",
+  "original_response_sha256": "5dfe4cee340eeb9b8c140934808103a58ae8e877a3c313233b0fc1cdfca1e873",
+  "payload_sha256": "dd79b66d9eb0a3e7aac0fdfc267699b0849b04b65053f4ec582450f2a534f992"
+ },
+ {
+  "judge_id": "K123",
+  "case_id": "W1-06",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "b86705bd64b6b58c54d1636f4befc845050222662992b7f3468d09f0585935b3",
+  "prompt_path": "prompts/K123_full_prompt.txt",
+  "raw_path": "raw_outputs/K123_raw.txt",
+  "parsed_path": "parsed_outputs/K123.json",
+  "run_record_path": "run_records/K123.json",
+  "original_response_sha256": "fbd2b97f6377a47529e6d454d11c9ccffd63106c9d5886594a39148b46ebf3f1",
+  "payload_sha256": "92b8cd6169c6b543a1c9302026a74733ffa38539d05ff6fb4bd906dacf1093cc"
+ },
+ {
+  "judge_id": "K124",
+  "case_id": "W1-06",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "590db493fa32e36c156e31c95ac16fd8216dc48e1f66b9e1cbd86bff97fe87a7",
+  "prompt_path": "prompts/K124_full_prompt.txt",
+  "raw_path": "raw_outputs/K124_raw.txt",
+  "parsed_path": "parsed_outputs/K124.json",
+  "run_record_path": "run_records/K124.json",
+  "original_response_sha256": "2f24a9c971a6df019bc0767cd7eacd50b3f7b1d17b8fb47b8f589d18657c4e5b",
+  "payload_sha256": "6be495e550b44cda58f8de4023163564526d1b2fe18bfae30bc9de799b0fad7a"
+ },
+ {
+  "judge_id": "K125",
+  "case_id": "W2-07",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "98086b168185c16f65684a01618e3e5607f04ef5dd03e70a1db54c4606cdeb77",
+  "prompt_path": "prompts/K125_full_prompt.txt",
+  "raw_path": "raw_outputs/K125_raw.txt",
+  "parsed_path": "parsed_outputs/K125.json",
+  "run_record_path": "run_records/K125.json",
+  "original_response_sha256": "ed42b165e366cb1428cb3b477daa52db992040fa51abf23c4d9d49389ad763e1",
+  "payload_sha256": "f36726ecf5c2cff8c9270b627df17057455c1920f0a1f88196b6ac9f8fda1b68"
+ },
+ {
+  "judge_id": "K126",
+  "case_id": "W2-07",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "e14b03033a5dafa9d5e1f899b2f45fc2955defa98868c8f879e8e57561878b61",
+  "prompt_path": "prompts/K126_full_prompt.txt",
+  "raw_path": "raw_outputs/K126_raw.txt",
+  "parsed_path": "parsed_outputs/K126.json",
+  "run_record_path": "run_records/K126.json",
+  "original_response_sha256": "ccaa6d8891460f314a4f529ff10d5041075f1a5bf9d2fb9b64be3d66fd80d77d",
+  "payload_sha256": "f9420090dffc90d71c5ee7d7529b013fbcbfad8e3a28128b0b898f2f110604b9"
+ },
+ {
+  "judge_id": "K127",
+  "case_id": "W2-07",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "fa85c92eb786759d19003be469c00bd0bd4038c8224fedca5be6fc51efcb9ea4",
+  "prompt_path": "prompts/K127_full_prompt.txt",
+  "raw_path": "raw_outputs/K127_raw.txt",
+  "parsed_path": "parsed_outputs/K127.json",
+  "run_record_path": "run_records/K127.json",
+  "original_response_sha256": "61fbaa55c892ea91ed116df4dda684f6f38ef1a6700e610a133d23c2d4f2c5bd",
+  "payload_sha256": "f96d8b3ae0cce4809df5a7245c20d40ba0d22a3c8599e1d07a425ff0702d94dc"
+ },
+ {
+  "judge_id": "K128",
+  "case_id": "W2-07",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "07d5b1d7da175b826ce866d477522386af36b61c78d47b164dd6689b9d21526f",
+  "prompt_path": "prompts/K128_full_prompt.txt",
+  "raw_path": "raw_outputs/K128_raw.txt",
+  "parsed_path": "parsed_outputs/K128.json",
+  "run_record_path": "run_records/K128.json",
+  "original_response_sha256": "27062f9e836ed4977e30b3ba230538065e2b44ce851f778551ac56cfcfeaf608",
+  "payload_sha256": "7eb81b3896f4eb253f0410fab51109aae1de8395fbf406067b5f50a787a99601"
+ },
+ {
+  "judge_id": "K129",
+  "case_id": "W3-04",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "d35babbcb918b31c0645ed8ea6f14cc95fee681068d90972d96b2eda04b20abd",
+  "prompt_path": "prompts/K129_full_prompt.txt",
+  "raw_path": "raw_outputs/K129_raw.txt",
+  "parsed_path": "parsed_outputs/K129.json",
+  "run_record_path": "run_records/K129.json",
+  "original_response_sha256": "5076082ed1e8ff830f7cc53dc9b1d882d6e7efb6cc06196e0139ca3620bcbfcf",
+  "payload_sha256": "5ec4603eeca90ad43256a716af635407befe5249fc1ffeea53fd2f442db90c21"
+ },
+ {
+  "judge_id": "K130",
+  "case_id": "W3-04",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "3255aa80623645536fdeafe7733e8ab13aa048f82f634dcc7e2dd5a468285f32",
+  "prompt_path": "prompts/K130_full_prompt.txt",
+  "raw_path": "raw_outputs/K130_raw.txt",
+  "parsed_path": "parsed_outputs/K130.json",
+  "run_record_path": "run_records/K130.json",
+  "original_response_sha256": "7d6534dcf5381929003f1ddf18e4a0eda8ce21cf4ddd503837227409125732d2",
+  "payload_sha256": "4bee45a61e6db4fac1240c6de4266edbbb5a986d16f27f04bb36d6c49fec01e4"
+ },
+ {
+  "judge_id": "K131",
+  "case_id": "W3-04",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "cf138bd26a31e90143d42ff35505501cb205c45199e536d4818144990ddd64c0",
+  "prompt_path": "prompts/K131_full_prompt.txt",
+  "raw_path": "raw_outputs/K131_raw.txt",
+  "parsed_path": "parsed_outputs/K131.json",
+  "run_record_path": "run_records/K131.json",
+  "original_response_sha256": "44603bdad91afe0c34b8507160804bf9ba79c3e8c0b971a82e8e85e05d18ed8c",
+  "payload_sha256": "6a59d824c311d5f0fa291ab64993e518d8a626d08b3f3bdbed22db857446f053"
+ },
+ {
+  "judge_id": "K132",
+  "case_id": "W3-04",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "cfd7ec8b460e9d60d441f84425c8b9e3fcec0964eead6416b66c6e292bd39b50",
+  "prompt_path": "prompts/K132_full_prompt.txt",
+  "raw_path": "raw_outputs/K132_raw.txt",
+  "parsed_path": "parsed_outputs/K132.json",
+  "run_record_path": "run_records/K132.json",
+  "original_response_sha256": "18a577789e40630a384440680f0d651e1f8e0f8b3519ae29f7fc281a7ec6f9f2",
+  "payload_sha256": "bec0b415830bd38722ec8be9645c5860f6bde8943b3c2058198130568bee06cd"
+ },
+ {
+  "judge_id": "K133",
+  "case_id": "W1-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "c08826f929029b47b678098c1fb8162f72d6a66cd0a96d9b690f466568df8f82",
+  "prompt_path": "prompts/K133_full_prompt.txt",
+  "raw_path": "raw_outputs/K133_raw.txt",
+  "parsed_path": "parsed_outputs/K133.json",
+  "run_record_path": "run_records/K133.json",
+  "original_response_sha256": "d7fb04d9f7e22b33858c83770b4dbbd58162ddf1648432255e25eb1fc77e116f",
+  "payload_sha256": "b3cca7bd62ad3493feb6bade4c06bf45af1fb1d7df0068548fc908f7253acb3a"
+ },
+ {
+  "judge_id": "K134",
+  "case_id": "W1-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "a961d0e0a5d8cc538933575aafa294455a4d150fc2c4e242094a44b741f41347",
+  "prompt_path": "prompts/K134_full_prompt.txt",
+  "raw_path": "raw_outputs/K134_raw.txt",
+  "parsed_path": "parsed_outputs/K134.json",
+  "run_record_path": "run_records/K134.json",
+  "original_response_sha256": "50222e36501b2609811f1bab49fa727061d5884387f4b31ebba77026b8af7a50",
+  "payload_sha256": "a4eaab3a835badbdc073545b1cb2dbf6b958b5b5f36f5d3a85f441b0fe34cfc3"
+ },
+ {
+  "judge_id": "K135",
+  "case_id": "W1-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "d87027b6eed9daa81429773d19e81d813a0c39507b7cf4ee2e8198630020c5d3",
+  "prompt_path": "prompts/K135_full_prompt.txt",
+  "raw_path": "raw_outputs/K135_raw.txt",
+  "parsed_path": "parsed_outputs/K135.json",
+  "run_record_path": "run_records/K135.json",
+  "original_response_sha256": "c01ace24a4cdd9c90a541e1698e01054ba26feea1427e3c8deb18b64b8932079",
+  "payload_sha256": "1a8e80839b4e258e8d4575504e9678a7162af62a988671e9e0d672f9378ed810"
+ },
+ {
+  "judge_id": "K136",
+  "case_id": "W1-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "10ce6a6dfb9c97c17a80b1324100c6b7dedd1bd5e714c0ed3bf6a246a2ab9fed",
+  "prompt_path": "prompts/K136_full_prompt.txt",
+  "raw_path": "raw_outputs/K136_raw.txt",
+  "parsed_path": "parsed_outputs/K136.json",
+  "run_record_path": "run_records/K136.json",
+  "original_response_sha256": "009230a074b8b979d64a1066e26df5245279de4df1fd6335520a317150aab54a",
+  "payload_sha256": "4bca5ee562fdb1e8f78aa2ee514f84603969fa62a59880cc0701ccd3c072006c"
+ },
+ {
+  "judge_id": "K137",
+  "case_id": "W2-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "36721f63f0c423d81bb19689a026bb4cda708fea27899751c9e9df260ac19040",
+  "prompt_path": "prompts/K137_full_prompt.txt",
+  "raw_path": "raw_outputs/K137_raw.txt",
+  "parsed_path": "parsed_outputs/K137.json",
+  "run_record_path": "run_records/K137.json",
+  "original_response_sha256": "23aeebe4ff09cad9df8e9d0cb69f69dbc05edbf894d765ad6670a7caf1edb797",
+  "payload_sha256": "33b0e59d0ef1d5abf166787846756267ec7e8c22ed63668d33a96fd6ec9768f6"
+ },
+ {
+  "judge_id": "K138",
+  "case_id": "W2-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "099a67c815be6dfecefff8fbf33f5c6249280cf6d2fedeffe0abb1c981f9bb79",
+  "prompt_path": "prompts/K138_full_prompt.txt",
+  "raw_path": "raw_outputs/K138_raw.txt",
+  "parsed_path": "parsed_outputs/K138.json",
+  "run_record_path": "run_records/K138.json",
+  "original_response_sha256": "9a3f1c254bb9ef9ecef4d87b0b1322f31aa1b90529620bd9b85248f91da5bdf2",
+  "payload_sha256": "cdd871ef02a6c89d124a97bb3c2daa77e9dfad1873a376d03eeb1bbf8d9d9fa6"
+ },
+ {
+  "judge_id": "K139",
+  "case_id": "W2-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "29f8f530c2c5c6293a2ca35b613e58c310e089bfc314e2a0695509bee91a32ba",
+  "prompt_path": "prompts/K139_full_prompt.txt",
+  "raw_path": "raw_outputs/K139_raw.txt",
+  "parsed_path": "parsed_outputs/K139.json",
+  "run_record_path": "run_records/K139.json",
+  "original_response_sha256": "8e8bd8dd48ca92720020ae91db33da4176f4f6d43bd7947583bd6b9936c7e234",
+  "payload_sha256": "a6df210400ce0ac579dd984af88176d16231bbc1b2e2fd12d11db664008c1b63"
+ },
+ {
+  "judge_id": "K140",
+  "case_id": "W2-03",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3
+  ],
+  "prompt_sha256": "1c702cfcb17e57c72bff953ca639315930f2013abcbfe5ce57917e8b9fd571d6",
+  "prompt_path": "prompts/K140_full_prompt.txt",
+  "raw_path": "raw_outputs/K140_raw.txt",
+  "parsed_path": "parsed_outputs/K140.json",
+  "run_record_path": "run_records/K140.json",
+  "original_response_sha256": "41f8b973df8c462ebcf3a01e503e892fbf7ea7dbf620cdcee4183c59f62a115e",
+  "payload_sha256": "d9352c3fe779ed6f32b82e6d3c8cc917510c0068e1baec8b48d89b6c63ca7b5d"
+ },
+ {
+  "judge_id": "K141",
+  "case_id": "W3-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "2abca4c6ebaba25816b3c4128d4fb59475c0267e1c24c97388f589b09880c06c",
+  "prompt_path": "prompts/K141_full_prompt.txt",
+  "raw_path": "raw_outputs/K141_raw.txt",
+  "parsed_path": "parsed_outputs/K141.json",
+  "run_record_path": "run_records/K141.json",
+  "original_response_sha256": "87198caffc373dd2d0f28f4dbb587338d8d3fc02ebd4ee621b3a2379f9df1d8c",
+  "payload_sha256": "177db251736826cbc5a9cde8e417a81aa059e44f69b49a7e9bc1739693c0b67d"
+ },
+ {
+  "judge_id": "K142",
+  "case_id": "W3-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "d6f4c4b66243a4f06a8ae49e75e7717a803804066c91d74c8745578112af7ff7",
+  "prompt_path": "prompts/K142_full_prompt.txt",
+  "raw_path": "raw_outputs/K142_raw.txt",
+  "parsed_path": "parsed_outputs/K142.json",
+  "run_record_path": "run_records/K142.json",
+  "original_response_sha256": "7c1b5bcf0cb7bab8291071f919b3cf41374245dde79fad611461abef1bbbe676",
+  "payload_sha256": "77be3f88e4925bd94aa46896b38556c544b7debd28f2de8f420ce71e6032a834"
+ },
+ {
+  "judge_id": "K143",
+  "case_id": "W3-08",
+  "block": "CLAUDE_MATCHED_48",
+  "criteria_ids": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "prompt_sha256": "c899c00d4274bfbbcbbd25bccbb34154936e1229dd9b8c8ed976bda46d8c14a7",
+  "prompt_path": "prompts/K143_full_prompt.txt",
+  "raw_path": "raw_outputs/K143_raw.txt",
+  "parsed_path": "parsed_outputs/K143.json",
+  "run_record_path": "run_records/K143.json",
+  "original_response_sha256": "65b77ed831d570251d4144992247a2914e14056521daa070e0e474099a6eef44",
+  "payload_sha256": "10fd762993898b5652d544e0301562ecbfcee9a806bdffbfdfe84e91f4328402"
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "judge_id": "J024",
+  "case_id": "W1-03",
+  "record_status": "NOT_RUN",
+  "attempt": 2,
+  "prompt_sha256": "708f06338ff865db005eb24cb6edb9c25b454cfa63b1a302eb78d4d6d9d6b771",
+  "started_at": null,
+  "finished_at": null,
+  "actual_model_id": null,
+  "reasoning_setting": null,
+  "interface": null,
+  "provider": null,
+  "usage": null,
+  "cost": null,
+  "prompt_unchanged": null,
+  "fresh_chat": null,
+  "tools_or_attachments_used": null,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": " Attempt 1 invalid JSON (control character). Attempt 2 supplied by the researcher on 2026-09-18 (about 15:40 +08:00) from the DeepSeek interface after the original view failed; treated as a technical re-collection."
+}

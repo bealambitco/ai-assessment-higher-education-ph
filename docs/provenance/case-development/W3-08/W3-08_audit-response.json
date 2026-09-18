@@ -1,0 +1,20 @@
+{
+  "case_id": "W3-08",
+  "target_sha256": "bd8b52b554144fed95671bff5c956a50c9bc4170986544d077b1fbf5d1480373",
+  "verdict": "NO_SUBSTANTIVE_ISSUE",
+  "findings": [],
+  "optional_style_notes": [
+    "The locators in source_atoms and the reference response name a table titled 'Component Weight Distribution'. The supplied source block contains an untitled table whose third column header is 'Weight Distribution'; 'Component' is the first column header. The row assignments (Row 1 = Class Standing, Row 2 = Major Examination) are accurate, so the atoms remain traceable, but a label such as 'component/weight table, Class Standing row' would track the excerpt more literally. Style only — no regeneration warranted.",
+    "Reference response item 1 cites 'Grade Components and Weights weights and announcement' as a single run-on locator. Splitting it into the range rows and the 'Key Reminder' sentence would match the granularity used in the Supporting policy provisions list.",
+    "The scenario gives each score twice ('88 (or 88.00%)', '92 (or 92.00%)'). This is harmless and arguably guards against a points-vs-percent misreading, but one form per score would read more cleanly.",
+    "Criterion 3 pass_criteria bundles honors criteria, rounding/transmutation, and qualitative evidence into one sentence with an instruction not to withhold arithmetic. It is scorable as written; splitting the 'do not infer' and 'do not withhold' halves would make partial credit easier to assign consistently."
+  ],
+  "limitations": [
+    "Audit is confined to the active case scope: the retained P-SPUS-01 source block (component/weight table plus Key Reminder). The referenced HTML section '2. Alignment of Assessments' and the underlying PDF/HTML files were not opened and are treated as non-governing here.",
+    "Whether the retained excerpt reflects the institution's current published policy beyond its captured version was not assessed, and no institutional endorsement of the scenario is implied.",
+    "Arithmetic was checked against the scenario's own constructed facts (88 × 0.60 = 52.8; 92 × 0.40 = 36.8; total 89.6), not against any external grade record.",
+    "The scenario states no rounding or transmutation rule is supplied; the audit therefore treats 89.6 as the terminal supported figure and does not evaluate any institutional transmutation table that may exist elsewhere in the source document.",
+    "Case-specific incorrect_examples and prohibited_inferences were read as intentionally wrong distractors and were not scored as candidate assertions.",
+    "This audit records evidence review only. It does not record human approval, a new researcher source-verification date, or a final freeze."
+  ]
+}

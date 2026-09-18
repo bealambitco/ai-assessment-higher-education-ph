@@ -1,0 +1,242 @@
+[
+  {
+    "case_id": "W1-01",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "42eb28beceb7c3adbdd7fe1b84166759df1a6e4cff8796c0458d72e32df56c04",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "ff42f31b2d55365bafc4326fee2cc49801a8a18b5f26a56c396b97e22a59f10d",
+    "development_directory": "W1-01"
+  },
+  {
+    "case_id": "W1-02",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "a640bdbeb52d54108e876f51edf23a56283340ec0ab359d2da5303e3a6289f0a",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "355fbcc6aed84cca8684d529c75e083588ca1821afacc39a9b64c8ce4e45cce9",
+    "development_directory": "W1-02"
+  },
+  {
+    "case_id": "W1-03",
+    "gemini_revision_received": false,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "d3034dc9509e4a01524fe89671a22d4a996e306e93a469e25631ddeb1bb6b644",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "a8a2fee4d93ac64f6ff863864ec68d9a8d473157bb473a9a997ada7f5116fec2",
+    "development_directory": "W1-03"
+  },
+  {
+    "case_id": "W1-04",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "0027acf0fae1edf39517cec4b71c1ac65c7e6ccd21e7dc8a86c9cfe1f741d500",
+    "audit_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 1,
+    "audit_target_sha256": "2c6eec6a9450673409b35664961d300175a188a3bb26e49b275b5fa0548d2ff3",
+    "development_directory": "W1-04"
+  },
+  {
+    "case_id": "W1-05",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "858f4831274e58d2e6221c0812e6d0b4ac099304950954177a1c049cdd7ec76b",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "509ef151851bc093a7e3c6cebe86797c5b9bdd4b135ea72585ad1109a9ef913b",
+    "development_directory": "W1-05"
+  },
+  {
+    "case_id": "W1-06",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "698e96e7e71e2ac73db92c4eed518f1e3faf3d6fda75a5c850b3f630d8c2947a",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "2cde8db16d442aa83939172f3ab29310c4b1272cc9729e7b6e83a13cc142f924",
+    "development_directory": "W1-06"
+  },
+  {
+    "case_id": "W1-07",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "96f0801f58d525554deda7f9ad9ae76965ec8f19b6ac62e274636bc0ba9518d2",
+    "audit_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 2,
+    "audit_target_sha256": "835a5ba5b78fb609df15e1b4b79614b94c9be52c306047ad3c09e13405bbeb23",
+    "development_directory": "W1-07"
+  },
+  {
+    "case_id": "W1-08",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "65885b9d12349380004494ebb85934a81f3a35ab0c80170e2e9ce07f3cc6f1eb",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "b3703ad82765b7292cfcef279e89a0b41b5724ee03c29ca65cc1f110fe60ad01",
+    "development_directory": "W1-08"
+  },
+  {
+    "case_id": "W2-01",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "18af4735d718a585affd5fe9548704e39cc9e2c9ecbeaad4dc86872eaa18e035",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "134bd8b654979775209452a805c1e8df0c7a63e86ee0aa7e5318947a6b52e6e0",
+    "development_directory": "W2-01"
+  },
+  {
+    "case_id": "W2-02",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "c49b116293a9dee6cee21c9aff54efef5208792a31abb7e38df7516c00675e55",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "baf3366561900acf81a5b97f146e59ddb002e23335730a2d0c24796fb9086487",
+    "development_directory": "W2-02"
+  },
+  {
+    "case_id": "W2-03",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "636d829fbaf4479256e9a76f9a2514abe3270d4322ae9ff497cf8ce4880eae0f",
+    "audit_verdict": "CORRECTION_NEEDED",
+    "formal_findings": 1,
+    "audit_target_sha256": "efb980e04a14fade7e902cccfb67d33f150f6ebcf4abd68f7239217680447a82",
+    "development_directory": "W2-03"
+  },
+  {
+    "case_id": "W2-04",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "f4d1f6c42cd23fe2970eb9cb3cbe2721726650268abdf3b993cdb5b676857e5b",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "6e3025a7b44f775723930028c7fee4de96dfb608b9d07a48b116d36e2b53f2f1",
+    "development_directory": "W2-04"
+  },
+  {
+    "case_id": "W2-05",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "0a30e2d028c0cae0fab9d564cbbd53b12458fb2db0136f2af2cc29953e5b25cd",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "b9f33b18a6ca2b967b10effe9d125066d9199ffb9e02215aa00316653d1e5767",
+    "development_directory": "W2-05"
+  },
+  {
+    "case_id": "W2-06",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "48f890e7688cef84fb3520c3f7af487fe0140dc2a099537ebfba840c6f5e24b7",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "5bb722f6049be5f1a5891622ea568a7096e4cebbfbfc84e652c20ae9136c5165",
+    "development_directory": "W2-06"
+  },
+  {
+    "case_id": "W2-07",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "8176d79376bc5d29743ef372e422ba0184bc69ab5475704324908108b2eb105d",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "2469dbb1117de9fb37955f0416f0824ec98cb3be7d523eb4177dc615ac3061fa",
+    "development_directory": "W2-07"
+  },
+  {
+    "case_id": "W2-08",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "2e732a6144d37a9cf6f665b11beb15018952d6ef47af6301a89ddf1c1801c91c",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "1308e6c4b3314d234e464cdb7cd1faae5b102b2472e50cdaafd6c98018048de5",
+    "development_directory": "W2-08"
+  },
+  {
+    "case_id": "W3-01",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "880be28b496c00f562c4312e4d5e5da0a9c018fc456fb11b1361775f1b1f72c6",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "c0226095578b266eb58143b3aa453270d729fabfc8a1a5c2990fe87847ae81a2",
+    "development_directory": "W3-01"
+  },
+  {
+    "case_id": "W3-02",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "982b80ab7eb676cb3f4e78e0430a4f71ea49314cc7d06dada7d26452d5a2a294",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "54ce0ee84f38cfc30bc678bc9eb006a5d89d794e861da835f996bab55a020cab",
+    "development_directory": "W3-02"
+  },
+  {
+    "case_id": "W3-03",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "324afa1e312bf018f9fea635153bd8bfbcf3ec5b5f89d3cdaf74fd7e3f0fb03c",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "4be37d144b68f1b3157a27b9fc26f515c5f99b340e25a5837759c65a9ca8574b",
+    "development_directory": "W3-03"
+  },
+  {
+    "case_id": "W3-04",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "b88a6bab3b6edf5517cf6d43cc739859601aba2f107cdeb2fe2a2c0a60bf8412",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "8b45e0a2def75ee0e21f114543da2c53404171cb0b66a91d5c6a778cfb9f72bb",
+    "development_directory": "W3-04"
+  },
+  {
+    "case_id": "W3-05",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "9647b5f38d28bc8d6f5ca1bf3abb0b330eed1342e431a858f887bc2791394de8",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "69d4c9bea2cb3807a880fa41ce8880423957667f9d5f7bf08cdafcfbe43c4051",
+    "development_directory": "W3-05"
+  },
+  {
+    "case_id": "W3-06",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "552ff40292bb25a1a1552da580328894c6a81763bc5c502732e53bbd94a3f949",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "06bccf4db03ae6177b3ad781a28bae1ccea4254f5d2b0a8c5949898fab477375",
+    "development_directory": "W3-06"
+  },
+  {
+    "case_id": "W3-07",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "fdd71c7218bb4a820bb23125544ad9581cb7815c5776d1cbff0e409952bbf210",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "0f924a5dba53e84012193f9499c61c798b05138771af09d3fd595b2622b8c0fc",
+    "development_directory": "W3-07"
+  },
+  {
+    "case_id": "W3-08",
+    "gemini_revision_received": true,
+    "second_review_date": "2026-09-13",
+    "reviewed_candidate_sha256": "99b8540a605482f2b951d2967b7bc1e1d1db6fc0b77f0307ccb734e49111adf7",
+    "audit_verdict": "NO_SUBSTANTIVE_ISSUE",
+    "formal_findings": 0,
+    "audit_target_sha256": "bd8b52b554144fed95671bff5c956a50c9bc4170986544d077b1fbf5d1480373",
+    "development_directory": "W3-08"
+  }
+]

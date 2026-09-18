@@ -1,0 +1,4 @@
+# Python 3.12 (tested with 3.12.3).
+# The analysis, tests, hash check and parsers use only the standard library.
+# python-docx is needed only by frozen_2026-09-15/reviewer_packets.py (Word reviewer packets).
+python-docx==1.2.0

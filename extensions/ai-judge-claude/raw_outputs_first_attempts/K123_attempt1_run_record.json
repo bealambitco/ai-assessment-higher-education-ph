@@ -1,0 +1,20 @@
+{
+  "judge_id": "K123",
+  "case_id": "W1-06",
+  "record_status": "TECHNICAL_FAILURE",
+  "attempt": 1,
+  "prompt_sha256": "b86705bd64b6b58c54d1636f4befc845050222662992b7f3468d09f0585935b3",
+  "started_at": null,
+  "finished_at": null,
+  "actual_model_id": null,
+  "reasoning_setting": null,
+  "interface": null,
+  "provider": null,
+  "usage": null,
+  "cost": null,
+  "prompt_unchanged": null,
+  "fresh_chat": null,
+  "tools_or_attachments_used": null,
+  "output_seen_before_human_review_finished": null,
+  "exception_notes": "[{\"attempt\": 1, \"error\": \"empty reply\", \"at\": \"2026-09-18T14:59:29+08:00\"}, {\"attempt\": 2, \"error\": \"HTTP Error 429: Too Many Requests\", \"at\": \"2026-09-18T15:01:36+08:00\"}, {\"attempt\": 3, \"error\": \"HTTP Error 429: Too Many Requests\", \"at\": \"2026-09-18T15:01:47+08:00\"}]"
+}
