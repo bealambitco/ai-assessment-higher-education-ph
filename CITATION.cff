@@ -6,8 +6,8 @@ authors:
   - family-names: Lambitco
     given-names: Bea Charmelyn T.
     affiliation: "AI for Asia Fellowship 2026 (Philippines)"
-version: "1.0.0"
-date-released: "2026-09-18"
+version: "1.0.1"
+date-released: "2026-09-19"
 license: CC-BY-4.0
 abstract: >-
   A benchmark of 24 assessment-support cases built from the published rules of nine Philippine
