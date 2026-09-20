@@ -30,11 +30,16 @@ from the evidence given. That prompt is about 77 percent similar to the one the 
 received, so a format difference between the two could in principle come from the wording rather than the
 model.
 
-Because the arm costs well under a cent per model, the same 24 cases are also sent **the study's own frozen
-prompt, unchanged**, byte for byte as the primary configurations received it. That second condition is the
-one to use when comparing format failures or quotation behaviour with the primary configurations; the first
-is kept and reported beside it, and the difference between them is itself a small result about prompt
-sensitivity.
+Because the arm costs well under a cent per model, the same 24 cases were also sent **the study's own frozen
+prompt, unchanged**, byte for byte as the primary configurations received it. Both conditions are reported:
+[summary.csv](summary.csv) for the prompt written for this arm and
+[summary-matched-prompt.csv](summary-matched-prompt.csv) for the frozen one.
+
+The wording matters enough to be worth reporting. Under the frozen prompt, gpt-oss-20b produced valid
+structure in all 24 answers instead of 22, while qwen3-30b-a3b fell from 21 to 20 and gemma-3-12b rose from
+20 to 21; across the three models, 65 of 72 answers were valid instead of 63. In the other direction, the
+frozen prompt drew more quotations (232 against 203) and more quotations that are not in the supplied
+excerpt (27 against 11). No claim in the paper rests on one configuration's count in one condition.
 
 ## What this arm can and cannot establish
 

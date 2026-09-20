@@ -46,6 +46,7 @@ MAP = {
     "extensions/second-timer/SESSION_CHECKLIST.md": "07_SECOND_TIMER/SESSION_CHECKLIST.md",
     "extensions/findings-by-arm.md": "08_RESULTS_PUBLIC/FINDINGS_BY_ARM.md",
     "extensions/low-resource-models/summary.csv": "08_RESULTS_PUBLIC/low_resource_summary.csv",
+    "extensions/low-resource-models/summary-matched-prompt.csv": "08_RESULTS_PUBLIC/low_resource_summary_matched_prompt.csv",
     "extensions/whole-documents/summary.csv": "08_RESULTS_PUBLIC/documents_summary.csv",
     "extensions/rule-discovery/summary.csv": "08_RESULTS_PUBLIC/discovery_summary.csv",
     "results/Analysis_Workbook_Extension.xlsx": "analysis/Analysis_Workbook_Extension.xlsx",

@@ -67,3 +67,18 @@ cut off, 23 parsed.
 
 The case can be re-sent with a larger output allowance; until it is, it is reported as a format failure with
 its cause named.
+
+## D2-05. The low-resource arm was run in two prompt conditions (21 September 2026)
+
+**What happened.** The prompt written for the extension arms is about 77 percent similar to the one the
+primary configurations received: the same case, excerpt and schema, but its own wording and an added
+instruction to answer only from the evidence given. A format comparison with the primary configurations
+would therefore have confounded the model with the wording.
+
+**What was done.** The same 24 cases were sent again to the same three open-weight models with the study's
+frozen prompt, byte for byte unchanged, at a cost of about two US cents. Nothing else differed, and no answer
+from the first condition was discarded.
+
+**How it is reported.** Both conditions are published side by side, with the counts for each. The difference
+between them is reported as a result about prompt sensitivity, and no claim rests on one configuration's
+count in one condition.
