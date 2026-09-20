@@ -1,0 +1,342 @@
+{
+  "note": "Proposed automatically from file-name prefixes and checked by the author. Document text is not published; only names, sizes and hashes are recorded here.",
+  "documents_dirs_at_preparation": [
+    "policies",
+    "attachments"
+  ],
+  "institutions": {
+    "St. Paul University Surigao": [
+      {
+        "file": "S-SPUS-Examination-Policies.txt",
+        "bytes": 5828,
+        "sha256": "415dacfcea96d47ae4418702c570b6302384a60a329b191e6555e2936b72f306"
+      },
+      {
+        "file": "S-SPUS-Grading-System.txt",
+        "bytes": 6407,
+        "sha256": "bbdffa936393940d67304039507dbd28518d29c502ac4e8f0b34f41f56d7a142"
+      }
+    ],
+    "Cebu Normal University": [
+      {
+        "file": "S-CNU-Student-Manual-2018.txt",
+        "bytes": 294054,
+        "sha256": "567b6aeaf6ce00244989d0d109d21a808e94ad1b00e9ba90afd28bc4b66fa629"
+      },
+      {
+        "file": "W1-03_full_text.txt",
+        "bytes": 296346,
+        "sha256": "026ecfd0c20aace6818dc237f00884bbf6068aafd14814832a676e636f39ef70"
+      }
+    ],
+    "Mapúa Malayan Colleges Mindanao": [
+      {
+        "file": "S-MAPUA-KB-grading-system.txt",
+        "bytes": 9123,
+        "sha256": "d7e353203817eea86bdebc89d90bf494171fc23fdcd6cf63b6ec910ac541c37e"
+      },
+      {
+        "file": "S-MAPUA-MCM-OBE-Guidelines-SY2024-2025.txt",
+        "bytes": 22646,
+        "sha256": "66cc2ff9474a574eecaa69c6812036776f9e1fffd259544b49a56b68627c582a"
+      },
+      {
+        "file": "W3-04_full_text.txt",
+        "bytes": 22793,
+        "sha256": "94925627441572a683dccc28d0b4a78ef9a834438d408d873b1a017c7d22d082"
+      }
+    ],
+    "Ateneo de Manila University": [
+      {
+        "file": "R13-ADMU-HE-Memo-Y3.03.txt",
+        "bytes": 2601,
+        "sha256": "bc2fbbb4905e4de39d580f914e671c7e63a3bef60f2f4de48385f693a9e12894"
+      },
+      {
+        "file": "R14-ADMU-HE-Memo-Y3.23.txt",
+        "bytes": 2333,
+        "sha256": "9d0a03eadf3850d9274c2741a5c3db5fbbfde028a1f0524b22f2516b009da929"
+      },
+      {
+        "file": "R19-ADMU-GenAI-HE-Guidelines.txt",
+        "bytes": 23905,
+        "sha256": "d797aac08c41c2eba6da4eaf6375d325a5d50720ec18084fadc05e9403aa0e98"
+      },
+      {
+        "file": "W1-06_full_text.txt",
+        "bytes": 24418,
+        "sha256": "40bd3c3da24ab912ff549a0d10804b9efc9a80306528086607e04f9586b03f8a"
+      }
+    ],
+    "Pateros Technological College": [
+      {
+        "file": "S-PTC-Student-Handbook-2025.txt",
+        "bytes": 34203,
+        "sha256": "4d0d278e203e3795092a6c8ac9e30569214ee47e4f2f719a19bfca0c10ab374f"
+      },
+      {
+        "file": "W2-07_full_text.txt",
+        "bytes": 34441,
+        "sha256": "b6606ee4259c929fc5cadb6a0b8c47eb523e067cc1130c79ff5de53af4f7e889"
+      }
+    ],
+    "De La Salle University": [
+      {
+        "file": "R12-DLSU-GenAI-Policy.txt",
+        "bytes": 56592,
+        "sha256": "c90900efc61e303b88b393139a8121ccff47f655be0cc059a66f99152bbf88fe"
+      },
+      {
+        "file": "W2-03_full_text.txt",
+        "bytes": 57120,
+        "sha256": "ac0be2258b8d6669b48bb615d9be227fa860a297053c409367698479e38cf03e"
+      }
+    ],
+    "University of the Philippines Diliman": [
+      {
+        "file": "S-UPD-ATTENDANCE.txt",
+        "bytes": 691,
+        "sha256": "9d04a828d8e034a28344dbad328fe2c62d77dc6c15fbbd87f0534977b70ece1e"
+      },
+      {
+        "file": "S-UPD-Academic-Information.txt",
+        "bytes": 5216,
+        "sha256": "9e5c604b46b4ac8092e915a111c7a217e32a839fa2285f3c9e5d16af0eed3aa2"
+      },
+      {
+        "file": "S-UPD-CHANGE_OF_GRADES.txt",
+        "bytes": 1951,
+        "sha256": "1b4ce85298c32d3fbe01f3bb9aeb291e280225a45edb2c79e2f1a75ea58360f8"
+      },
+      {
+        "file": "S-UPD-DROPPING_OF_SUBJECTS.txt",
+        "bytes": 2064,
+        "sha256": "24dfc66f71e5b31b22e17a025ea772de8767879215fc9b2bfe06909d372dab3c"
+      },
+      {
+        "file": "S-UPD-FINAL_EXAMINATIONS.txt",
+        "bytes": 260,
+        "sha256": "029edee4a613503fb95918fe2d571234f8d4da59d90289ccc6974634293d1ebb"
+      },
+      {
+        "file": "S-UPD-GENERAL_RULES_FOR_GRADUATE_PROGRAMS.txt",
+        "bytes": 613,
+        "sha256": "939542837cf5a31412de0aa24831be2c78a1f5cf9d3828bb0d985691f76223ca"
+      },
+      {
+        "file": "S-UPD-GRADES.txt",
+        "bytes": 935,
+        "sha256": "a41d056420f405ed81436b4363b22753ec43250a4fba991ba600bce8bd88e1d8"
+      },
+      {
+        "file": "S-UPD-GRADE_AVERAGES.txt",
+        "bytes": 1561,
+        "sha256": "820fc6af15944a5dcff71a571709d8002495c703cc195d2a5f0712be90c56dec"
+      },
+      {
+        "file": "S-UPD-GRADE_OF_4.txt",
+        "bytes": 1236,
+        "sha256": "a6edea9416c29a0653424205fa242966dc57c7a6a0e1675364e90d2dc8c6ad82"
+      },
+      {
+        "file": "S-UPD-GRADE_OF_INCOMPLETE.txt",
+        "bytes": 1219,
+        "sha256": "64c65b036d96f63b98a81dac1e696207d748c86cfa7005bf208801d37372a5fe"
+      },
+      {
+        "file": "S-UPD-REMOVAL_OF_INCOMPLETE.txt",
+        "bytes": 2267,
+        "sha256": "aa5b61ee668dac148931807f2b91d2dfaf41e6724ca5752ed8fe635c8aa276b7"
+      },
+      {
+        "file": "S-UPD-REMOVAL_OF_THE_GRADE_OF_4.txt",
+        "bytes": 3757,
+        "sha256": "f57b914aae0dd274ab46153af72d9d6adebe326aedbc721d273c5869d1585a9f"
+      },
+      {
+        "file": "S-UPD-RULES_ON_SCHOLASTIC_STANDING.txt",
+        "bytes": 4716,
+        "sha256": "b0cf14f5388ae18640a206481a7ece59c31577a4b3ae144f1c6fb9c206927fb5"
+      },
+      {
+        "file": "S-UPD-TRANSFER_ADMISSION_FROM_OTHER_UNIVERSITIES.txt",
+        "bytes": 1977,
+        "sha256": "708e58d44def805d75dda76e6f05c1f4d2412545f0dbeb830b786eba4b587de5"
+      },
+      {
+        "file": "S-UPD-VALIDATION_FOR_ADVANCED_CREDITS.txt",
+        "bytes": 3657,
+        "sha256": "e5429f0217909fbbe47c4d73d984229a6dde316ddca9b7bd909bcf336ff8cfce"
+      }
+    ],
+    "University of Southeastern Philippines": [
+      {
+        "file": "S-USEP-Academic-Policies.txt",
+        "bytes": 44829,
+        "sha256": "294884a5001539e8b77165ce25c4717a153f9edea6e8d51fad803b73769fd10d"
+      }
+    ],
+    "University of Southern Philippines Foundation": [
+      {
+        "file": "S-USPF-Tertiary-Handbook-2023.txt",
+        "bytes": 370093,
+        "sha256": "95fc1a6401776f26964a1930c16e704d0f4b043cbb340e95ab08603189957ee1"
+      },
+      {
+        "file": "W3-02_full_text.txt",
+        "bytes": 374776,
+        "sha256": "0d68701c43a8e07e8c03870a359fe688b09d6cabf8afa7adfaa59b0785756000"
+      }
+    ]
+  },
+  "unmatched_cases": [],
+  "governing_document_by_case": {
+    "W1-01": {
+      "institution": "Ateneo de Manila University",
+      "file": "R19-ADMU-GenAI-HE-Guidelines.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-02": {
+      "institution": "Ateneo de Manila University",
+      "file": "R19-ADMU-GenAI-HE-Guidelines.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-03": {
+      "institution": "Cebu Normal University",
+      "file": "S-CNU-Student-Manual-2018.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-04": {
+      "institution": "University of the Philippines Diliman",
+      "file": "S-UPD-REMOVAL_OF_INCOMPLETE.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-05": {
+      "institution": "Ateneo de Manila University",
+      "file": "R13-ADMU-HE-Memo-Y3.03.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-06": {
+      "institution": "Ateneo de Manila University",
+      "file": "W1-06_full_text.txt",
+      "probe_matches": "0/4",
+      "assigned_by_author": true,
+      "checked": "Assigned by the author, NOT confirmed by matching excerpt text: the excerpt was transcribed from a table or reformatted, so it does not appear verbatim in the document. Confirm before collection. Retained full text prepared for the primary-study document extension for this case."
+    },
+    "W1-07": {
+      "institution": "Cebu Normal University",
+      "file": "S-CNU-Student-Manual-2018.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W1-08": {
+      "institution": "St. Paul University Surigao",
+      "file": "S-SPUS-Grading-System.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-01": {
+      "institution": "St. Paul University Surigao",
+      "file": "S-SPUS-Examination-Policies.txt",
+      "probe_matches": "1/3",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-02": {
+      "institution": "St. Paul University Surigao",
+      "file": "S-SPUS-Examination-Policies.txt",
+      "probe_matches": "1/3",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-03": {
+      "institution": "De La Salle University",
+      "file": "R12-DLSU-GenAI-Policy.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-04": {
+      "institution": "University of Southeastern Philippines",
+      "file": "S-USEP-Academic-Policies.txt",
+      "probe_matches": "2/3",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-05": {
+      "institution": "University of the Philippines Diliman",
+      "file": "S-UPD-CHANGE_OF_GRADES.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-06": {
+      "institution": "University of the Philippines Diliman",
+      "file": "S-UPD-VALIDATION_FOR_ADVANCED_CREDITS.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-07": {
+      "institution": "Pateros Technological College",
+      "file": "S-PTC-Student-Handbook-2025.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W2-08": {
+      "institution": "University of Southeastern Philippines",
+      "file": "S-USEP-Academic-Policies.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-01": {
+      "institution": "Mapúa Malayan Colleges Mindanao",
+      "file": "S-MAPUA-MCM-OBE-Guidelines-SY2024-2025.txt",
+      "probe_matches": "0/4",
+      "assigned_by_author": true,
+      "checked": "Assigned by the author, NOT confirmed by matching excerpt text: the excerpt was transcribed from a table or reformatted, so it does not appear verbatim in the document. Confirm before collection. Mapúa Malayan Colleges Mindanao modular system guidelines, the source the case was built from (paper, Appendix D)."
+    },
+    "W3-02": {
+      "institution": "University of Southern Philippines Foundation",
+      "file": "S-USPF-Tertiary-Handbook-2023.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-03": {
+      "institution": "De La Salle University",
+      "file": "R12-DLSU-GenAI-Policy.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-04": {
+      "institution": "Mapúa Malayan Colleges Mindanao",
+      "file": "W3-04_full_text.txt",
+      "probe_matches": "0/4",
+      "assigned_by_author": true,
+      "checked": "Assigned by the author, NOT confirmed by matching excerpt text: the excerpt was transcribed from a table or reformatted, so it does not appear verbatim in the document. Confirm before collection. Retained full text prepared for the primary-study document extension for this case."
+    },
+    "W3-05": {
+      "institution": "University of Southern Philippines Foundation",
+      "file": "S-USPF-Tertiary-Handbook-2023.txt",
+      "probe_matches": "2/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-06": {
+      "institution": "De La Salle University",
+      "file": "R12-DLSU-GenAI-Policy.txt",
+      "probe_matches": "2/3",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-07": {
+      "institution": "Mapúa Malayan Colleges Mindanao",
+      "file": "S-MAPUA-MCM-OBE-Guidelines-SY2024-2025.txt",
+      "probe_matches": "3/4",
+      "checked": "excerpt fragments found in the document text"
+    },
+    "W3-08": {
+      "institution": "St. Paul University Surigao",
+      "file": "S-SPUS-Grading-System.txt",
+      "probe_matches": "1/3",
+      "checked": "excerpt fragments found in the document text"
+    }
+  }
+}
