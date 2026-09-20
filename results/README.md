@@ -10,6 +10,13 @@ The primary conditions are `astra` or `luna` × `direct` or `controlled`. Each c
 
 [Analysis_Workbook_Supplement_v2.xlsx](Analysis_Workbook_Supplement_v2.xlsx) adds two exploratory analyses: a dated project timeline from design to score lock (calendar spans, not hours worked), and the AI judge's ratings of the 24 document-evidence answers (all acceptable, no serious error; see [../extensions/ai-judge-documents/](../extensions/ai-judge-documents/)).
 
+## Extension
+
+[Analysis_Workbook_Extension.xlsx](Analysis_Workbook_Extension.xlsx) presents the extension collections and the
+revised release checks: a dashboard, the before-and-after comparison of the checks, the low-resource,
+whole-document and rule-discovery arms, costs reconciled against the provider's billing export, and a data
+dictionary. Correctness for the new arms is not established until the answers are scored; every sheet says so.
+
 ## Primary study
 
 | File | Contents |

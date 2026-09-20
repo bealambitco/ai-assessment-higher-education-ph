@@ -1,0 +1,9 @@
+rules,outcome_class,answers,withheld_v1,withheld_new,released_by_new_rules,withheld_by_new_rules
+v2,acceptable,48,6,4,2,0
+v2,serious,0,0,0,0,0
+v2,confirmed_error,2,0,2,0,2
+v2,unscored,142,31,22,9,0
+v2b,acceptable,48,6,4,2,0
+v2b,serious,0,0,0,0,0
+v2b,confirmed_error,2,0,2,0,2
+v2b,unscored,142,31,27,9,5

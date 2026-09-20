@@ -1,0 +1,13 @@
+model,rules,answers,released,routed,blocked
+astra,v1,48,41,5,2
+astra,v2,48,41,5,2
+astra,v2b,48,40,6,2
+fable,v1,48,38,3,7
+fable,v2,48,42,4,2
+fable,v2b,48,40,6,2
+haiku,v1,48,37,1,10
+haiku,v2,48,40,1,7
+haiku,v2b,48,40,1,7
+luna,v1,48,39,6,3
+luna,v2,48,41,6,1
+luna,v2b,48,39,8,1
