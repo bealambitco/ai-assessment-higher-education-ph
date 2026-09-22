@@ -90,7 +90,9 @@ Three comparison rules reuse the saved answers: withhold everything, block only 
 - Analysis reports counts with denominators, compares case by case, and gives approximate case-resampled intervals. No significance tests or success thresholds are used.
 - Failure classes were not coded during scoring, so RQ2 is answered by inspecting which check withheld each answer (D4).
 
-**Coverage.** At the cutoff (September 18, 2026, 12:50 +08:00), 48 of 96 answers had been scored: 12 complete cases, in a balanced order fixed in advance by seed. All three workflow groups and all nine institutions were covered. Scores were locked at 13:09.
+**Coverage.** At the first cutoff (September 18, 2026, 12:50 +08:00), 48 of 96 answers had been scored: 12 complete cases, in a balanced order fixed in advance by seed. All three workflow groups and all nine institutions were covered. Scores were locked at 13:09.
+
+Reading continued afterwards in a second stage, in an order fixed and published before it began ([scoring-plan.md](scoring-plan.md)): first every answer the frozen checks had withheld and nobody had read, then the answers that complete those cases. The locked scores were not revised, and the overlay refuses to run if asked to revise one. Reading stopped on September 22, 2026 with 12 further answers read, so 60 answers in 15 complete cases have been read and 36 remain unread. The stop was decided after those answers had been read and is recorded as a deviation ([extension-deviations.md](extension-deviations.md), D2-07). Every answer the checks withheld, 16 of the 96, has been read.
 
 **Sensitivity analyses:**
 - each repetition on its own;

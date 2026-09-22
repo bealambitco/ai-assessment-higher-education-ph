@@ -10,10 +10,12 @@ The AI-judge and document-evidence folders below are exploratory records collect
 
 | Folder | What it is |
 |---|---|
+| [withheld-answers/](withheld-answers/) | Every answer the frozen checks withheld from a user, read against the same answer keys: what fired, what the answer turned out to be, and what that costs. [Findings](withheld-answers/README.md). |
 | [revised-checks/](revised-checks/) | The release checks rewritten to tolerate harmless differences and to fail closed when a quantity is missing, then re-run over all 192 collected answers. [Specification](revised-checks/SPECIFICATION.md), [findings](revised-checks/FINDINGS.md). |
 | [low-resource-models/](low-resource-models/) | The same 24 cases answered by open-weight models in the 8B-30B range, the kind a school could self-host, with the same excerpt and the same required format. |
 | [whole-documents/](whole-documents/) | All 24 cases answered with the entire governing document attached instead of the excerpt, so the model must find the passage itself. |
 | [rule-discovery/](rule-discovery/) | Eight cases answered with every retained document from the institution and no passage selected, so the model must decide which document and which section govern the case. |
+| [answer-scoring/](answer-scoring/) | Reviewer packets so independent people can judge the extension-arm answers themselves, in the same design as the packets the primary study sent. Covers the selection rule, the anchors and how the whole-document answers are evidenced. The generated packets stay in the local extension package. |
 | [answer-key-review/](answer-key-review/) | Packets and instructions for independent Philippine higher-education experts to validate the answer keys themselves. |
 | [second-timer/](second-timer/) | The instrument and instructions for a second, outside observer to time the checking work. |
 | [ai-judge-primary/](ai-judge-primary/) | DeepSeek V4 Pro (`deepseek/deepseek-v4-pro-0813`) judged each of the 96 primary answers once, against the same answer keys. It worked through OpenCode and OpenRouter with reasoning set to High, and was collected September 18, 2026, 04:10–04:56 +08:00. All 96 replies are valid; J024 was re-collected once and its first attempt is kept. |

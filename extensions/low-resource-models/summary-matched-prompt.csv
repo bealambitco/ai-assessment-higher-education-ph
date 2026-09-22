@@ -1,0 +1,4 @@
+arm,label,model_id,runs,replies_received,replies_cut_off,parsed,schema_ok,released_v1,routed_v1,blocked_v1,released_v2,routed_v2,blocked_v2,answers_with_quotes,quotes_total,quotes_matching_evidence,quotes_matching_original_excerpt,cost_usd_total,median_seconds
+access,gemma3-12b,google/gemma-3-12b-it,24,24,0,24,21,17,2,5,17,2,5,24,80,78,78,0.0044,9.803
+access,gptoss20b,openai/gpt-oss-20b,24,24,0,24,24,17,0,7,17,0,7,24,70,52,52,0.0057,11.726
+access,qwen3-30b-a3b,qwen/qwen3-30b-a3b-instruct-2507,24,24,0,24,20,13,3,8,13,4,7,24,82,75,75,0.0072,7.638

@@ -1,0 +1,8 @@
+check,status,answers,scope
+schema,PASS,96,all 96 primary answers
+quoted_source_membership,PASS,93,all 96 primary answers
+quoted_source_membership,FAIL,3,all 96 primary answers
+recompute,PASS,28,all 96 primary answers
+recompute,FAIL,4,all 96 primary answers
+consequential_action_routing,NOT_TRIGGERED,85,all 96 primary answers
+consequential_action_routing,TRIGGERED,11,all 96 primary answers

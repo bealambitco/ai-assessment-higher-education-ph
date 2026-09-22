@@ -1,9 +1,9 @@
 pathway,handling_decision,locked_score_class,items
-controlled,accept,acceptable,5
-controlled,accept,unscored,3
-controlled,minor_edit,acceptable,2
-controlled,minor_edit,unscored,2
+controlled,accept,acceptable,6
+controlled,accept,unscored,2
+controlled,minor_edit,acceptable,3
+controlled,minor_edit,unscored,1
 direct,accept,acceptable,4
 direct,accept,unscored,3
-direct,minor_edit,acceptable,1
-direct,minor_edit,unscored,4
+direct,minor_edit,acceptable,2
+direct,minor_edit,unscored,3

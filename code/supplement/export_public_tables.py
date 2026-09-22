@@ -67,12 +67,18 @@ def write(out, name, rows, note=None):
 
 def main(a):
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
-    sup = load(Path(a.base) / 'analysis/supplement/supplement_results.json')
+    sup = load(Path(a.base) / 'analysis/supplement' / a.supplement)
+    read_after_lock = (sup.get('extension_overlay') or {}).get('answers_added', 0)
 
     c = sup['S1_coverage']
     write(out, 'coverage.csv', [{'scheduled_answers': c['scheduled'], 'scored': c['SCORED'], 'cannot_judge': c['CANNOT_JUDGE'],
-                                 'not_scored_at_cutoff': c['MISSING'], 'reference_challenges_recorded': c['reference_challenges'],
-                                 'scoring_cutoff': '2026-09-18T12:50:00+08:00', 'scoring_order': 'balanced first-48 order fixed in advance (seed 2026091703); 12 complete cases'}])
+                                 'not_scored': c['MISSING'], 'reference_challenges_recorded': c['reference_challenges'],
+                                 'read_after_the_first_cutoff': read_after_lock,
+                                 'scoring_order': 'balanced order fixed in advance (seed 2026091703), then the answers the '
+                                                  'checks had withheld, in case blocks fixed before reading '
+                                                  '(seed 2026091701)',
+                                 'stopped': '2026-09-22 (reading stopped by the researcher; see docs/extension-deviations.md D2-07)'
+                                            if read_after_lock else '2026-09-18T12:50:00+08:00'}])
 
     write(out, 'primary_outcomes.csv', [outcome_row(k, sup['S2_conditions'][k]) for k in CONDS])
 
@@ -95,7 +101,20 @@ def main(a):
     write(out, 'checks_by_outcome.csv', rows)
 
     rows = []
-    for key, text in sup['S16_frozen_surfaced'].items():
+    s17 = sup.get('S17_recomputed_sensitivities')
+    if s17:
+        # Every answer read, with the frozen script's own subsets and definitions.
+        for name, block17 in s17['sensitivities'].items():
+            for cond, s in block17.items():
+                rows.append({'kind': 'sensitivity', 'analysis': name.replace('loio:', 'leave out institution: '),
+                             'condition': cond, 'serious_released': s['serious_released']['n'],
+                             'useful_release': s['useful_release']['n'], 'denominator': s['useful_release']['d']})
+        for name, by_model in s17['diagnostics'].items():
+            for m, mm in by_model.items():
+                rows.append({'kind': 'comparison policy', 'analysis': name, 'condition': m,
+                             'serious_released': mm['serious_release_n'], 'useful_release': mm['useful_release_n'],
+                             'denominator': mm['scheduled_n']})
+    for key, text in ({} if s17 else sup.get('S16_frozen_surfaced', {})).items():
         kind, analysis, cond = key.split('|')
         m = re.search(r'serious(?: released)? (\d+)/(\d+); useful (\d+)/(\d+)', text)
         rows.append({'kind': 'frozen diagnostic' if kind == 'diag' else 'frozen sensitivity', 'analysis': analysis.replace('loio:', 'leave out institution: '),
@@ -126,17 +145,29 @@ def main(a):
                      'criterion_correctness_scheduled_case_mean': round(crit['scheduled_case_mean'], 4), 'criterion_correctness_scored_case_mean': round(crit['scored_case_mean'], 4)})
     write(out, 'paired_case_summary.csv', rows)
 
+    # The three items explained on 21 September 2026 rejoin their own condition; T24 stays out and is a range.
+    REJOIN = {'astra_direct': 'T02', 'astra_controlled': 'T04', 'luna_direct': 'T16'}
     t = sup['S8_timing']['by_condition']; rows = []
     for k in CONDS:
         m, p = split(k); x = t[k]
         pc, pc2, c1 = x['primary_clock1'], x['primary_clock2_among_corrected'] or {}, x['clock1']
+        cl = x['clock1'] if k in REJOIN else x['primary_clock1']
+        cl2 = x['clock2_among_worked_items'] if k in REJOIN else pc2
+        cl_corr = (f"{x['items_with_clock2_work']}/{x['clock1']['n']}" if k in REJOIN
+                   else x['primary_items_with_correction'])
         rows.append({'model': m, 'pathway': p, 'timed_items': c1['n'], 'primary_items': pc['n'],
                      'decision_time_s_median': round(pc['median']), 'decision_time_s_min': round(pc['min']), 'decision_time_s_max': round(pc['max']),
                      'items_needing_correction': x['primary_items_with_correction'].split('/')[0],
                      'correction_time_s_median_among_corrected': round(pc2['median']) if pc2 else '',
                      'all_recorded_decision_time_s_median': round(c1['median']), 'handling_accept': x['decisions'].get('accept', 0),
                      'handling_minor_edit': x['decisions'].get('minor_edit', 0), 'release_decision_overrides': x['overrides'],
-                     'note': 'primary summary excludes one flagged item per condition (untimed gap > 5 min, unresolved interruption, or unknown prior exposure)'})
+                     'clarified_items': cl['n'], 'clarified_decision_time_s_median': round(cl['median']),
+                     'clarified_decision_time_s_min': round(cl['min']), 'clarified_decision_time_s_max': round(cl['max']),
+                     'clarified_items_needing_correction': cl_corr.split('/')[0],
+                     'clarified_correction_time_s_median_among_corrected': round(cl2['median']) if cl2 else '',
+                     'note': 'the first columns exclude one flagged item per condition; the clarified columns '
+                             'include the three items the researcher explained on 21 September 2026 and still '
+                             'exclude the one with an unresolved interruption (docs/timing-clarifications.md)'})
     write(out, 'timing_summary.csv', rows)
     s13 = sup['S13_handler_vs_score']
     rows = [dict(zip(('pathway', 'handling_decision', 'locked_score_class'), cell.split('|')), items=n) for cell, n in sorted(s13['cells'].items())]
@@ -144,14 +175,18 @@ def main(a):
 
     ra = load(Path(a.base) / 'analysis/supplement/reviewer_agreement.json')
     per = ra['per_reviewer']
-    groups = {'Reviewer 1': ['Reviewer-01'], 'Reviewer 2': ['Reviewer-02', 'Reviewer-03']}  # Reviewer 2 returned two packets
+    # One label per person, not per file: a reviewer who returned a Core and an Optional packet is one person.
+    groups = load(Path(a.reviewer_groups)) if a.reviewer_groups else {
+        'Reviewer 1': ['Reviewer-01'], 'Reviewer 2': ['Reviewer-02', 'Reviewer-03'], 'Reviewer 3': ['Reviewer-04']}
     rows = []
     for label, keys in groups.items():
         for k in keys:
             r = per[k]
             rows.append({'reviewer': label, 'packet': r['packet'], 'responses_returned': r['responses_returned'], 'criteria_judged': r['criteria_judged'],
                          'criteria_compared_with_researcher': r['criteria_compared'], 'criteria_exact_agreement': r['criteria_exact_agree'],
-                         'reference_concerns': r['reference_concerns'], 'responses_researcher_had_not_scored': r['responses_not_comparable_researcher_unscored']})
+                         'reference_concerns': r['reference_concerns'],
+                         'responses_researcher_had_not_scored': r['responses_not_comparable_researcher_unscored'],
+                         'form_fields_read_from': r.get('extraction', 'Word form controls')})
     write(out, 'reviewer_agreement_by_packet.csv', rows)
     rows = []
     for measure in ('criterion_correct_vs_not', 'serious_vs_not', 'acceptable_vs_not'):
@@ -162,7 +197,8 @@ def main(a):
                  'both_yes': '', 'researcher_yes_reviewer_no': '', 'researcher_no_reviewer_yes': '', 'both_no': ''})
     write(out, 'reviewer_agreement.csv', rows)
 
-    ag = load(Path(a.judge) / 'analysis/agreement_with_human.json')
+    agree_file = Path(a.judge) / 'analysis/agreement_with_human_all_read.json'
+    ag = load(agree_file if (read_after_lock and agree_file.exists()) else Path(a.judge) / 'analysis/agreement_with_human.json')
     rows = []
     for measure in ('serious_error', 'acceptable', 'criterion_correct'):
         x = ag[measure]
@@ -229,6 +265,12 @@ def main(a):
         {'item': 'Gemini 3.1 Pro Preview, 12 document-extension runs', 'usd': 0.72, 'basis': 'OpenRouter-reported usage.cost per run'},
         {'item': 'Kimi K3, 12 document-extension runs', 'usd': 1.01, 'basis': 'OpenRouter-reported usage.cost per run'},
         {'item': 'Primary configurations (Astra, Luna) in Codex', 'usd': '', 'basis': 'Not measured: subscription access produced no per-answer usage records'},
+        {'item': 'Open-weight configurations, 24 cases each, two prompt conditions', 'usd': 0.0303,
+         'basis': 'OpenRouter-reported usage.cost per run, kept runs only'},
+        {'item': 'Whole-document condition, 24 cases on two configurations', 'usd': 3.644,
+         'basis': 'OpenRouter-reported usage.cost per run, kept runs only'},
+        {'item': 'Rule-discovery condition, 8 cases on two configurations', 'usd': 1.009,
+         'basis': 'OpenRouter-reported usage.cost per run, kept runs only'},
     ])
 
 
@@ -236,4 +278,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     for k in ('base', 'judge', 'claude-key', 'claude-judge', 'doc', 'out'):
         ap.add_argument('--' + k, required=True)
+    ap.add_argument('--supplement', default='supplement_results.json',
+                    help='which supplement file in analysis/supplement/ to export')
+    ap.add_argument('--reviewer-groups', help='JSON mapping one label per person to their packet labels')
     main(ap.parse_args())

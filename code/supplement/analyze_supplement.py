@@ -43,6 +43,40 @@ RELEASED = ('release', 'release_with_warning')
 T24 = 'T24'  # unresolved interruption during Clock 2 (addendum D10); sensitivity excludes it
 
 
+def overlay_extension(joined, path):
+    """Add the judgments recorded after the lock, for answers the study left unscored.
+
+    The locked score file is never touched: this reads the extension's own score file and fills in
+    `acceptable`, `severity` and the criterion judgments for answers whose locked status was not SCORED.
+    An answer the study scored is never overwritten, and an answer neither has read stays unscored.
+    """
+    data = json.loads(Path(path).read_text())
+    ext = {r['run_id']: r for r in data['records'] if r['status'] == 'SCORED'}
+    added, refused = [], []
+    for r in joined:
+        e = ext.get(r['run_id'])
+        if not e:
+            continue
+        if r['status'] == 'SCORED':
+            refused.append(r['run_id'])
+            continue
+        r['status'] = 'SCORED'
+        r['acceptable'] = bool(e['acceptable'])
+        r['severity'] = e['severity']
+        r['criteria_judgments'] = [c.get('judgment') for c in (e.get('criteria') or [])]
+        r['score_source'] = 'extension'
+        if r['pathway'] == 'direct':
+            added.append(r['run_id'])
+    if refused:
+        raise ValueError(f'{len(refused)} answer(s) are scored in both files; locked scores are never revised: {sorted(refused)[:5]}')
+    missing = sorted(set(ext) - {r['run_id'] for r in joined})
+    if missing:
+        raise ValueError(f'extension scores with no matching answer: {missing}')
+    return {'answers_added': len(added), 'run_ids': sorted(added), 'source': str(path),
+            'note': 'Judgments recorded after the score lock, for answers the study had left unread. '
+                    'Locked scores are unchanged.'}
+
+
 def load_frozen(base):
     sys.path.insert(0, str(base / 'code'))
     import experiment  # noqa: E402  (frozen module; imported read-only)
@@ -277,15 +311,20 @@ def timing_summary(base, ex, key_by_run):
             'note': 'Single familiar researcher, one item per case; describes this study only.'}, rows
 
 
-def analyze(base):
+def analyze(base, extension_scores=None, out_name='supplement_results.json'):
     ex = load_frozen(base)
     joined, scores = build_join(base, ex)
+    overlay = overlay_extension(joined, extension_scores) if extension_scores else None
     key_by_run = {r['run_id']: r for r in ex.read(base / 'private/identity_key.json')}
     inst = {c: ex.read(base / f'inputs/{c}.json')['institution'] for c in sorted({r['case_id'] for r in joined})}
     res = {'label': 'POST-FREEZE SUPPLEMENT (Package 22 proposal); primary definitions from frozen metrics()'}
+    if overlay:
+        res['label'] += '; with the answers read after the lock'
+        res['extension_overlay'] = overlay
 
     # S1 coverage
-    st = [s['status'] for s in scores.values()]
+    answers = [r for r in joined if r['pathway'] == 'direct']
+    st = [r['status'] for r in answers] if overlay else [s['status'] for s in scores.values()]
     res['S1_coverage'] = {k: st.count(k) for k in ['SCORED', 'MISSING', 'CANNOT_JUDGE']} | {'scheduled': len(st),
                          'reference_challenges': sum(bool((s.get('reference_challenge') or '').strip()) for s in scores.values())}
 
@@ -298,6 +337,11 @@ def analyze(base):
         fm = res['frozen_metrics_crosscheck'][k]
         if b['useful_release']['n'] != fm['useful_release_n'] or b['serious_released']['n'] != fm['serious_release_n']:
             raise ValueError('supplement counts disagree with frozen metrics() for ' + k)
+    if overlay:
+        # S16 restates the frozen script's own output, which describes the locked scores only.
+        res['S16_note'] = ('The frozen diagnostics and sensitivities are not restated here: they are the frozen '
+                           'script\'s output over the locked scores. Bounds (S6), exposure (S14) and the '
+                           'per-condition tables above are recomputed over every answer read.')
     res['S4_checks'] = checks_table(joined)
     res['S5_workflow'] = {w: {f'{m}_{p}': condition_block([r for r in joined if r['case_id'].startswith(w) and r['model'] == m and r['pathway'] == p])
                               for m in MODELS for p in PATHWAYS} for w in ['W1', 'W2', 'W3']}
@@ -433,10 +477,51 @@ def analyze(base):
                     surf[f'sens|{name}|{cond}'] = f"serious {mm['serious_release_n']}/{mm['scheduled_n']}; useful {mm['useful_release_n']}/{mm['scheduled_n']}"
         res['S16_frozen_surfaced'] = surf
 
+    if overlay:
+        # S17 restates the frozen script's diagnostics and sensitivities over every answer read, using the
+        # same subsets and the same definitions. S16 keeps the frozen script's own output for the locked set.
+        POST_AUDIT = ['W1-04', 'W1-07', 'W2-03', 'W3-01', 'W3-03', 'W3-06']
+        INTERPRETATION_SENSITIVE = ['W1-04', 'W1-08']
+        judgment_cases = [c for c in inst if c.startswith(('W1', 'W2'))]
+        sens = {}
+
+        def block(rows_):
+            return {f'{m}_{p}': condition_block([r for r in rows_ if r['model'] == m and r['pathway'] == p])
+                    for m in MODELS for p in PATHWAYS}
+
+        sens['repetition_1'] = block([r for r in joined if r['repetition'] == 1])
+        sens['repetition_2'] = block([r for r in joined if r['repetition'] == 2])
+        sens['omit_interpretation_sensitive'] = block([r for r in joined if r['case_id'] not in INTERPRETATION_SENSITIVE])
+        sens['omit_post_audit_changes'] = block([r for r in joined if r['case_id'] not in POST_AUDIT])
+        for name in sorted(set(inst.values())):
+            sens[f'loio:{name}'] = block([r for r in joined if inst[r['case_id']] != name])
+        # Critical-only: a Major error no longer counts as serious, so only Critical can be a serious release.
+        sens['critical_only'] = block([dict(r, severity='Minor' if r['severity'] == 'Major' else r['severity'])
+                                       for r in joined])
+        diag = {
+            'always_withhold': {m: {'useful_release_n': 0, 'serious_release_n': 0,
+                                    'scheduled_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct')}
+                                for m in MODELS},
+            'structural_only': {m: {'useful_release_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct' and acceptable(r)),
+                                    'serious_release_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct' and is_known(r) and r['severity'] in ('Major', 'Critical')),
+                                    'scheduled_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct')}
+                                for m in MODELS},
+            'stratum_routing_only': {m: {'useful_release_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct' and acceptable(r) and r['case_id'] not in judgment_cases),
+                                         'serious_release_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct' and is_known(r) and r['severity'] in ('Major', 'Critical') and r['case_id'] not in judgment_cases),
+                                         'scheduled_n': sum(1 for r in joined if r['model'] == m and r['pathway'] == 'direct')}
+                                     for m in MODELS},
+        }
+        res['S17_recomputed_sensitivities'] = {
+            'sensitivities': sens, 'diagnostics': diag,
+            'not_computed': {'unmatched_serious_catches_as_released': 'failure classes were not collected on the '
+                                                                      'study scoring form, so there is nothing to match',
+                             'not_scorable_as_unacceptable': 'no answer read was marked impossible to judge'},
+            'note': 'Same subsets and definitions as the frozen script, recomputed over every answer read.'}
+
     res['S9_placeholders'] = placeholders(res)
     out = base / 'analysis/supplement'
-    ex.write(out / 'supplement_results.json', res)
-    ex.write(out / 'placeholder_values.json', res['S9_placeholders'])
+    ex.write(out / out_name, res)
+    ex.write(out / out_name.replace('supplement_results', 'placeholder_values'), res['S9_placeholders'])
     return res
 
 
@@ -489,6 +574,10 @@ def placeholders(res):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--base', required=True)
+    ap.add_argument('--extension-scores', help='score file from the extension, overlaid on answers the study left unread')
+    ap.add_argument('--out-name', default='supplement_results.json')
     args = ap.parse_args()
-    analyze(Path(args.base))
-    print('Supplement written to analysis/supplement/ (contains model labels; keep private).')
+    res = analyze(Path(args.base), args.extension_scores, args.out_name)
+    if res.get('extension_overlay'):
+        print(f"{res['extension_overlay']['answers_added']} answer(s) read after the lock were added.")
+    print(f"Supplement written to analysis/supplement/{args.out_name} (contains model labels; keep private).")

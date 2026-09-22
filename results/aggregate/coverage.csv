@@ -1,2 +1,2 @@
-scheduled_answers,scored,cannot_judge,not_scored_at_cutoff,reference_challenges_recorded,scoring_cutoff,scoring_order
-96,48,0,48,4,2026-09-18T12:50:00+08:00,balanced first-48 order fixed in advance (seed 2026091703); 12 complete cases
+scheduled_answers,scored,cannot_judge,not_scored,reference_challenges_recorded,read_after_the_first_cutoff,scoring_order,stopped
+96,60,0,36,4,12,"balanced order fixed in advance (seed 2026091703), then the answers the checks had withheld, in case blocks fixed before reading (seed 2026091701)",2026-09-22 (reading stopped by the researcher; see docs/extension-deviations.md D2-07)

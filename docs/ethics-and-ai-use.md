@@ -5,7 +5,7 @@
 - **No student participants.** The cases are constructed scenarios based on public institutional rules. No student, student record or deployed system was involved.
 - **No institutional ethics review** was obtained. The AI for Asia Fellowship permitted this independent project, and the frozen protocol records the researcher's report of that permission.
 - **Researcher-only timing.** The only person whose working times were measured is the researcher.
-- **Volunteer reviewers.** Two independent reviewers volunteered to score masked subsets. They consented to acknowledgment in the paper. In this repository they are identified only as Reviewer 1 and Reviewer 2. Their returned packets, which carry their names, are not published.
+- **Volunteer reviewers.** Three independent reviewers volunteered to score masked subsets. They consented to acknowledgment in the paper. In this repository they are identified only as Reviewer 1, Reviewer 2 and Reviewer 3. Their returned packets, which carry their names, are not published.
 - **Institutions.** The scenarios describe hypothetical situations. They are not reports of incidents or of any institution's or person's conduct. Rules are cited in the versions that were retrieved, and these may have changed.
 - **No personal data** of students or staff is published. HTML policy snapshots that contained institutional contact emails are not redistributed.
 

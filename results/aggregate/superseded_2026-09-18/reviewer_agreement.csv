@@ -1,0 +1,5 @@
+measure,comparisons,agree,both_yes,researcher_yes_reviewer_no,researcher_no_reviewer_yes,both_no
+criterion_correct_vs_not,34,31,31,1,2,0
+serious_vs_not,10,10,0,0,0,10
+acceptable_vs_not,10,10,10,0,0,0
+severity_exact,10,7,,,,

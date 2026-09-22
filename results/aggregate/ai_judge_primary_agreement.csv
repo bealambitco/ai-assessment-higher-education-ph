@@ -1,5 +1,5 @@
 measure,comparisons,both_yes,human_yes_judge_no,human_no_judge_yes,both_no,raw_agreement,kappa
-serious_error,48,0,0,0,48,1.0,
-acceptable,48,48,0,0,0,1.0,
-criterion_correct,180,174,0,5,1,0.972,0.279
-severity_exact,48,,,,,0.875,42 of 48 exact
+serious_error,60,0,0,0,60,1.0,
+acceptable,60,60,0,0,0,1.0,
+criterion_correct,224,218,0,5,1,0.978,0.28
+severity_exact,60,,,,,0.9,54 of 60 exact

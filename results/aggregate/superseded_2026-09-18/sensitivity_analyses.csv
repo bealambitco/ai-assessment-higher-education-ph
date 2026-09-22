@@ -1,0 +1,87 @@
+kind,analysis,condition,serious_released,useful_release,denominator
+frozen diagnostic,always_withhold,astra,0,0,48
+frozen diagnostic,always_withhold,luna,0,0,48
+frozen diagnostic,structural_only,astra,0,24,48
+frozen diagnostic,structural_only,luna,0,24,48
+frozen diagnostic,stratum_routing_only,astra,0,8,48
+frozen diagnostic,stratum_routing_only,luna,0,8,48
+frozen sensitivity,repetition_1,astra_direct,0,12,24
+frozen sensitivity,repetition_1,astra_controlled,0,12,24
+frozen sensitivity,repetition_1,luna_direct,0,12,24
+frozen sensitivity,repetition_1,luna_controlled,0,10,24
+frozen sensitivity,repetition_2,astra_direct,0,12,24
+frozen sensitivity,repetition_2,astra_controlled,0,11,24
+frozen sensitivity,repetition_2,luna_direct,0,12,24
+frozen sensitivity,repetition_2,luna_controlled,0,9,24
+frozen sensitivity,omit_interpretation_sensitive,astra_direct,0,24,44
+frozen sensitivity,omit_interpretation_sensitive,astra_controlled,0,23,44
+frozen sensitivity,omit_interpretation_sensitive,luna_direct,0,24,44
+frozen sensitivity,omit_interpretation_sensitive,luna_controlled,0,19,44
+frozen sensitivity,leave out institution: Cebu Normal University,astra_direct,0,22,44
+frozen sensitivity,leave out institution: Cebu Normal University,astra_controlled,0,21,44
+frozen sensitivity,leave out institution: Cebu Normal University,luna_direct,0,22,44
+frozen sensitivity,leave out institution: Cebu Normal University,luna_controlled,0,17,44
+frozen sensitivity,leave out institution: University of Southern Philippines Foundation,astra_direct,0,20,44
+frozen sensitivity,leave out institution: University of Southern Philippines Foundation,astra_controlled,0,19,44
+frozen sensitivity,leave out institution: University of Southern Philippines Foundation,luna_direct,0,20,44
+frozen sensitivity,leave out institution: University of Southern Philippines Foundation,luna_controlled,0,16,44
+frozen sensitivity,leave out institution: University of the Philippines Diliman,astra_direct,0,22,42
+frozen sensitivity,leave out institution: University of the Philippines Diliman,astra_controlled,0,21,42
+frozen sensitivity,leave out institution: University of the Philippines Diliman,luna_direct,0,22,42
+frozen sensitivity,leave out institution: University of the Philippines Diliman,luna_controlled,0,17,42
+frozen sensitivity,leave out institution: University of Southeastern Philippines,astra_direct,0,22,44
+frozen sensitivity,leave out institution: University of Southeastern Philippines,astra_controlled,0,21,44
+frozen sensitivity,leave out institution: University of Southeastern Philippines,luna_direct,0,22,44
+frozen sensitivity,leave out institution: University of Southeastern Philippines,luna_controlled,0,19,44
+frozen sensitivity,leave out institution: Mapúa Malayan Colleges Mindanao,astra_direct,0,22,42
+frozen sensitivity,leave out institution: Mapúa Malayan Colleges Mindanao,astra_controlled,0,22,42
+frozen sensitivity,leave out institution: Mapúa Malayan Colleges Mindanao,luna_direct,0,22,42
+frozen sensitivity,leave out institution: Mapúa Malayan Colleges Mindanao,luna_controlled,0,18,42
+frozen sensitivity,leave out institution: Ateneo de Manila University,astra_direct,0,18,40
+frozen sensitivity,leave out institution: Ateneo de Manila University,astra_controlled,0,17,40
+frozen sensitivity,leave out institution: Ateneo de Manila University,luna_direct,0,18,40
+frozen sensitivity,leave out institution: Ateneo de Manila University,luna_controlled,0,13,40
+frozen sensitivity,leave out institution: St. Paul University Surigao,astra_direct,0,22,40
+frozen sensitivity,leave out institution: St. Paul University Surigao,astra_controlled,0,21,40
+frozen sensitivity,leave out institution: St. Paul University Surigao,luna_direct,0,22,40
+frozen sensitivity,leave out institution: St. Paul University Surigao,luna_controlled,0,17,40
+frozen sensitivity,leave out institution: De La Salle University,astra_direct,0,22,42
+frozen sensitivity,leave out institution: De La Salle University,astra_controlled,0,21,42
+frozen sensitivity,leave out institution: De La Salle University,luna_direct,0,22,42
+frozen sensitivity,leave out institution: De La Salle University,luna_controlled,0,17,42
+frozen sensitivity,leave out institution: Pateros Technological College,astra_direct,0,22,46
+frozen sensitivity,leave out institution: Pateros Technological College,astra_controlled,0,21,46
+frozen sensitivity,leave out institution: Pateros Technological College,luna_direct,0,22,46
+frozen sensitivity,leave out institution: Pateros Technological College,luna_controlled,0,18,46
+frozen sensitivity,critical_only,astra_direct,0,24,48
+frozen sensitivity,critical_only,astra_controlled,0,23,48
+frozen sensitivity,critical_only,luna_direct,0,24,48
+frozen sensitivity,critical_only,luna_controlled,0,19,48
+frozen sensitivity,not_scorable_as_unacceptable,astra_direct,0,24,48
+frozen sensitivity,not_scorable_as_unacceptable,astra_controlled,0,23,48
+frozen sensitivity,not_scorable_as_unacceptable,luna_direct,0,24,48
+frozen sensitivity,not_scorable_as_unacceptable,luna_controlled,0,19,48
+frozen sensitivity,unmatched_serious_catches_as_released,astra_direct,0,24,48
+frozen sensitivity,unmatched_serious_catches_as_released,astra_controlled,0,23,48
+frozen sensitivity,unmatched_serious_catches_as_released,luna_direct,0,24,48
+frozen sensitivity,unmatched_serious_catches_as_released,luna_controlled,0,19,48
+frozen sensitivity,omit_post_audit_changes,astra_direct,0,22,36
+frozen sensitivity,omit_post_audit_changes,astra_controlled,0,21,36
+frozen sensitivity,omit_post_audit_changes,luna_direct,0,22,36
+frozen sensitivity,omit_post_audit_changes,luna_controlled,0,17,36
+post-freeze bound,bound: least favourable to controls (S6a),astra_direct,24,24,48
+post-freeze bound,bound: least favourable to controls (S6a),astra_controlled,18,23,48
+post-freeze bound,bound: least favourable to controls (S6a),luna_direct,24,24,48
+post-freeze bound,bound: least favourable to controls (S6a),luna_controlled,20,19,48
+post-freeze bound,bound: least favourable to direct release (S6b),astra_direct,24,24,48
+post-freeze bound,bound: least favourable to direct release (S6b),astra_controlled,18,23,48
+post-freeze bound,bound: least favourable to direct release (S6b),luna_direct,24,24,48
+post-freeze bound,bound: least favourable to direct release (S6b),luna_controlled,20,19,48
+post-freeze exposure sensitivity,excluding_all_timed_answers,astra_direct,0,19,36
+post-freeze exposure sensitivity,excluding_all_timed_answers,astra_controlled,0,18,36
+post-freeze exposure sensitivity,excluding_all_timed_answers,luna_direct,0,17,36
+post-freeze exposure sensitivity,excluding_all_timed_answers,luna_controlled,0,13,36
+post-freeze exposure sensitivity,excluding_controlled_timed_answers,astra_direct,0,21,42
+post-freeze exposure sensitivity,excluding_controlled_timed_answers,astra_controlled,0,20,42
+post-freeze exposure sensitivity,excluding_controlled_timed_answers,luna_direct,0,20,42
+post-freeze exposure sensitivity,excluding_controlled_timed_answers,luna_controlled,0,16,42

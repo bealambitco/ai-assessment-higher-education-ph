@@ -147,7 +147,22 @@ def agree(a):
     if not lock.exists():
         raise SystemExit('Human scores are not locked.')
     amap = {r['judge_id']: r['human_masked_id'] for r in json.loads((pkg / 'private/JUDGE_TO_HUMAN_MASKED_MAP.json').read_text())}
-    human = {r['masked_id']: r for r in json.loads((base / 'scoring/researcher_scores.json').read_text()) if r['status'] == 'SCORED'}
+    rows = json.loads((base / 'scoring/researcher_scores.json').read_text())
+    if a.extension_scores:
+        # Judgments recorded after the lock, for answers the study left unread. The locked file is not
+        # modified; the merge happens here and is written to its own output file.
+        run_to_mid = {r['run_id']: r['masked_id'] for r in json.loads(Path(a.join).read_text())}
+        ext = {r['run_id']: r for r in json.loads(Path(a.extension_scores).read_text())['records']
+               if r['status'] == 'SCORED'}
+        by_mid = {r['masked_id']: r for r in rows}
+        for rid, e in ext.items():
+            h = by_mid[run_to_mid[rid]]
+            if h['status'] == 'SCORED':
+                raise SystemExit(f'{rid} is scored in both files; locked scores are never revised')
+            h.update({'status': 'SCORED', 'acceptable': bool(e['acceptable']), 'severity': e['severity'],
+                      'criteria': [{'criterion': c['criterion'], 'judgment': c.get('judgment')}
+                                   for c in (e.get('criteria') or [])]})
+    human = {r['masked_id']: r for r in rows if r['status'] == 'SCORED'}
     ser, acc, crit, exact, dis = [], [], [], [], []
     for f in sorted((pkg / 'parsed_outputs').glob('J*.json')):
         d = json.loads(f.read_text()); j = f.stem
@@ -167,11 +182,13 @@ def agree(a):
                 crit.append((c['judgment'].lower() == 'correct', jc[c['criterion']] == 'correct'))
         if hs != js or bool(h.get('acceptable')) != ja:
             dis.append({'judge_id': j, 'masked_id': mid, 'case_id': h.get('case_id'), 'human': [h.get('severity'), h.get('acceptable')], 'judge': [g.get('severity'), g.get('acceptable')]})
-    res = {'label': 'EXPLORATORY: AI judge agreement with locked human scores; a cross-check, never the decider',
+    res = {'label': 'EXPLORATORY: AI judge agreement with the human scores; a cross-check, never the decider'
+                    + ('; includes the answers read after the lock' if a.extension_scores else ''),
            'answers_compared': len(ser), 'serious_error': table(ser), 'acceptable': table(acc), 'criterion_correct': table(crit),
            'severity_exact': round(sum(exact) / len(exact), 3) if exact else None, 'disagreements_for_review': dis}
     out = pkg / 'analysis'; out.mkdir(exist_ok=True)
-    (out / 'agreement_with_human.json').write_text(json.dumps(res, indent=1))
+    name = 'agreement_with_human_all_read.json' if a.extension_scores else 'agreement_with_human.json'
+    (out / name).write_text(json.dumps(res, indent=1))
     print(json.dumps({k: v for k, v in res.items() if k != 'disagreements_for_review'}, indent=1))
 
 
@@ -182,6 +199,8 @@ if __name__ == '__main__':
     ap.add_argument('--max-tokens', type=int, default=6000); ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--agree', action='store_true'); ap.add_argument('--reasoning', choices=['low', 'medium', 'high'])
     ap.add_argument('--provider', nargs='*', help='OpenRouter provider order, e.g. Baidu'); ap.add_argument('--workers', type=int, default=1); ap.add_argument('--base')
+    ap.add_argument('--extension-scores', help='score file from the extension, merged for the agreement run only')
+    ap.add_argument('--join', help='locked_score_gate_join.json, needed to match a run to its masked identifier')
     a = ap.parse_args()
     PROVIDER = a.provider
     agree(a) if a.agree else run(a)

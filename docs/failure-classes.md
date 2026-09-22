@@ -146,6 +146,46 @@ required qualification, or a required statement that the supplied evidence is si
 
 *No frozen check sees this.*
 
+### F10 — Conclusion not supported by the reasoning given
+
+The answer reaches a conclusion the supplied evidence and its own stated reasoning do not support. This
+covers the case where the conclusion happens to be right but the path to it is not: the reader cannot get
+from the quoted rule and the answer's argument to the answer's result.
+
+*This is a failure:* the rule sets a two-term window, the answer reasons about weeks, and still lands on the
+correct term.
+*This is not:* a conclusion that follows from the evidence but omits a step a reader can supply.
+
+### F11 — Internal contradiction within the answer
+
+Two parts of the same answer cannot both be true: the prose says one thing and the declared action, the
+numbers or a later paragraph says another.
+
+*This is a failure:* the text says the request cannot be approved without the form, and the declared action
+is approve_request.
+*This is not:* an answer that gives a main recommendation and a clearly labelled alternative.
+
+### F12 — Wrong rule version or applicability
+
+The answer applies an issuance, a table or a provision that the supplied evidence shows does not govern this
+case: a superseded version when both are supplied, a rule for a different programme or course type, or a
+provision whose stated scope excludes the situation.
+
+*This is a failure:* applying the January memo when the evidence contains the April issuance that replaced
+it.
+*This is not:* naming the applicable rule and noting that an earlier version exists.
+
+### F99 — Other, described in the reason
+
+The error is real but none of the classes above holds it. **A reason is required**, and the scoring tool
+refuses to save without one: write what the failure actually was, in your own words. Nothing is lost by using
+this class; it is the honest record of a failure the list did not anticipate, and the reasons collected here
+are what justify adding a class later.
+
+*Use it for:* a failure you can describe but cannot place.
+*Do not use it for:* a failure that fits an existing class imperfectly. Use the nearest class and say what
+strained, in the reason.
+
 ## Reading the list for RQ2
 
 | Class | Frozen check | Visible to the checks |
@@ -169,3 +209,24 @@ coincidental catch, following deviation D4.
 
 *None yet. Every addition or clarification after September 20, 2026 appears here with its date, and rows
 above are left as written.*
+
+### 21 September 2026 — four classes added
+
+Added F10 (conclusion not supported by the reasoning given), F11 (internal contradiction within the answer),
+F12 (wrong rule version or applicability) and F99 (other, described in the reason).
+
+**Why the existing classes could not hold these.** F7 covers an assertion the evidence does not establish,
+but not a conclusion that is reachable and yet unsupported by the answer's own argument. Nothing covered an
+answer that contradicts itself between its prose, its numbers and its declared action. Rule-version errors
+were being forced into F3 or F5, which describe attribution and scope rather than the wrong issuance. And
+nothing let the scorer record a real failure the list did not anticipate; without F99 the choice was to
+force a wrong class or to leave the error uncoded, and both spoil the RQ2 counts.
+
+**Who decided.** The researcher, after meeting the gap while scoring, and before the seventh answer was
+finished.
+
+**Re-reading.** Seven answers had been scored when the classes were added. Each was re-read against the four
+new classes on the same day; any change is recorded as an edit in the score file, with the previous version
+kept.
+
+Codes F1 to F9 are unchanged in number, name and meaning.

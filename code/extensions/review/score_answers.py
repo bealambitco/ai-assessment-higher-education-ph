@@ -20,6 +20,7 @@ import argparse
 import hashlib
 import io
 import json
+import re
 import os
 import random
 import sys
@@ -60,6 +61,11 @@ FAILURE_CLASSES = OrderedDict([
     ("F7", {"label": "Unsupported inference", "check_visible": False, "check": None}),
     ("F8", {"label": "Output-contract failure", "check_visible": True, "check": "schema"}),
     ("F9", {"label": "Omission of a required element", "check_visible": False, "check": None}),
+    ("F10", {"label": "Conclusion not supported by the reasoning given", "check_visible": False, "check": None}),
+    ("F11", {"label": "Internal contradiction within the answer", "check_visible": False, "check": None}),
+    ("F12", {"label": "Wrong rule version or applicability", "check_visible": False, "check": None}),
+    ("F99", {"label": "Other, described in the reason", "check_visible": False, "check": None,
+             "requires_reason": True}),
 ])
 
 
@@ -295,6 +301,10 @@ def validate_record(record):
             problems.append(f"criterion {n} is {j} and needs at least one failure class")
         if j == "Correct" and classes:
             problems.append(f"criterion {n} is Correct and must carry no failure class")
+        needs_reason = [f for f in classes if FAILURE_CLASSES.get(f, {}).get("requires_reason")]
+        if needs_reason and not (c.get("reason") or "").strip():
+            problems.append(f"criterion {n} uses {', '.join(needs_reason)} and needs a reason saying "
+                            "what the failure was")
     severity = record.get("severity")
     if severity not in SEVERITIES:
         problems.append("severity blank or invalid")
@@ -318,6 +328,39 @@ def validate_record(record):
 # ------------------------------------------------------------------------------- the score file
 
 
+def blank_criteria(specs):
+    """One unfilled criterion row per scoring check. Used when a record is created and when it is redone."""
+    return [{"criterion": c["criterion"], "judgment": None, "response_evidence": "",
+             "reason": "", "failure_classes": []} for c in specs]
+
+
+def compose_updates(criteria, severity, acceptable, clock=None, challenge="", comments=""):
+    """The record written for one answer, from the values collected for it.
+
+    One definition, used by the terminal prompts and by the browser form, so the two interfaces cannot
+    drift apart. The primary-study rule decides the status: an unresolved criterion or an unresolved
+    severity is CANNOT_JUDGE, never SCORED with a Cannot judge inside it.
+    """
+    criteria = [dict(c) for c in criteria]
+    judgments = [c.get("judgment") for c in criteria]
+    derived = derive_acceptability(severity, judgments)
+    challenge = "" if (challenge or "").strip().lower() in ("", "none", "n/a") else challenge.strip()
+    updates = {"criteria": criteria, "reference_challenge": challenge,
+               "researcher_comments": comments}
+    if clock is not None:
+        updates["clock"] = clock
+    if derived is None:
+        updates.update({"status": "CANNOT_JUDGE", "scored_at": None, "severity": None,
+                        "acceptable": None, "failure_classes": []})
+        return updates
+    stamp = (clock or {}).get("finished_at") or datetime.now(MANILA).replace(microsecond=0).isoformat()
+    updates.update({"status": "SCORED", "scored_at": stamp, "severity": severity,
+                    "acceptable": False if derived is False else acceptable,
+                    "failure_classes": sorted({f for c in criteria
+                                               for f in (c.get("failure_classes") or [])})})
+    return updates
+
+
 def new_record(row, key):
     return {"scoring_id": row["scoring_id"], "position": row["position"], "part": row["part"],
             "run_id": row["run_id"], "case_id": row["case_id"],
@@ -325,8 +368,7 @@ def new_record(row, key):
             "round1_check_decision": row["decision"],
             "status": "PENDING", "scored_at": None, "severity": None, "acceptable": None,
             "failure_classes": [],
-            "criteria": [{"criterion": c["criterion"], "judgment": None, "response_evidence": "",
-                          "reason": "", "failure_classes": []} for c in key["scoring_checks"]],
+            "criteria": blank_criteria(key["scoring_checks"]),
             "reference_challenge": "", "prior_timing_exposure": None,
             "researcher_comments": "", "locked": False}
 
@@ -341,7 +383,7 @@ def init_state(ordered, bench_root, collection_dir):
             "collection_dir": str(collection_dir), "seed": SEED,
             "order_signature": order_signature(ordered),
             "failure_classes": {k: v["label"] for k, v in FAILURE_CLASSES.items()},
-            "locked_at": None, "records": records}
+            "locked_at": None, "sittings": [], "records": records}
 
 
 def save_state(state, path):
@@ -369,6 +411,89 @@ def apply_record(state, scoring_id, updates, path=None):
                 save_state(state, path)
             return rec
     raise KeyError(scoring_id)
+
+
+def supersede_record(rec, now=None):
+    """Keep the record as it stands in its own supersedes list, before anything replaces it.
+
+    Appends; an earlier supersedes entry is never dropped, and every other field on the record
+    (an evidence-repair note, for instance) travels into the snapshot with it.
+    """
+    keep = {k: v for k, v in rec.items() if k != "supersedes"}
+    keep["superseded_at"] = (now or datetime.now(MANILA)).replace(microsecond=0).isoformat()
+    rec.setdefault("supersedes", []).append(keep)
+    return keep
+
+
+def redo_record(state, scoring_id, path=None, now=None):
+    """Return one answer to PENDING so it can be scored again from scratch.
+
+    The earlier record is kept in its supersedes list, never deleted. A locked record is refused.
+    Shared by the terminal --redo and the browser rescore route.
+    """
+    for rec in state["records"]:
+        if rec["scoring_id"] != scoring_id:
+            continue
+        if rec.get("locked"):
+            raise PermissionError(f"{scoring_id}: locked; a locked record is never changed")
+        if rec["status"] == "PENDING":
+            return rec
+        supersede_record(rec, now)
+        rec.update({"status": "PENDING", "scored_at": None, "clock": None, "severity": None,
+                    "acceptable": None, "failure_classes": [],
+                    "criteria": blank_criteria(rec["criteria"]),
+                    "reference_challenge": "", "researcher_comments": ""})
+        if path:
+            save_state(state, path)
+        return rec
+    raise KeyError(f"{scoring_id}: no such answer in this score file")
+
+
+def edit_record(state, scoring_id, updates, clock=None, path=None, now=None):
+    """Save a revision of a finished record, keeping the version it replaces.
+
+    The same supersedes rule as redo_record, but the fields already entered are revised rather than
+    blanked. The clock first measured for the answer is left exactly as it was recorded and the time
+    spent on this revision is kept apart from it, so the scoring-time figures stay what they were.
+    """
+    for rec in state["records"]:
+        if rec["scoring_id"] != scoring_id:
+            continue
+        if rec.get("locked"):
+            raise PermissionError(f"{scoring_id}: locked; a locked record is never changed")
+        updates = dict(updates)
+        edit_clock = updates.pop("clock", None) or clock
+        updates.pop("edits", None)
+        # "clock" is never among the updates, so the measurement already on the record survives untouched.
+        problems = validate_record({**rec, **updates})
+        if problems:
+            raise ValueError("; ".join(problems))    # nothing is superseded by a record that will not save
+        if edit_clock:
+            updates["edits"] = (rec.get("edits") or []) + [
+                {"started_at": edit_clock["started_at"], "finished_at": edit_clock["finished_at"],
+                 "seconds": edit_clock["seconds_clean"], "seconds_raw": edit_clock["seconds_raw"],
+                 "pauses": edit_clock["pauses"], "flags": edit_clock["flags"]}]
+        supersede_record(rec, now)
+        rec.update(updates)
+        if path:
+            save_state(state, path)
+        return rec
+    raise KeyError(f"{scoring_id}: no such answer in this score file")
+
+
+def start_sitting(state, now=None):
+    """A sitting is when the tool was open, not time spent scoring. Both interfaces record it the same way."""
+    sitting = {"started_at": (now or datetime.now(MANILA)).replace(microsecond=0).isoformat(),
+               "ended_at": None, "answers_scored": 0,
+               "note": "when the tool was open, not time spent scoring"}
+    state.setdefault("sittings", []).append(sitting)
+    return sitting
+
+
+def end_sitting(sitting, answers_scored, now=None):
+    sitting["ended_at"] = (now or datetime.now(MANILA)).replace(microsecond=0).isoformat()
+    sitting["answers_scored"] = answers_scored
+    return sitting
 
 
 def lock_state(state, path=None):
@@ -439,6 +564,47 @@ def render_answer(record, case, key, answer, position, total):
     return "\n".join(lines)
 
 
+class Clock:
+    """Elapsed time with explicit pauses, and a flag for any unexplained gap over five minutes."""
+
+    GAP_SECONDS = 300
+
+    def __init__(self, now=None):
+        self._now = now or (lambda: datetime.now(MANILA))
+        self.started = self._now().replace(microsecond=0)
+        self.pauses = []
+        self.last_seen = self.started
+        self.flags = []
+
+    def pause(self, reason):
+        self.pauses.append({"reason": reason, "start": self._now().replace(microsecond=0).isoformat(), "finish": None})
+
+    def resume(self):
+        if self.pauses and self.pauses[-1]["finish"] is None:
+            self.pauses[-1]["finish"] = self._now().replace(microsecond=0).isoformat()
+        self.last_seen = self._now()
+
+    def tick(self):
+        """Called between prompts: an unexplained gap over five minutes is recorded, never subtracted."""
+        seen = self._now()
+        gap = (seen - self.last_seen).total_seconds()
+        if gap > self.GAP_SECONDS:
+            self.flags.append({"unexplained_gap_seconds": round(gap, 1),
+                               "at": seen.replace(microsecond=0).isoformat()})
+        self.last_seen = seen
+
+    def stop(self):
+        finished = self._now().replace(microsecond=0)
+        paused = 0.0
+        for p in self.pauses:
+            if p["finish"]:
+                paused += (datetime.fromisoformat(p["finish"]) - datetime.fromisoformat(p["start"])).total_seconds()
+        raw = (finished - self.started).total_seconds()
+        return {"started_at": self.started.isoformat(), "finished_at": finished.isoformat(),
+                "seconds_raw": round(raw, 1), "seconds_paused": round(paused, 1),
+                "seconds_clean": round(raw - paused, 1), "pauses": self.pauses, "flags": self.flags}
+
+
 def failure_class_menu():
     lines = ["  failure classes (see docs/failure-classes.md):"]
     for code, d in FAILURE_CLASSES.items():
@@ -448,11 +614,17 @@ def failure_class_menu():
 
 
 class Console:
-    """Terminal prompts. A scripted list of replies makes the whole flow testable without a terminal."""
+    """Terminal prompts with a clock, the same instrument shape as the timed exercise.
 
-    def __init__(self, script=None, out=None):
+    The clock starts when an answer is put on screen, stops when the record is saved, and is paused only by
+    an explicit `p` with a reason. Paused time is excluded from the clean figure and kept in the record, so a
+    long interval is never silently counted as work.
+    """
+
+    def __init__(self, script=None, out=None, clock=None):
         self.script = list(script) if script is not None else None
         self.out = out if out is not None else sys.stdout
+        self.clock = clock
 
     def say(self, text=""):
         print(text, file=self.out)
@@ -472,16 +644,60 @@ class Console:
             value = value.strip()
             if value.lower() in ("q", "quit"):
                 return "q"
+            if value.lower() in ("p", "pause") and self.clock is not None:
+                reason = ""
+                while not reason:
+                    self.say("  paused. the clock is stopped and this interval is excluded.")
+                    reason = (self.script.pop(0) if self.script else input("  reason for the pause> ")).strip()
+                    if not reason:
+                        self.say("  a pause needs a reason.")
+                self.clock.pause(reason)
+                self.say("  press Enter when you are back.")
+                if self.script:
+                    self.script.pop(0)
+                else:
+                    input()
+                self.clock.resume()
+                continue
             if not value and not allow_blank:
                 self.say("  a value is required.")
                 continue
             if valid is None:
+                if self.clock is not None:
+                    self.clock.tick()
                 return value
             match = valid(value)
             if match is None:
                 self.say("  not one of the allowed values; try again.")
                 continue
+            if self.clock is not None:
+                self.clock.tick()
             return match
+
+
+def ask_text(console, prompt, allow_blank=True):
+    """Free text that may be pasted over several lines.
+
+    A pasted quotation arrives as many lines; reading one line would keep the first and feed the rest to the
+    next prompt. Lines are collected until a blank one, so a paste is captured whole. A single line followed
+    by Enter still works, because the blank line ends it either way.
+    """
+    if console.script is not None:      # scripted runs (tests, self-test) stay one line per prompt
+        return console.ask(prompt, allow_blank=allow_blank)
+    console.say("  (type or paste; line breaks are joined into one continuous text. "
+                "Press Enter on an empty line when you are finished.)")
+    lines = []
+    while True:
+        line = console.ask("   " if lines else prompt, allow_blank=True)
+        if line == "q":
+            return "q"
+        if line == "":
+            if not lines and not allow_blank:
+                console.say("  a value is required.")
+                continue
+            break
+        lines.append(line)
+    return re.sub(r"\s+", " ", " ".join(lines)).strip()
 
 
 def choose(console, prompt, options, allow_blank=False):
@@ -513,10 +729,16 @@ def ask_failure_classes(console, prompt):
 
 
 def score_one(console, record, case, key, answer, position, total, now=None):
-    """Collect one answer's score. Returns an updates dict, 'skip', or 'quit'."""
+    """Collect one answer's score. Returns an updates dict, 'skip', or 'quit'.
+
+    The record keeps when the answer was put on screen and when it was saved. These are provenance, not a
+    measure of verification time: nothing pauses when the scorer steps away, so a long interval means only
+    that the sitting was interrupted. The study's timing evidence comes from the timed exercise alone."""
+    console.clock = Clock(now=(lambda: now) if now else None)
     console.say(render_answer(record, case, key, answer, position, total))
     console.say("\n  Enter q at any prompt to stop and keep everything saved so far.")
-    console.say("  Enter s at the first prompt to skip this answer and come back to it.\n")
+    console.say("  Enter s at the first prompt to skip this answer and come back to it.")
+    console.say("  Enter p at any prompt to pause the clock; you will be asked why.\n")
 
     criteria, judgments = [], []
     for spec, blank in zip(key["scoring_checks"], record["criteria"]):
@@ -526,7 +748,7 @@ def score_one(console, record, case, key, answer, position, total, now=None):
             return "quit"
         if j.lower() == "s":
             return "skip"
-        evidence = console.ask("  evidence from the answer (quote or brief reason)> ", allow_blank=False)
+        evidence = ask_text(console, "  evidence from the answer (quote or brief reason)> ", allow_blank=False)
         if evidence == "q":
             return "quit"
         classes = []
@@ -546,12 +768,12 @@ def score_one(console, record, case, key, answer, position, total, now=None):
     if derived is None:
         console.say("  Unresolved criterion or severity: this answer is recorded CANNOT_JUDGE, "
                     "not SCORED (the primary-study lock rejects Cannot judge under SCORED).")
-        reason = console.ask("  reason> ", allow_blank=False)
+        reason = ask_text(console, "  reason> ", allow_blank=False)
         if reason == "q":
             return "quit"
-        return {"status": "CANNOT_JUDGE", "scored_at": None, "severity": None, "acceptable": None,
-                "failure_classes": [], "criteria": criteria, "reference_challenge": "",
-                "researcher_comments": reason}
+        clock = console.clock.stop()
+        console.clock = None
+        return compose_updates(criteria, severity, None, clock=clock, comments=reason)
     if derived is False:
         console.say("  Major/Critical severity: acceptable is No under the primary-study rule.")
         acceptable = False
@@ -561,18 +783,16 @@ def score_one(console, record, case, key, answer, position, total, now=None):
         if answer_yn == "q":
             return "quit"
         acceptable = answer_yn == "Yes"
-    challenge = console.ask("  reference or key concern (blank if none)> ")
+    challenge = ask_text(console, "  reference or key concern (blank if none)> ")
     if challenge == "q":
         return "quit"
-    comments = console.ask("  other comments (blank if none)> ")
+    comments = ask_text(console, "  other comments (blank if none)> ")
     if comments == "q":
         return "quit"
-    stamp = (now or datetime.now(MANILA)).replace(microsecond=0).isoformat()
-    union = sorted({f for c in criteria for f in c["failure_classes"]})
-    return {"status": "SCORED", "scored_at": stamp, "severity": severity, "acceptable": acceptable,
-            "failure_classes": union, "criteria": criteria,
-            "reference_challenge": "" if challenge.lower() in ("", "none", "n/a") else challenge,
-            "researcher_comments": comments}
+    clock = console.clock.stop()
+    console.clock = None
+    return compose_updates(criteria, severity, acceptable, clock=clock,
+                           challenge=challenge, comments=comments)
 
 
 # ------------------------------------------------------------------------------------ the parts
@@ -625,10 +845,20 @@ def order_table(ordered):
     return "\n".join(rows)
 
 
-def run_session(state, ordered, answers, bench_root, path, console, limit=None, now=None):
+def run_session(state, ordered, answers, bench_root, path, console, limit=None, now=None, redo=None):
     by_run = {a["run_id"]: a for a in answers}
     by_id = {r["scoring_id"]: r for r in state["records"]}
+    for sid in (redo or []):
+        try:
+            redo_record(state, sid, path, now=now)
+        except (KeyError, PermissionError) as e:
+            raise SystemExit(e.args[0])
+    sitting = start_sitting(state, now)
     done = 0
+
+    def close_sitting():
+        end_sitting(sitting, done, now)
+        save_state(state, path)
     for row in ordered:
         rec = by_id.get(row["scoring_id"])
         if rec is None or rec["status"] != "PENDING":
@@ -642,6 +872,7 @@ def run_session(state, ordered, answers, bench_root, path, console, limit=None, 
             result = score_one(console, rec, case, key, source["answer"],
                                rec["position"], len(ordered), now=now)
             if result == "quit":
+                close_sitting()
                 console.say("\nStopped. Everything already entered is saved.")
                 return done
             if result == "skip":
@@ -653,7 +884,10 @@ def run_session(state, ordered, answers, bench_root, path, console, limit=None, 
                 continue
             console.say(f"  saved {rec['scoring_id']} ({rec['status']})\n")
             done += 1
+            sitting["answers_scored"] = done
+            save_state(state, path)
             break
+    close_sitting()
     return done
 
 
@@ -854,6 +1088,9 @@ def main(argv=None):
     ap.add_argument("--print-order", action="store_true", help="print the full order; writes nothing")
     ap.add_argument("--lock", action="store_true", help="lock every finished record")
     ap.add_argument("--limit", type=int, help="stop after this many answers in one sitting")
+    ap.add_argument("--redo", metavar="SCORING_ID", action="append",
+                    help="score an answer again; the earlier record is kept in its supersedes list, never "
+                         "deleted. A locked record is refused.")
     ap.add_argument("--self-test", action="store_true", help="run the whole flow on synthetic data")
     a = ap.parse_args(argv)
 
@@ -898,7 +1135,8 @@ def main(argv=None):
         return 0
 
     console = Console()
-    done = run_session(state, ordered, answers, a.benchmark_root, out_path, console, limit=a.limit)
+    done = run_session(state, ordered, answers, a.benchmark_root, out_path, console, limit=a.limit,
+                       redo=a.redo)
     print(f"\n{done} answer(s) scored this sitting.")
     print(status_report(answers, scored, decisions, ordered, state))
     return 0

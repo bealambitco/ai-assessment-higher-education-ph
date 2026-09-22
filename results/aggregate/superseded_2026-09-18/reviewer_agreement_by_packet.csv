@@ -1,0 +1,4 @@
+reviewer,packet,responses_returned,criteria_judged,criteria_compared_with_researcher,criteria_exact_agreement,reference_concerns,responses_researcher_had_not_scored
+Reviewer 1,A1-Core,6,23,14,12,1,2
+Reviewer 2,D1-Core,6,21,14,13,0,2
+Reviewer 2,D1-Optional,4,14,6,6,1,2
