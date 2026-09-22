@@ -1,4 +1,5 @@
-reviewer,packet,responses_returned,criteria_judged,criteria_compared_with_researcher,criteria_exact_agreement,reference_concerns,responses_researcher_had_not_scored
-Reviewer 1,A1-Core,6,23,14,12,1,2
-Reviewer 2,D1-Core,6,21,14,13,0,2
-Reviewer 2,D1-Optional,4,14,6,6,1,2
+reviewer,packet,responses_returned,criteria_judged,criteria_compared_with_researcher,criteria_exact_agreement,reference_concerns,responses_researcher_had_not_scored,form_fields_read_from
+Reviewer 1,A1-Core,6,23,19,17,1,1,Word form controls
+Reviewer 2,D1-Core,6,21,14,13,0,2,Word form controls
+Reviewer 2,D1-Optional,4,14,6,6,1,2,Word form controls
+Reviewer 3,C1-Core,6,23,14,13,0,2,"document text, form controls flattened in the returned file"

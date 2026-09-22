@@ -10,7 +10,8 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parents[1] / 'supplement'  # repository layout (2026-09-18): modules are in code/supplement/
 sys.path.insert(0, str(HERE))
-FROZEN = None
+# The frozen module is in the repository, so plain discovery works; --frozen-code still points elsewhere.
+FROZEN = Path(__file__).resolve().parents[1] / 'frozen_2026-09-15/experiment.py'
 
 
 def h(p):
@@ -191,6 +192,46 @@ class SupplementTests(unittest.TestCase):
         self.assertIn('[', res['S9_placeholders']['R-12c'])
         self.assertEqual(res['S7_repetition_consistency']['astra']['same_label'], 6)
 
+    def test_answers_read_after_the_lock_are_added_but_never_overwrite_one(self):
+        """The overlay fills in unread answers, refuses to revise a locked score, and changes the counts."""
+        import importlib, analyze_supplement as a
+        importlib.reload(a)
+        self.tmp = tempfile.mkdtemp(); base = make_base(self.tmp)
+        scores = json.loads((base / 'scoring/researcher_scores.json').read_text())
+        key = {r['masked_id']: r for r in json.loads((base / 'private/identity_key.json').read_text())}
+        left_unread = [s for s in scores if s['case_id'] == 'W1-02']
+        for s in left_unread:
+            s['status'], s['acceptable'], s['severity'], s['criteria'] = 'MISSING', None, None, []
+        w(base / 'scoring/researcher_scores.json', scores)
+        w(base / 'scoring/score_lock.json', {'sha256': h(base / 'scoring/researcher_scores.json')})
+        before = a.analyze(base)
+        self.assertEqual(before['S1_coverage']['SCORED'], 20)
+
+        record = lambda s, acc: {'run_id': key[s['masked_id']]['run_id'], 'status': 'SCORED', 'acceptable': acc,
+                                 'severity': 'None' if acc else 'Major',
+                                 'criteria': [{'criterion': 1, 'judgment': 'Correct' if acc else 'Incorrect'}]}
+        ext = base / 'ext_scores.json'
+        w(ext, {'records': [record(s, True) for s in left_unread]})
+        after = a.analyze(base, str(ext), 'supplement_results_with_extension.json')
+        self.assertEqual(after['extension_overlay']['answers_added'], 4, 'one case, four answers, counted once each')
+        self.assertEqual(after['S1_coverage']['SCORED'], 24)
+        self.assertGreater(after['S2_conditions']['astra_direct']['useful_release']['n'],
+                           before['S2_conditions']['astra_direct']['useful_release']['n'])
+        self.assertIn('S17_recomputed_sensitivities', after)
+        self.assertNotIn('S17_recomputed_sensitivities', before)
+        self.assertTrue((base / 'analysis/supplement/supplement_results.json').exists(),
+                        'the run without the overlay keeps its own file')
+
+        already = [s for s in scores if s['status'] == 'SCORED'][0]
+        w(ext, {'records': [record(already, False)]})
+        with self.assertRaises(ValueError) as e:
+            a.analyze(base, str(ext), 'supplement_results_with_extension.json')
+        self.assertIn('never revised', str(e.exception))
+
+        w(ext, {'records': [{'run_id': 'no-such-run', 'status': 'SCORED', 'acceptable': True, 'severity': 'None', 'criteria': []}]})
+        with self.assertRaises(ValueError):
+            a.analyze(base, str(ext), 'supplement_results_with_extension.json')
+
     def test_frozen_base_untouched(self):
         # Run in a fresh interpreter WITHOUT -B, so only the script's own guard can prevent __pycache__.
         import subprocess, os
@@ -290,7 +331,7 @@ class FormTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(); ap.add_argument('--frozen-code', required=True)
+    ap = argparse.ArgumentParser(); ap.add_argument('--frozen-code', default=str(FROZEN))
     a, rest = ap.parse_known_args()
     FROZEN = Path(a.frozen_code)
     unittest.main(argv=[sys.argv[0]] + rest, verbosity=2)

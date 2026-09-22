@@ -19,7 +19,7 @@
 |---|---|---|
 | Masking keys: masked ID to model, repetition and pathway; judge ID to masked ID; timing and repeat assignments; the four private files in the freeze record | The release retains privacy and masking boundaries; repeat scoring was not completed by the cutoff | Any later release requires a separate privacy and reconciliation decision, recorded in [../CHANGELOG.md](../CHANGELOG.md) |
 | Per-answer human scores and scoring forms | These can be joined with the masking keys only after release. The results folder is aggregate only. | Subject to a later release decision; not promised |
-| Returned reviewer packets and extracted reviewer files | They contain the reviewers' names; the reviewers are identified publicly only as Reviewer 1 and Reviewer 2 | Not planned |
+| Returned reviewer packets and extracted reviewer files | They contain the reviewers' names; the reviewers are identified publicly only as Reviewer 1, 2 and 3 | Not planned |
 | Full institutional documents, including the full-text renderings used in the document-evidence extension | Redistribution rights were not verified. The source register notes "cite; do not redistribute in full". Some HTML snapshots contain institutional contact emails. | Links, access dates and SHA-256 values are in [../literature/institutional-sources.csv](../literature/institutional-sources.csv) |
 | OpenRouter activity exports | They contain API key labels | Only aggregate costs are published |
 | Chat archives, working drafts and staging workbooks | Internal working material | Not planned |

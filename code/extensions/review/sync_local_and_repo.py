@@ -34,6 +34,7 @@ MAP = {
     "docs/scoring-plan.md": "02_SCORING/SCORING_PLAN.md",
     "docs/failure-classes.md": "02_SCORING/FAILURE_CLASSES.md",
     "docs/how-to-score.md": "02_SCORING/HOW_TO_SCORE.md",
+    "docs/timing-clarifications.md": "07_SECOND_TIMER/TIMING_CLARIFICATIONS.md",
     "extensions/whole-documents/README.md": "03_DOCUMENTS/README.md",
     "benchmark/governing-documents.json": "03_DOCUMENTS/governing-documents.json",
     "extensions/rule-discovery/README.md": "04_RULE_DISCOVERY/README.md",
@@ -55,12 +56,18 @@ MAP = {
     "extensions/revised-checks/effect_by_outcome.csv": "08_RESULTS_PUBLIC/revised_checks_effect_by_outcome.csv",
     "extensions/revised-checks/changes_public.csv": "08_RESULTS_PUBLIC/revised_checks_changes.csv",
     "extensions/revised-checks/run-record.json": "08_RESULTS_PUBLIC/revised_checks_run_record.json",
+    "extensions/withheld-answers/README.md": "02_SCORING/WITHHELD_ANSWERS_FINDINGS.md",
+    "extensions/withheld-answers/answers_scored.csv": "08_RESULTS_PUBLIC/answers_scored.csv",
+    "extensions/withheld-answers/scoring_results.json": "08_RESULTS_PUBLIC/scoring_results.json",
+    "extensions/withheld-answers/quotation_scope.json": "08_RESULTS_PUBLIC/quotation_scope.json",
 }
 CODE = ["revised_checks/checks.py", "revised_checks/rerun.py", "revised_checks/freeze.py",
         "collection/prepare_prompts.py", "collection/run_openrouter.py", "collection/parse_replies.py",
         "collection/build_workbook.py", "review/score_answers.py", "review/timing_session.py",
-        "review/key_review_packets.py", "review/key_review_intake.py", "review/sync_local_and_repo.py"]
-TESTS = ["test_revised_checks.py", "test_score_answers.py", "test_timing_session.py"]
+        "review/key_review_packets.py", "review/key_review_intake.py", "review/sync_local_and_repo.py", "review/score_answers_web.py", "review/recompute_timing.py",
+        "review/analyze_scoring.py", "revised_checks/quotation_scope.py"]
+TESTS = ["test_score_answers_web.py", "test_revised_checks.py", "test_score_answers.py", "test_timing_session.py",
+         "test_reviewer_flat_extract.py"]
 for name in CODE:
     MAP[f"code/extensions/{name}"] = f"09_CODE/{name.split('/')[-1]}"
 for name in TESTS:

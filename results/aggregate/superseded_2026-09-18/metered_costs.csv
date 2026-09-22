@@ -1,0 +1,6 @@
+item,usd,basis
+AI judge (DeepSeek V4 Pro) on 96 primary answers,0.79,OpenRouter activity records (US$0.80 including one practice prompt)
+AI judge (DeepSeek V4 Pro) on 48 matched Claude answers,0.99,OpenRouter activity records (US$1.14 including replaced attempts)
+"Gemini 3.1 Pro Preview, 12 document-extension runs",0.72,OpenRouter-reported usage.cost per run
+"Kimi K3, 12 document-extension runs",1.01,OpenRouter-reported usage.cost per run
+"Primary configurations (Astra, Luna) in Codex",,Not measured: subscription access produced no per-answer usage records

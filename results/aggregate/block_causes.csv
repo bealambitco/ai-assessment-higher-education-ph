@@ -1,5 +1,5 @@
 block_cause,outcome_class,blocked_answers
-quoted_source_membership,other_or_unscored,3
+quoted_source_membership,acceptable,3
 recompute_course_grade:unit_label_not_in_allow_list,acceptable,1
 recompute_absence_hours:unit_label_not_in_allow_list,acceptable,1
 recompute_absence_percentage:unit_label_not_in_allow_list,acceptable,1

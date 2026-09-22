@@ -1,0 +1,5 @@
+model,pathway,timed_items,primary_items,decision_time_s_median,decision_time_s_min,decision_time_s_max,items_needing_correction,correction_time_s_median_among_corrected,all_recorded_decision_time_s_median,handling_accept,handling_minor_edit,release_decision_overrides,note
+astra,direct,6,5,98,55,263,2,530,114,3,3,0,"primary summary excludes one flagged item per condition (untimed gap > 5 min, unresolved interruption, or unknown prior exposure)"
+astra,controlled,6,5,158,91,355,3,262,193,3,3,1,"primary summary excludes one flagged item per condition (untimed gap > 5 min, unresolved interruption, or unknown prior exposure)"
+luna,direct,6,5,122,78,215,2,218,122,4,2,0,"primary summary excludes one flagged item per condition (untimed gap > 5 min, unresolved interruption, or unknown prior exposure)"
+luna,controlled,6,5,120,61,301,0,,108,5,1,2,"primary summary excludes one flagged item per condition (untimed gap > 5 min, unresolved interruption, or unknown prior exposure)"

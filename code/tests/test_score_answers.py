@@ -313,5 +313,42 @@ class SelfTest(unittest.TestCase):
         self.assertEqual(s2.self_test(out), 0, out.getvalue()[-2000:])
 
 
+class ScoringClock(unittest.TestCase):
+    """The scoring clock behaves like the timed exercise: pauses are explicit and excluded."""
+
+    def clock(self, step=30):
+        from datetime import datetime, timedelta, timezone
+        manila = timezone(timedelta(hours=8))
+        t = [datetime(2026, 10, 1, 9, 0, tzinfo=manila)]
+
+        def now():
+            t[0] += timedelta(seconds=step)
+            return t[0]
+        return s2.Clock(now=now)
+
+    def test_pause_is_excluded_and_kept(self):
+        c = self.clock()
+        c.pause("phone call")
+        c.resume()
+        out = c.stop()
+        self.assertEqual(out["seconds_raw"], 120.0)
+        self.assertEqual(out["seconds_paused"], 30.0)
+        self.assertEqual(out["seconds_clean"], 90.0)
+        self.assertEqual(out["pauses"][0]["reason"], "phone call")
+
+    def test_clean_equals_raw_without_pauses(self):
+        out = self.clock().stop()
+        self.assertEqual(out["seconds_clean"], out["seconds_raw"])
+        self.assertEqual(out["pauses"], [])
+
+    def test_unexplained_gap_is_flagged_not_subtracted(self):
+        c = self.clock(step=400)
+        c.tick()
+        out = c.stop()
+        self.assertTrue(out["flags"])
+        self.assertEqual(out["seconds_paused"], 0.0)
+        self.assertEqual(out["seconds_clean"], out["seconds_raw"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

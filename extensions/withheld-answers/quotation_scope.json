@@ -1,0 +1,1006 @@
+{
+  "label": "Post-hoc diagnostic, 22 September 2026: quotation membership scoped to the whole prompt instead of the policy excerpt alone. Chosen after seeing which answers were blocked; reported to name the cause, not as a validated check.",
+  "totals": {
+    "quotations": 419,
+    "in_excerpt": 398,
+    "elsewhere_in_prompt": 21,
+    "nowhere": 0
+  },
+  "answers_with_a_quotation_outside_the_excerpt": 3,
+  "of_those_every_quotation_elsewhere_in_the_prompt": 3,
+  "answers_affected": [
+    {
+      "run_id": "W1-01_astra_r1",
+      "case_id": "W1-01",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 15,
+      "not_in_excerpt": 8,
+      "elsewhere_in_the_prompt": 8,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-01_astra_r2",
+      "case_id": "W1-01",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 15,
+      "not_in_excerpt": 8,
+      "elsewhere_in_the_prompt": 8,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-01_luna_r1",
+      "case_id": "W1-01",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 11,
+      "not_in_excerpt": 5,
+      "elsewhere_in_the_prompt": 5,
+      "found_nowhere_in_the_prompt": 0
+    }
+  ],
+  "per_answer": [
+    {
+      "run_id": "W1-01_astra_r1",
+      "case_id": "W1-01",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 15,
+      "not_in_excerpt": 8,
+      "elsewhere_in_the_prompt": 8,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-02_astra_r1",
+      "case_id": "W1-02",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 9,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-03_astra_r1",
+      "case_id": "W1-03",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-04_astra_r1",
+      "case_id": "W1-04",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-05_astra_r1",
+      "case_id": "W1-05",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-06_astra_r1",
+      "case_id": "W1-06",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-07_astra_r1",
+      "case_id": "W1-07",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-08_astra_r1",
+      "case_id": "W1-08",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-01_astra_r1",
+      "case_id": "W2-01",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-02_astra_r1",
+      "case_id": "W2-02",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-03_astra_r1",
+      "case_id": "W2-03",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-04_astra_r1",
+      "case_id": "W2-04",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-05_astra_r1",
+      "case_id": "W2-05",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-06_astra_r1",
+      "case_id": "W2-06",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-07_astra_r1",
+      "case_id": "W2-07",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-08_astra_r1",
+      "case_id": "W2-08",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-01_astra_r1",
+      "case_id": "W3-01",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-02_astra_r1",
+      "case_id": "W3-02",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-03_astra_r1",
+      "case_id": "W3-03",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-04_astra_r1",
+      "case_id": "W3-04",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-05_astra_r1",
+      "case_id": "W3-05",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-06_astra_r1",
+      "case_id": "W3-06",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-07_astra_r1",
+      "case_id": "W3-07",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-08_astra_r1",
+      "case_id": "W3-08",
+      "configuration": "astra",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-01_astra_r2",
+      "case_id": "W1-01",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 15,
+      "not_in_excerpt": 8,
+      "elsewhere_in_the_prompt": 8,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-02_astra_r2",
+      "case_id": "W1-02",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 9,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-03_astra_r2",
+      "case_id": "W1-03",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-04_astra_r2",
+      "case_id": "W1-04",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-05_astra_r2",
+      "case_id": "W1-05",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-06_astra_r2",
+      "case_id": "W1-06",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-07_astra_r2",
+      "case_id": "W1-07",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-08_astra_r2",
+      "case_id": "W1-08",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-01_astra_r2",
+      "case_id": "W2-01",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-02_astra_r2",
+      "case_id": "W2-02",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-03_astra_r2",
+      "case_id": "W2-03",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-04_astra_r2",
+      "case_id": "W2-04",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-05_astra_r2",
+      "case_id": "W2-05",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-06_astra_r2",
+      "case_id": "W2-06",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-07_astra_r2",
+      "case_id": "W2-07",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-08_astra_r2",
+      "case_id": "W2-08",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-01_astra_r2",
+      "case_id": "W3-01",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-02_astra_r2",
+      "case_id": "W3-02",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-03_astra_r2",
+      "case_id": "W3-03",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-04_astra_r2",
+      "case_id": "W3-04",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-05_astra_r2",
+      "case_id": "W3-05",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-06_astra_r2",
+      "case_id": "W3-06",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-07_astra_r2",
+      "case_id": "W3-07",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-08_astra_r2",
+      "case_id": "W3-08",
+      "configuration": "astra",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-01_luna_r1",
+      "case_id": "W1-01",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 11,
+      "not_in_excerpt": 5,
+      "elsewhere_in_the_prompt": 5,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-02_luna_r1",
+      "case_id": "W1-02",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 8,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-03_luna_r1",
+      "case_id": "W1-03",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-04_luna_r1",
+      "case_id": "W1-04",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-05_luna_r1",
+      "case_id": "W1-05",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-06_luna_r1",
+      "case_id": "W1-06",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-07_luna_r1",
+      "case_id": "W1-07",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-08_luna_r1",
+      "case_id": "W1-08",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-01_luna_r1",
+      "case_id": "W2-01",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-02_luna_r1",
+      "case_id": "W2-02",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-03_luna_r1",
+      "case_id": "W2-03",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-04_luna_r1",
+      "case_id": "W2-04",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-05_luna_r1",
+      "case_id": "W2-05",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-06_luna_r1",
+      "case_id": "W2-06",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-07_luna_r1",
+      "case_id": "W2-07",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 8,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-08_luna_r1",
+      "case_id": "W2-08",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-01_luna_r1",
+      "case_id": "W3-01",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-02_luna_r1",
+      "case_id": "W3-02",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-03_luna_r1",
+      "case_id": "W3-03",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-04_luna_r1",
+      "case_id": "W3-04",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-05_luna_r1",
+      "case_id": "W3-05",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-06_luna_r1",
+      "case_id": "W3-06",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-07_luna_r1",
+      "case_id": "W3-07",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-08_luna_r1",
+      "case_id": "W3-08",
+      "configuration": "luna",
+      "repetition": 1,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-01_luna_r2",
+      "case_id": "W1-01",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-02_luna_r2",
+      "case_id": "W1-02",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 10,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-03_luna_r2",
+      "case_id": "W1-03",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-04_luna_r2",
+      "case_id": "W1-04",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-05_luna_r2",
+      "case_id": "W1-05",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-06_luna_r2",
+      "case_id": "W1-06",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-07_luna_r2",
+      "case_id": "W1-07",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W1-08_luna_r2",
+      "case_id": "W1-08",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 6,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-01_luna_r2",
+      "case_id": "W2-01",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-02_luna_r2",
+      "case_id": "W2-02",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-03_luna_r2",
+      "case_id": "W2-03",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-04_luna_r2",
+      "case_id": "W2-04",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-05_luna_r2",
+      "case_id": "W2-05",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-06_luna_r2",
+      "case_id": "W2-06",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-07_luna_r2",
+      "case_id": "W2-07",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 7,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W2-08_luna_r2",
+      "case_id": "W2-08",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 5,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-01_luna_r2",
+      "case_id": "W3-01",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 1,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-02_luna_r2",
+      "case_id": "W3-02",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-03_luna_r2",
+      "case_id": "W3-03",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-04_luna_r2",
+      "case_id": "W3-04",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 2,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-05_luna_r2",
+      "case_id": "W3-05",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 4,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-06_luna_r2",
+      "case_id": "W3-06",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-07_luna_r2",
+      "case_id": "W3-07",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    },
+    {
+      "run_id": "W3-08_luna_r2",
+      "case_id": "W3-08",
+      "configuration": "luna",
+      "repetition": 2,
+      "quotations": 3,
+      "not_in_excerpt": 0,
+      "elsewhere_in_the_prompt": 0,
+      "found_nowhere_in_the_prompt": 0
+    }
+  ],
+  "note": "The scenario of some cases contains the document the model was asked to assess, for example a syllabus. A quotation from that document is legitimate evidence and the frozen check cannot see it, because the check searches the policy excerpt only."
+}

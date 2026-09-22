@@ -82,3 +82,89 @@ from the first condition was discarded.
 **How it is reported.** Both conditions are published side by side, with the counts for each. The difference
 between them is reported as a result about prompt sensitivity, and no claim rests on one configuration's
 count in one condition.
+
+## D2-06. The four flagged timing items were clarified on the record (21 September 2026)
+
+**What happened.** Four of the 24 timed items carried unexplained intervals and were left out of the main
+timing figures: an unrecorded 53 minutes (T02), an unrecorded 12 minutes (T16), an unknown prior-exposure
+answer (T04), and a pause whose start was never established (T24).
+
+**What was done.** The researcher stated on the record what each interval was: away from the task for T02 and
+T16, no prior exposure for T04, and, for T24, an interruption that began about a minute before the pause was
+pressed. The statements are dated and recorded in [timing-clarifications.md](timing-clarifications.md).
+Nothing in the timing file was edited.
+
+**How it is reported.** T02, T16 and T04 rejoin the main figures, flagged as explained after the fact; T24
+stays out of the point estimates and its correction time is reported as a range. Both the earlier figures,
+which excluded all four, and the recomputed ones are published. Recalling an interval days later is weaker
+evidence than a clock, and the paper says so wherever these items are used.
+
+## D2-07. Reading of the answers stopped on 22 September 2026, before the cutoff (22 September 2026)
+
+**What happened.** [scoring-plan.md](scoring-plan.md) fixed a cutoff of 30 November 2026 and an order in four
+parts. Reading stopped on 22 September 2026 with 12 of the 144 scheduled answers read: all 10 of Part A, the
+answers the frozen checks had withheld and nobody had ever read, and the 2 answers of Part B that complete
+those three cases. Parts C and D were not begun.
+
+**Why it matters.** The stop was decided after 12 answers had been read, so it is not a rule fixed in
+advance, and a reader is entitled to ask whether what those answers showed is why the reading stopped. The
+decision was the researcher's, on the ground that the remaining 132 answers were some fourteen hours of work
+against a fixed publication date, and it was taken knowing that Part A had come out uniformly one way. That
+cannot be unknown, and it is not presented as an independent stopping rule.
+
+**What protects the result.** Part A was not a sample of convenience. It was defined before any answer was
+read, in a published order, as exactly the answers the checks withheld and the study never scored, on the
+argument that a hold on an answer nobody read is neither a catch nor a false alarm but an unpaid bill. That
+part is now complete: every answer the checks withheld across the 96 has been read, in both configurations,
+in all three workflow groups. The question the part was written to settle is settled, and no further reading
+could change which answers the checks withheld.
+
+**How it is reported.** Coverage is reported per part, so a reader can see that the part bearing on the
+checks is complete while the rest is not. The 36 answers still unread stay in every denominator, and the
+bounding sensitivities resolve them both ways. The paper reports the stop, its date and the reason, with the
+order of events stated plainly: the answers were read, then the reading stopped.
+
+## D2-08. One returned reviewer packet had lost its form controls (22 September 2026)
+
+**What happened.** A third independent reviewer returned a Core packet in which the Word content controls
+had been flattened into ordinary text, most likely by saving through another editor. The frozen extractor
+reads controls by tag and found none, so the return was recorded as six responses with nothing in them.
+
+**What was done.** A fallback reader (`code/supplement/reviewer_flat_extract.py`) recovers the answers from
+the document text in the packet's own fixed layout, verbatim, and produces the same fields the controls
+would have produced. It is required to reproduce the controls exactly on every return that still carries
+them; on the three such returns it agrees on all 121 fields, with no differences
+(`code/tests/test_reviewer_flat_extract.py`). Which reader was used is recorded per return and published in
+`results/aggregate/reviewer_agreement_by_packet.csv`.
+
+**How it is reported.** The return is analysed with every other return, and the extraction route is stated
+rather than hidden. Nothing in the returned file was edited.
+
+## D2-09. A post-hoc diagnostic on the quotation check (22 September 2026)
+
+**What happened.** Reading the withheld answers showed that three acceptable answers were blocked by the
+quotation check on the same case. The diagnostic that followed — searching for each unmatched quotation in
+the whole prompt rather than in the policy excerpt alone — was chosen after that result was known.
+
+**What was done.** `code/extensions/revised_checks/quotation_scope.py` reports, for all 96 primary answers,
+how many quotations were in the excerpt, elsewhere in the prompt, or nowhere. It changes no decision and is
+not part of the revised checks.
+
+**How it is reported.** As a diagnosis of a known result, labelled as post-hoc wherever it appears, and never
+as a validated improvement. A check revised in the light of the answers it got wrong has to be tested on
+answers it has not seen before anything can be claimed for it.
+
+## D2-10. The clarified timing figures were derived from the published aggregates (22 September 2026)
+
+**What happened.** [timing-clarifications.md](timing-clarifications.md) described recomputing the timing
+figures from the private file that maps each timed item to its condition.
+
+**What was done.** The recomputation did not need that file. Each of the four flagged items is already
+published against its own condition in the study's supplementary results, so including the three explained
+items and excluding the fourth is a matter of reading the figures already computed for each condition. The
+recomputation was done that way, and `recompute_timing.py` remains in the repository for anyone who wants to
+re-derive the same figures from the item-level record.
+
+**How it is reported.** Both sets of figures appear side by side in
+`results/aggregate/timing_summary.csv` and in the paper: the earlier ones, which left out all four items,
+and the clarified ones, which include the three explained items and still leave out the fourth.

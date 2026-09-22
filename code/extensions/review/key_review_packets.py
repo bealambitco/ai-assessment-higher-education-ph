@@ -173,7 +173,19 @@ def grouped_locations(locators):
 # ---------------------------------------------------------------- document helpers
 
 class Builder:
-    """Wraps one python-docx document. The field counter is per document, so ids are stable."""
+    """Wraps one python-docx document. The field counter is per document, so ids are stable.
+
+    Everything from `field` down to `save` is the design layer copied from the primary-study
+    reviewer packets. A sibling arm that needs the same document design subclasses this and
+    overrides the four strings below plus `_front_matter`, so the layout is written once.
+    """
+
+    # The only parts of the page furniture that name this arm. A subclass replaces them.
+    DOC_TITLE = 'Review of the study answer keys, packet %s'
+    DOC_COMMENTS = ('Generated from the public benchmark files. '
+                    'Contains no model answers, model names or scores.')
+    HEADER_KIND = 'ANSWER-KEY REVIEW '
+    FOOTER_TEXT = 'Answer-key review %s  |  Please complete the yellow fields.'
 
     def __init__(self, label, case_ids, case_note):
         self.packet = label
@@ -510,20 +522,19 @@ class Builder:
         props = doc.core_properties
         props.author = RESEARCHER
         props.last_modified_by = RESEARCHER
-        props.title = 'Review of the study answer keys, packet ' + self.packet
-        props.comments = ('Generated from the public benchmark files. '
-                          'Contains no model answers, model names or scores.')
+        props.title = self.DOC_TITLE % self.packet
+        props.comments = self.DOC_COMMENTS
         props.created = FIXED_DATE
         props.modified = FIXED_DATE
         props.revision = 1
 
         paragraph = section.header.paragraphs[0]
-        paragraph.text = BANNER + SEP + 'ANSWER-KEY REVIEW ' + self.packet.upper()
+        paragraph.text = BANNER + SEP + self.HEADER_KIND + self.packet.upper()
         self.band(paragraph)
 
         paragraph = section.footer.paragraphs[0]
         # The trailing run pads the footer so the page number sits where the primary study put it.
-        text = 'Answer-key review ' + self.packet + '  |  Please complete the yellow fields.'
+        text = self.FOOTER_TEXT % self.packet
         paragraph.text = text + ' ' * max(4, 79 - len(text))
         field = OxmlElement('w:fldSimple')
         field.set(qn('w:instr'), 'PAGE')

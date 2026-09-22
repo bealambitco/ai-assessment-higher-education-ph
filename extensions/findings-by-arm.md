@@ -2,8 +2,11 @@
 
 Collected on 20 September 2026 through OpenRouter, one request per case, no tools, no web search, no
 follow-up, first reply kept. Answers were parsed with the frozen parser and passed through both check
-versions. **No person has scored these answers yet, so nothing here is a correctness result.** What follows
+versions. **No person has read these answers, so nothing in this file is a correctness result.** What follows
 is coverage, format, quotation membership, release decisions, time and cost.
+
+The answers that *have* been read are the primary comparison's own, including every answer the checks
+withheld there: [withheld-answers](withheld-answers/README.md).
 
 ## Coverage
 
@@ -114,6 +117,18 @@ is superseded attempts: replies truncated at the first output cap and re-sent, K
 allowance went to reasoning, and retries. Every generation identifier recorded in a run record appears in the
 export. The provider's per-request figures and the figures saved in the run records differ by US$0.000052
 across the 136 kept runs; both are reported rather than reconciled away.
+
+## Where each arm stands
+
+| Arm | What it asked | State |
+|---|---|---|
+| Revised checks | Do the revised rules release help without releasing error? | Complete; [findings](revised-checks/FINDINGS.md) |
+| Withheld answers | Were the answers the checks held back worth holding? | Complete for the primary comparison; [findings](withheld-answers/README.md) |
+| Low-resource models | Can open-weight models in the 8B–30B range hold the required form? | Collected; unread |
+| Whole documents | Does the short excerpt limit the answers? | Collected; unread |
+| Rule discovery | What happens when no passage is selected for the model? | Collected; unread |
+| Answer-key review | Are the keys themselves sound? | Packets prepared, held for a later round |
+| Second timer | Does a second person's checking time look like the first's? | Not yet run |
 
 ## What these arms cannot show yet
 

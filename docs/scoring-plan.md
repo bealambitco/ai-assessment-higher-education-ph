@@ -137,4 +137,19 @@ is reported in the paper as a deviation, in the same form as the primary-study d
 
 ## Dated notes
 
-*None yet.*
+### 22 September 2026 — reading stopped early, with Part A complete
+
+Reading stopped on 22 September 2026, before the 30 November cutoff, with 12 of the 144 answers read: all
+10 of Part A and the 2 answers of Part B that complete the three cases Part A opened (W1-01, W1-07 and
+W3-07). Parts C and D were not begun. The rows above are left as written.
+
+The stop was the researcher's decision, on the ground that the remaining 132 answers were about fourteen
+hours of work against a fixed publication date. It was taken after those 12 answers had been read, so it is
+not a rule fixed in advance, and it is reported that way: see
+[extension-deviations.md](extension-deviations.md), D2-07. What the part was written to settle is settled,
+because Part A was defined before any answer was read as exactly the answers the checks withheld and nobody
+had scored, and it is now complete — 16 withheld answers across the 96, counting the 6 the study had already
+scored, every one of them read.
+
+Everything the cutoff section says still holds for what was not read. The 132 unread answers stay in every
+denominator, coverage is reported per part, and no unread answer is counted as either useful or serious.

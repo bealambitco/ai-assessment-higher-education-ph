@@ -4,3 +4,6 @@ AI judge (DeepSeek V4 Pro) on 48 matched Claude answers,0.99,OpenRouter activity
 "Gemini 3.1 Pro Preview, 12 document-extension runs",0.72,OpenRouter-reported usage.cost per run
 "Kimi K3, 12 document-extension runs",1.01,OpenRouter-reported usage.cost per run
 "Primary configurations (Astra, Luna) in Codex",,Not measured: subscription access produced no per-answer usage records
+"Open-weight configurations, 24 cases each, two prompt conditions",0.0303,"OpenRouter-reported usage.cost per run, kept runs only"
+"Whole-document condition, 24 cases on two configurations",3.644,"OpenRouter-reported usage.cost per run, kept runs only"
+"Rule-discovery condition, 8 cases on two configurations",1.009,"OpenRouter-reported usage.cost per run, kept runs only"

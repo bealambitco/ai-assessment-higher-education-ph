@@ -4,6 +4,13 @@ Arm B of [the extension protocol](extension-protocol.md). You are scoring 144 an
 unscored, then the 96 Claude answers. Everything runs on your machine. Nothing is sent anywhere and nothing
 costs money.
 
+There are two ways to do it, and they are the same instrument: **a browser page on this computer**
+(`bash run.sh score-web`, described under [Scoring in a browser](#scoring-in-a-browser)) or the terminal
+prompts (`bash run.sh score`). Same order, same questions, same rules, same score file; you can switch
+between them whenever you like, even part-way through the queue. The browser page is easier for long
+quotations and it is the only one that lets you go back and edit an answer you have already scored, so it
+is the one to use unless you have a reason not to.
+
 ## Before you start
 
 Read [failure-classes.md](failure-classes.md) once, all of it. It is short, and it is the one thing you
@@ -21,6 +28,88 @@ COLLECTION="<21_EXPERIMENT_EXECUTION_PACKAGE>/collection"
 SCORES="$HOME/Documents/round2-scores/extension_scores.json"
 ROUND1="<21_EXPERIMENT_EXECUTION_PACKAGE>/scoring/researcher_scores.json"
 ```
+
+## The clock
+
+Scoring uses the same instrument as the timed exercise. A clock starts when an answer appears and stops when
+you save it. **Press Pause on the page, or enter `p` at any terminal prompt**; you will be asked why, and that interval is excluded
+from the clean figure and kept in the record with your reason. If more than five minutes pass between
+entries without a pause, the gap is recorded and flagged, never subtracted. Each sitting also records when
+you opened and closed the tool.
+
+What this measures is how long scoring took, under the same rules as the timed exercise. It is not the
+verification-burden measure: scoring against an answer key is a different task from deciding whether to
+accept an answer, and the paper's verification times come from the timed exercise alone.
+
+## Pasting a quotation
+
+In the browser every box is an ordinary text box: paste a quotation of any length, line breaks and all, and
+it is saved exactly as you pasted it.
+
+In the terminal, evidence, reasons and comments accept several lines. Paste as much as you like, then press
+Enter on an empty line to finish. A single line still works the same way: type it, then Enter, then Enter.
+The terminal joins the lines into one continuous text; the browser keeps them.
+
+## Scoring in a browser
+
+```
+bash run.sh score-web
+```
+
+It prints an address like `http://127.0.0.1:8767`. Open that in any browser **on this computer** and leave
+the terminal window alone; Ctrl-C there stops the tool. Nothing is served to the network, no page loads
+anything from the internet, and the score file is the same file the terminal tool writes. Add a port number
+(`bash run.sh score-web 8790`) if something else is already using 8767.
+
+The first page is progress: how many answers each part holds, how many are scored, how many are left, the
+order signature and where the score file is. **All answers** lists every answer with its status. **Score the
+next answer** opens the next one in the queue.
+
+An answer's page shows, in this order: which answer it is and which part, the case, the scenario, the task,
+the policy excerpt, the answer under review in a box of its own, then the answer key with its criteria, its
+accepted variants and its "not this" examples. Below that is the form: for each criterion a judgment, an
+evidence box, a reason box and the failure-class checkboxes; then severity, the acceptability rule and your
+Yes/No, a reference-concern box and a comments box. The buttons are **Save and next**, **Skip for now**,
+**Pause** and **Finish this sitting**.
+
+The clock is shown at the top of every answer page: when it started, how long it has counted, any paused
+time, and any gap it has flagged. Pause asks for a reason and refuses to pause without one. Refreshing the
+page does not restart it.
+
+If something is inconsistent, the page comes back with the problem named at the top **and everything you
+typed still in the boxes**. Nothing is written to the score file until the record is one the tool would
+accept, and nothing you typed is ever thrown away by a refusal.
+
+## If you leave an answer part-finished
+
+Whatever you have typed is kept as a draft on that answer, saved as soon as you press any button. If you
+press Finish while an answer has entries, the page refuses once and tells you: press Save and next to record
+it, or press Finish again to end the sitting and keep the entries as a draft. Reopening the answer puts them
+back in the boxes, with a note saying when they were left.
+
+## Changing an answer you have already scored
+
+Two ways, both on the **All answers** page, and both keep the version they replace in that answer's
+`supersedes` list with the time it was replaced. Nothing is overwritten silently, and a locked record is
+refused either way.
+
+* **Edit** re-opens the answer with every box already filled with what you saved, so you can fix one
+  criterion's evidence without retyping the rest. The time first measured for that answer is left exactly
+  as it was recorded; the time you spend on the revision is kept separately, in an `edits` list, so the
+  scoring-time figures stay honest.
+* **Score again from blank** empties the form and starts the answer over. This is the same thing as
+  `bash run.sh rescore S001` in the terminal.
+
+## Scoring an answer again, from the terminal
+
+If an entry went in wrong and you are not in the browser, re-open that one answer:
+
+```
+bash run.sh rescore S001
+```
+
+The earlier record is kept inside the answer's `supersedes` list with the time it was replaced, so nothing is
+lost and the change is visible. A locked record is refused.
 
 ## The commands
 
@@ -41,7 +130,20 @@ python3 -B code/extensions/review/score_answers.py --status \
 
 Expect 96 primary answers found, 48 scored in the primary study, 48 left; 96 Claude answers; 144 queued.
 
-**Score, or carry on where you stopped:**
+**Score in the browser (the same queue and the same file):**
+
+```
+python3 -B code/extensions/review/score_answers_web.py \
+    --collection "$COLLECTION" --round1-scores "$ROUND1" --out "$SCORES"
+```
+
+**Check the browser tool works, on invented data:**
+
+```
+python3 -B code/extensions/review/score_answers_web.py --self-test
+```
+
+**Score, or carry on where you stopped, in the terminal:**
 
 ```
 python3 -B code/extensions/review/score_answers.py --resume \
@@ -59,9 +161,9 @@ python3 -B code/extensions/review/score_answers.py --lock \
 
 ## What each answer asks you
 
-One answer per screen, under a scoring ID like `S017`. You see the scenario, the task, the policy excerpt,
-the answer and the answer key. You do not see which model wrote it, and neither does anything printed to the
-terminal.
+The same questions in both tools. One answer per screen, under a scoring ID like `S017`. You see the
+scenario, the task, the policy excerpt, the answer and the answer key. You do not see which model wrote it,
+and neither does anything printed to the terminal or drawn on the page.
 
 For each criterion in turn:
 
@@ -81,8 +183,9 @@ Then, once:
    answer to agree with it. Blank if none.
 7. **Other comments** — blank if none.
 
-Type `q` at any prompt to stop. Everything already entered is saved. Type `s` at a criterion's judgment
-prompt to skip the whole answer and come back to it later.
+In the terminal, type `q` at any prompt to stop; everything already entered is saved. Type `s` at a
+criterion's judgment prompt to skip the whole answer and come back to it later. In the browser those are the
+**Finish this sitting** and **Skip for now** buttons.
 
 If an entry is inconsistent — Yes with a Critical severity, an Incorrect criterion with no failure class,
 severity None with an error — the tool says what is wrong and asks for the answer again. It does not save
@@ -109,7 +212,8 @@ in the denominator and are reported as unscored, the way the primary study repor
 
 At the cutoff — or when you finish, if that comes first:
 
-1. Run `--lock`. Every finished record is marked locked and the file records the time. Locked records are
+1. Run `--lock` in the terminal. There is no lock button on the page: locking happens once, deliberately,
+   at the cutoff. Every finished record is marked locked and the file records the time. Locked records are
    not revised, by you or by anything else.
 2. Run `--status` once more and keep the output; it is the coverage statement for the paper.
 

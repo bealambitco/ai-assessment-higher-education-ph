@@ -60,6 +60,10 @@ def parse_args(argv=None):
     ap.add_argument("--out", required=True, help="workbook to write")
     ap.add_argument("--billing", default=None,
                     help="OpenRouter activity export (default: openrouter_activity_2026-09-20.csv beside the package)")
+    ap.add_argument("--scoring", default=None,
+                    help="scoring_results.json from analyze_scoring.py (default: analysis/scoring_results.json "
+                         "in the package). Adds the sheet on the answers that were read and brings the outcome "
+                         "classes up to date.")
     return ap.parse_args(argv)
 
 
@@ -97,7 +101,7 @@ def median(xs):
     return xs[n // 2] if n % 2 else round((xs[n // 2 - 1] + xs[n // 2]) / 2, 3)
 
 
-def load(pkg, billing_path):
+def load(pkg, billing_path, scoring_path=None):
     """Read every source once. Returns a plain dict; nothing here writes."""
     pkg = Path(pkg).expanduser().resolve()
     src = {
@@ -125,6 +129,22 @@ def load(pkg, billing_path):
     src["billing_name"] = bill.name
     run_record = pkg / "08_RESULTS_PUBLIC/checks_v2_run_record.json"
     src["checks_run_record"] = json.loads(run_record.read_text()) if run_record.exists() else {}
+    # Answers read after the score lock: the outcome classes in the per-answer table were written before
+    # they were read, so bring them up to date here rather than leaving the sheets describing a stale state.
+    sc = Path(scoring_path).expanduser() if scoring_path else pkg / "analysis/scoring_results.json"
+    src["scoring"] = json.loads(sc.read_text()) if sc.exists() else None
+    if src["scoring"]:
+        read_now = {r["run_id"]: r for r in src["scoring"]["withheld_audit"]}
+        by_run = {r["run_id"]: r for r in csv.DictReader((pkg / "analysis/scoring_per_answer.csv").open())} \
+            if (pkg / "analysis/scoring_per_answer.csv").exists() else {}
+        for row in src["answers"]:
+            a = by_run.get(row["run_id"])
+            if a and a["read"] == "True" and row["outcome_class"] == "unscored":
+                row["outcome_class"] = "acceptable" if a["acceptable"] == "True" else "serious"
+                row["severity"] = a["severity"]
+                row["acceptable"] = a["acceptable"]
+        src["read_after_lock"] = sum(1 for r in by_run.values() if r["read_in"] == "extension")
+        src["withheld_read"] = read_now
     return src
 
 
@@ -484,6 +504,69 @@ UNSCORED_LINE = ("Correctness is not scored for the three collection arms: no pe
                  "describes what the models produced and what the checks did with it.")
 
 
+def answers_read_sheet(wb, src):
+    """The answers the checks withheld, and what reading them showed."""
+    sc = src["scoring"]
+    cov, head, conds = sc["coverage"], sc["headline"], sc["conditions_text"]
+    ws = sheet(wb, "Answers read", "Arm B: the answers the checks withheld",
+               "Sixteen of the 96 answers in the primary comparison never reached a user. Ten of them had never "
+               "been read by anyone. All sixteen have now been read against the same keys, criteria and severity "
+               "definitions as the rest of the study.",
+               [30, 14, 14, 14, 14, 14, 14, 14])
+    r = h2(ws, 4, "Table 1. What the checks withheld, and what reading it showed")
+    rows = [["Answers withheld by the checks", head["answers_withheld_by_the_checks"]],
+            ["Of those, read", head["now_read"]],
+            ["Judged acceptable", head["acceptable"]],
+            ["Judged serious (Major or Critical)", head["serious"]],
+            ["Still unread", head["still_unread"]],
+            ["Released by the revised checks", head["released_by_the_revised_checks"]]]
+    _, _, r = table(ws, r, ["Measure", "Answers"], rows, [None, INT], bold_first=True)
+    r = note(ws, r - 1, "Source: analysis/scoring_results.json. Withheld = blocked, or routed to a person. "
+                        "Every answer the checks withheld in the primary comparison has been read.")
+    r += 1
+
+    r = h2(ws, r, "Table 2. Each withheld answer, the check that fired, and the judgment")
+    rows = [[w["case_id"], PRIMARY_LABEL.get(w["model"], w["model"]), f"r{w['repetition']}",
+             {"block": "Blocked", "route": "Routed to a person"}.get(w["decision"], w["decision"]),
+             ", ".join(c.replace("_", " ") for c in w["checks_that_fired"]),
+             w["outcome"].capitalize(), "Yes" if w["revised_checks_release"] else "No"] for w in sc["withheld_audit"]]
+    _, _, r = table(ws, r, ["Case", "Configuration", "Repetition", "Decision", "Check that fired",
+                            "Judgment on reading", "Released by the revised checks"], rows, bold_first=True)
+    r = note(ws, r - 1, "Three of the blocks are the same case: the answers quoted the syllabus they had been asked "
+                        "to assess, and the quotation check searches the policy excerpt only.")
+    r += 1
+
+    r = h2(ws, r, "Table 3. Release outcomes, over every answer read")
+    rows = []
+    for k, v in conds.items():
+        model, pathway = k.split("_")
+        rows.append([PRIMARY_LABEL.get(model, model),
+                     "Direct release" if pathway == "direct" else "Under the checks",
+                     v["acceptable"], v["unscored"], v["serious_released"], v["useful_release"],
+                     v["acceptable_withheld"], v["routed"], v["blocked"]])
+    _, _, r = table(ws, r, ["Configuration", "Release route", "Acceptable", "Not read", "Serious answers released",
+                            "Useful releases", "Acceptable answers withheld", "of those, routed", "of those, blocked"],
+                    rows, bold_first=True)
+    r = note(ws, r - 1, "Denominator 48, every answer scheduled for that configuration; answers nobody has read stay "
+                        "in it. The same answer appears in both routes, so a difference between the routes is the "
+                        "checks and nothing else.")
+    r += 1
+
+    r = h2(ws, r, "Table 4. Coverage")
+    rows = [["Answers read", cov["scored"], 96],
+            ["Read in the primary study", cov["by_source"]["study"], 96],
+            ["Read afterwards", cov["by_source"]["extension"], 96],
+            ["Not read", cov["by_source"]["unscored"], 96],
+            ["Cases with every answer read", cov["cases_complete"], cov["cases_total"]]]
+    _, _, r = table(ws, r, ["Measure", "Count", "Of"], rows, [None, INT, INT], bold_first=True)
+    eff = sc["reading_effort"]
+    note(ws, r, f"Reading the {eff['answers_read']} answers took a median of {eff['seconds_median']:.0f} seconds each "
+                f"({eff['seconds_min']:.0f} to {eff['seconds_max']:.0f}), {eff['seconds_total'] / 60:.0f} minutes in "
+                "all, with the clock running only while an answer was open. Reading stopped on 22 September 2026 "
+                "before the planned cutoff; see docs/extension-deviations.md, D2-07.")
+    return ws
+
+
 def build(src, out_path):
     wb = Workbook()
     wb.remove(wb.active)
@@ -541,9 +624,12 @@ def build(src, out_path):
     _, _, r = table(ws, r, ["Rule set", "Outcome class", "Answers", "Withheld under v1", "Withheld under the new rules",
                             "Released by the new rules", "Withheld by the new rules"], rows,
                     [None, None, INT, INT, INT, INT, INT], bold_first=True)
-    r = note(ws, r - 1, "Withheld = routed to a person or blocked. Outcome classes come from the primary study human scores, "
-                        "unchanged: 48 answers scored acceptable, 2 confirmed wrong by hand, 0 scored serious, 142 not "
-                        "scored. An unscored answer is counted neither as recovered help nor as contained error.")
+    counts = Counter(row["outcome_class"] for row in src["answers"])
+    r = note(ws, r - 1, "Withheld = routed to a person or blocked. Outcome classes come from the human scores, "
+                        f"none of them revised: {counts['acceptable']} answers read and judged acceptable, "
+                        f"{counts['confirmed_error']} confirmed wrong by hand, {counts['serious']} read and judged "
+                        f"serious, {counts['unscored']} not read. An answer nobody has read is counted neither as "
+                        "recovered help nor as contained error.")
     if rr.get("pre_specified_reading"):
         psr = rr["pre_specified_reading"]
         r = note(ws, r, "Pre-specified reading, fixed in CHECKS_V2_SPEC.md before the run: recovered acceptable "
@@ -577,8 +663,12 @@ def build(src, out_path):
              "The revised checks block fewer answers in three of four configurations (of 48 each)",
              "Answers blocked (of 48)", [GREY, BLUE], y_max=12, width=18)
     r = place(ws, ch, f"A{r}", "analysis/checks_v2_per_answer.csv (Table 1 above).")
-    note(ws, r, "Blocking is not by itself a good or a bad outcome: whether a blocked answer was wrong is a scoring "
-                "question, and 142 of the 192 answers are still unscored.")
+    note(ws, r, "Blocking is not by itself a good or a bad outcome: whether a blocked answer was wrong is a "
+                f"question for a reader, and {counts['unscored']} of the 192 answers have not been read.")
+
+    # ---------------------------------------------------------------- Answers the checks withheld
+    if src.get("scoring"):
+        answers_read_sheet(wb, src)
 
     # ---------------------------------------------------------------- the three collection arms
     arm_sheet(wb, src, "access", arms["access"], prim,
@@ -1058,6 +1148,10 @@ def readme(ws, src, day):
         ("the primary study is closed", "Its cases, checks, answers, scores and results are not modified. Primary-study figures that "
                               "appear here are re-computed from the re-run of the checks over the same "
                               "answers, and are labelled as a different arm wherever they sit beside extension rows."),
+        ("Arm B, the answers the checks withheld",
+         "Every answer the frozen checks withheld in the primary comparison has been read against the same keys "
+         "and criteria, including the ten nobody had read. Reading stopped on 22 September 2026 before the "
+         "planned cutoff (docs/extension-deviations.md, D2-07)."),
         ("Arm A, revised checks", "The four frozen release checks were revised to the recommendation the paper itself "
                                   "makes in Section 6.3, specified and hashed before the run, and applied to the 192 "
                                   "answers already collected. No new answers, no paid calls, no score revised."),
@@ -1100,6 +1194,8 @@ def readme(ws, src, day):
         ("Dashboard", "Tiles and plain sentences (sources as on the linked sheets)."),
         ("Revised checks", "analysis/checks_v2_per_answer.csv (192 answers); analysis/checks_v2_changes.csv; "
                            "08_RESULTS_PUBLIC/checks_v2_run_record.json."),
+        ("Answers read", "analysis/scoring_results.json and analysis/scoring_per_answer.csv, from "
+                         "code/extensions/review/analyze_scoring.py."),
         ("Low-resource models", "analysis/access_per_run.csv; work/access/MANIFEST.json; "
                                 "work/access/by_model/*/run_records/*.json."),
         ("Whole documents", "analysis/documents_per_run.csv; work/documents/MANIFEST.json; "
@@ -1141,7 +1237,7 @@ def readme(ws, src, day):
 # ----------------------------------------------------------------------------------------------
 def main(argv=None):
     a = parse_args(argv)
-    src = load(a.package, a.billing)
+    src = load(a.package, a.billing, a.scoring)
     wb, arms, prim, crows, ctot = build(src, a.out)
     out = Path(a.out).expanduser()
     print(f"saved {out}")
